@@ -1,0 +1,31 @@
+{
+	"context_id": "dc0a4115d63f6032a402864d27105d5cc29616516f99e26799e2f4fb8dfada6a",
+	"context_status": "sufficient",
+	"context_reason": "表头、专业和章节没有范围冲突，可确定直接父节点。",
+	"evaluations": [
+		{
+			"leaf_id": "c431881f-a053-578e-bd68-234a1a07aa46",
+			"parent_id": "40d0a462-e73a-5495-8734-200a70c045ef",
+			"judgment": "match",
+			"reason": "完整料表信息中的西刘塬光伏场区与此父节点范围一致。",
+			"evidence_refs": [
+				"header.headerText",
+				"header.specialtyName",
+				"internalSections.S1.title",
+				"header.siteName"
+			]
+		},
+		{
+			"leaf_id": "f04010d1-02c0-5b46-9bb4-3befdcae5f81",
+			"parent_id": "ac0c6792-d50e-5b67-811e-69f9a53a2cc1",
+			"judgment": "no_match",
+			"reason": "完整料表信息指向西刘塬光伏场区，与席兰村光伏场区不符。",
+			"evidence_refs": [
+				"header.headerText",
+				"header.specialtyName",
+				"internalSections.S1.title",
+				"header.siteName"
+			]
+		}
+	]
+}

@@ -1,0 +1,166 @@
+{
+	"type": "object",
+	"additionalProperties": false,
+	"required": [
+		"packet_id",
+		"rows"
+	],
+	"properties": {
+		"packet_id": {
+			"type": "string"
+		},
+		"rows": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "object",
+				"additionalProperties": false,
+				"required": [
+					"r",
+					"role",
+					"parent",
+					"inherit",
+					"qty_from",
+					"unit_from",
+					"quantity_basis",
+					"quantity_parent",
+					"quantity_basis_ref",
+					"reason",
+					"node_type",
+					"classification"
+				],
+				"properties": {
+					"r": {
+						"type": "integer",
+						"minimum": 1
+					},
+					"role": {
+						"type": "string",
+						"enum": [
+							"project",
+							"section",
+							"group",
+							"summary",
+							"item",
+							"assembly",
+							"component",
+							"attribute",
+							"note",
+							"pending"
+						]
+					},
+					"parent": {
+						"type": [
+							"integer",
+							"null"
+						],
+						"minimum": 1
+					},
+					"inherit": {
+						"type": "array",
+						"items": {
+							"type": "integer",
+							"minimum": 1
+						},
+						"uniqueItems": true
+					},
+					"qty_from": {
+						"type": [
+							"integer",
+							"null"
+						],
+						"minimum": 1
+					},
+					"unit_from": {
+						"type": [
+							"integer",
+							"null"
+						],
+						"minimum": 1
+					},
+					"quantity_basis": {
+						"type": "string",
+						"enum": [
+							"total",
+							"per_parent",
+							"unknown",
+							"not_applicable"
+						]
+					},
+					"quantity_parent": {
+						"type": [
+							"integer",
+							"null"
+						],
+						"minimum": 1
+					},
+					"quantity_basis_ref": {
+						"type": [
+							"integer",
+							"null"
+						],
+						"minimum": 1
+					},
+					"reason": {
+						"type": [
+							"string",
+							"null"
+						]
+					},
+					"node_type": {
+						"type": [
+							"string",
+							"null"
+						],
+						"enum": [
+							"EQUIPMENT",
+							"MATERIAL",
+							null
+						]
+					},
+					"classification": {
+						"type": "object",
+						"additionalProperties": false,
+						"required": [
+							"status",
+							"rule_ids",
+							"source_rows",
+							"reason"
+						],
+						"properties": {
+							"status": {
+								"type": "string",
+								"enum": [
+									"resolved",
+									"review",
+									"not_applicable"
+								]
+							},
+							"rule_ids": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								},
+								"uniqueItems": true
+							},
+							"source_rows": {
+								"type": "array",
+								"items": {
+									"type": "integer",
+									"minimum": 1
+								},
+								"uniqueItems": true
+							},
+							"reason": {
+								"type": [
+									"string",
+									"null"
+								]
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

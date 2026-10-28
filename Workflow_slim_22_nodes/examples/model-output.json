@@ -1,0 +1,248 @@
+{
+	"packet_id": "packet-demo-001",
+	"rows": [
+		{
+			"r": 1,
+			"role": "section",
+			"parent": null,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "not_applicable",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": null,
+			"classification": {
+				"status": "not_applicable",
+				"rule_ids": [],
+				"source_rows": [],
+				"reason": null
+			}
+		},
+		{
+			"r": 2,
+			"role": "item",
+			"parent": 1,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "total",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": "EQUIPMENT",
+			"classification": {
+				"status": "resolved",
+				"rule_ids": [
+					"DEMO-E01"
+				],
+				"source_rows": [
+					2
+				],
+				"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+			}
+		},
+		{
+			"r": 3,
+			"role": "attribute",
+			"parent": 2,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "not_applicable",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": null,
+			"classification": {
+				"status": "not_applicable",
+				"rule_ids": [],
+				"source_rows": [],
+				"reason": null
+			}
+		},
+		{
+			"r": 4,
+			"role": "group",
+			"parent": 1,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "not_applicable",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": null,
+			"classification": {
+				"status": "not_applicable",
+				"rule_ids": [],
+				"source_rows": [],
+				"reason": null
+			}
+		},
+		{
+			"r": 5,
+			"role": "item",
+			"parent": 4,
+			"inherit": [
+				4
+			],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "total",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": "MATERIAL",
+			"classification": {
+				"status": "resolved",
+				"rule_ids": [
+					"DEMO-M01"
+				],
+				"source_rows": [
+					4,
+					5
+				],
+				"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+			}
+		},
+		{
+			"r": 6,
+			"role": "item",
+			"parent": 4,
+			"inherit": [
+				4
+			],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "total",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": "MATERIAL",
+			"classification": {
+				"status": "resolved",
+				"rule_ids": [
+					"DEMO-M01"
+				],
+				"source_rows": [
+					4,
+					6
+				],
+				"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+			}
+		},
+		{
+			"r": 7,
+			"role": "summary",
+			"parent": 1,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "not_applicable",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": null,
+			"classification": {
+				"status": "not_applicable",
+				"rule_ids": [],
+				"source_rows": [],
+				"reason": null
+			}
+		},
+		{
+			"r": 8,
+			"role": "item",
+			"parent": 7,
+			"inherit": [
+				7
+			],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "total",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": "EQUIPMENT",
+			"classification": {
+				"status": "resolved",
+				"rule_ids": [
+					"DEMO-E02"
+				],
+				"source_rows": [
+					7,
+					8
+				],
+				"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+			}
+		},
+		{
+			"r": 9,
+			"role": "assembly",
+			"parent": 1,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "total",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": "EQUIPMENT",
+			"classification": {
+				"status": "resolved",
+				"rule_ids": [
+					"DEMO-E03"
+				],
+				"source_rows": [
+					9
+				],
+				"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+			}
+		},
+		{
+			"r": 10,
+			"role": "component",
+			"parent": 9,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "per_parent",
+			"quantity_parent": 9,
+			"quantity_basis_ref": 10,
+			"reason": "原文明确每面柜内用量。",
+			"node_type": "MATERIAL",
+			"classification": {
+				"status": "resolved",
+				"rule_ids": [
+					"DEMO-M02"
+				],
+				"source_rows": [
+					9,
+					10
+				],
+				"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+			}
+		},
+		{
+			"r": 11,
+			"role": "note",
+			"parent": 1,
+			"inherit": [],
+			"qty_from": null,
+			"unit_from": null,
+			"quantity_basis": "not_applicable",
+			"quantity_parent": null,
+			"quantity_basis_ref": null,
+			"reason": null,
+			"node_type": null,
+			"classification": {
+				"status": "not_applicable",
+				"rule_ids": [],
+				"source_rows": [],
+				"reason": null
+			}
+		}
+	]
+}

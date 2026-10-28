@@ -1,0 +1,1008 @@
+{
+  "status": "proposed_configuration_not_importable_DSL",
+  "plan_revision": "quantity-workflow-slim-v1.1",
+  "date": "2026-10-27",
+  "operation_scope": "new_java_workflow_application_only",
+  "existing_workflow_policy": "preserve_all_nodes_edges_prompts_configuration_and_published_version",
+  "source_proposal_node_count": 57,
+  "target_core_node_count": 22,
+  "target_object_only_compatibility_node_count": 25,
+  "source_proposal_nodes": [
+    {
+      "id": "qStart",
+      "type": "start"
+    },
+    {
+      "id": "qEnd",
+      "type": "end"
+    },
+    {
+      "id": "qGetDispatch",
+      "type": "http-request"
+    },
+    {
+      "id": "sReadBatch",
+      "type": "code"
+    },
+    {
+      "id": "sIterFiles",
+      "type": "iteration"
+    },
+    {
+      "id": "sIterFilesStart",
+      "type": "iteration-start"
+    },
+    {
+      "id": "sItem",
+      "type": "code"
+    },
+    {
+      "id": "sGetInput",
+      "type": "http-request"
+    },
+    {
+      "id": "sReadInput",
+      "type": "code"
+    },
+    {
+      "id": "sEligible",
+      "type": "if-else"
+    },
+    {
+      "id": "sLLM",
+      "type": "llm"
+    },
+    {
+      "id": "sBuildProcessBody",
+      "type": "code"
+    },
+    {
+      "id": "sSkip",
+      "type": "code"
+    },
+    {
+      "id": "sProcess",
+      "type": "http-request"
+    },
+    {
+      "id": "sReadProcess1",
+      "type": "code"
+    },
+    {
+      "id": "sRepairGate",
+      "type": "if-else"
+    },
+    {
+      "id": "sLLM2",
+      "type": "llm"
+    },
+    {
+      "id": "sBuildProcessBody2",
+      "type": "code"
+    },
+    {
+      "id": "sProcess2",
+      "type": "http-request"
+    },
+    {
+      "id": "sFileEnvelope",
+      "type": "code"
+    },
+    {
+      "id": "sIterResult",
+      "type": "variable-aggregator"
+    },
+    {
+      "id": "sReconcile",
+      "type": "code"
+    },
+    {
+      "id": "sExport",
+      "type": "http-request"
+    },
+    {
+      "id": "sSemanticEnvelope",
+      "type": "code"
+    },
+    {
+      "id": "qBatchGate",
+      "type": "if-else"
+    },
+    {
+      "id": "qAcceptFirst",
+      "type": "code"
+    },
+    {
+      "id": "qReadProcess2",
+      "type": "code"
+    },
+    {
+      "id": "qRepairResultGate",
+      "type": "if-else"
+    },
+    {
+      "id": "qAcceptRepair",
+      "type": "code"
+    },
+    {
+      "id": "qStructureArgs",
+      "type": "variable-aggregator"
+    },
+    {
+      "id": "qCbsContext",
+      "type": "http-request"
+    },
+    {
+      "id": "qReadCbsInput",
+      "type": "code"
+    },
+    {
+      "id": "qCbsStartGate",
+      "type": "if-else"
+    },
+    {
+      "id": "qCbsSkipResult",
+      "type": "code"
+    },
+    {
+      "id": "qCbsLeafLLM",
+      "type": "llm"
+    },
+    {
+      "id": "qBuildLeafBody",
+      "type": "code"
+    },
+    {
+      "id": "qCbsLeafValidate",
+      "type": "http-request"
+    },
+    {
+      "id": "qReadLeafValidation",
+      "type": "code"
+    },
+    {
+      "id": "qCbsCandidateGate",
+      "type": "if-else"
+    },
+    {
+      "id": "qCbsLeafFinal",
+      "type": "code"
+    },
+    {
+      "id": "qCbsParentLLM",
+      "type": "llm"
+    },
+    {
+      "id": "qBuildParentBody",
+      "type": "code"
+    },
+    {
+      "id": "qCbsParentValidate",
+      "type": "http-request"
+    },
+    {
+      "id": "qReadParentValidation",
+      "type": "code"
+    },
+    {
+      "id": "qCbsParentGate",
+      "type": "if-else"
+    },
+    {
+      "id": "qCbsParentFinal",
+      "type": "code"
+    },
+    {
+      "id": "qCbsFailureBody",
+      "type": "code"
+    },
+    {
+      "id": "qSaveCbsFailure",
+      "type": "http-request"
+    },
+    {
+      "id": "qReadCbsFailure",
+      "type": "code"
+    },
+    {
+      "id": "qCbsResultArgs",
+      "type": "variable-aggregator"
+    },
+    {
+      "id": "qBuildFinalizeBody",
+      "type": "code"
+    },
+    {
+      "id": "qFinalizeFile",
+      "type": "http-request"
+    },
+    {
+      "id": "qSaveFileFailure",
+      "type": "http-request"
+    },
+    {
+      "id": "qReadFileFailure",
+      "type": "code"
+    },
+    {
+      "id": "qDispatchFailure",
+      "type": "code"
+    },
+    {
+      "id": "qEndArgs",
+      "type": "variable-aggregator"
+    },
+    {
+      "id": "qReadEnd",
+      "type": "code"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "qStart",
+      "type": "start",
+      "purpose": "单文件派发入口"
+    },
+    {
+      "id": "qClaimRun",
+      "type": "http-request",
+      "purpose": "原子领取当前运行与阶段"
+    },
+    {
+      "id": "qReadRunState",
+      "type": "code",
+      "purpose": "核验入口响应与阶段"
+    },
+    {
+      "id": "qResumeGate",
+      "type": "if-else",
+      "purpose": "按持久阶段续跑"
+    },
+    {
+      "id": "sLLM",
+      "type": "llm",
+      "purpose": "结构与分类；复用一次纠正"
+    },
+    {
+      "id": "sProcess",
+      "type": "http-request",
+      "purpose": "提交结构原文并持久校验"
+    },
+    {
+      "id": "sReadProcess1",
+      "type": "code",
+      "purpose": "核验结构提交动作"
+    },
+    {
+      "id": "sStructureGate",
+      "type": "if-else",
+      "purpose": "继续CBS或交服务续派/结束"
+    },
+    {
+      "id": "qPrepareLeaf",
+      "type": "http-request",
+      "purpose": "准备CBS首轮输入与attempt"
+    },
+    {
+      "id": "qReadLeafInput",
+      "type": "code",
+      "purpose": "核验首轮输入"
+    },
+    {
+      "id": "qLeafInputGate",
+      "type": "if-else",
+      "purpose": "首轮可执行判断"
+    },
+    {
+      "id": "qCbsLeafLLM",
+      "type": "llm",
+      "purpose": "单位工程名称语义判断"
+    },
+    {
+      "id": "qCbsLeafValidate",
+      "type": "http-request",
+      "purpose": "首轮校验并保存候选/完整结果"
+    },
+    {
+      "id": "qReadLeafValidation",
+      "type": "code",
+      "purpose": "核验首轮提交动作"
+    },
+    {
+      "id": "qCbsCandidateGate",
+      "type": "if-else",
+      "purpose": "有候选继续第二轮"
+    },
+    {
+      "id": "qPrepareParent",
+      "type": "http-request",
+      "purpose": "回读同证据父轮输入与attempt"
+    },
+    {
+      "id": "qReadParentInput",
+      "type": "code",
+      "purpose": "核验父轮输入"
+    },
+    {
+      "id": "qParentInputGate",
+      "type": "if-else",
+      "purpose": "父轮可执行判断"
+    },
+    {
+      "id": "qCbsParentLLM",
+      "type": "llm",
+      "purpose": "直接父名称语义判断"
+    },
+    {
+      "id": "qCbsParentValidate",
+      "type": "http-request",
+      "purpose": "父轮校验及幂等发布完整结果"
+    },
+    {
+      "id": "qReadParentValidation",
+      "type": "code",
+      "purpose": "核验父轮持久响应"
+    },
+    {
+      "id": "qEnd",
+      "type": "end",
+      "purpose": "只回传入口身份"
+    }
+  ],
+  "normal_and_business_branch_edges": [
+    {
+      "from": "qStart",
+      "to": "qClaimRun",
+      "condition": "normal"
+    },
+    {
+      "from": "qClaimRun",
+      "to": "qReadRunState",
+      "condition": "normal"
+    },
+    {
+      "from": "qReadRunState",
+      "to": "qResumeGate",
+      "condition": "normal"
+    },
+    {
+      "from": "sLLM",
+      "to": "sProcess",
+      "condition": "normal"
+    },
+    {
+      "from": "sProcess",
+      "to": "sReadProcess1",
+      "condition": "normal"
+    },
+    {
+      "from": "sReadProcess1",
+      "to": "sStructureGate",
+      "condition": "normal"
+    },
+    {
+      "from": "qPrepareLeaf",
+      "to": "qReadLeafInput",
+      "condition": "normal"
+    },
+    {
+      "from": "qReadLeafInput",
+      "to": "qLeafInputGate",
+      "condition": "normal"
+    },
+    {
+      "from": "qCbsLeafLLM",
+      "to": "qCbsLeafValidate",
+      "condition": "normal"
+    },
+    {
+      "from": "qCbsLeafValidate",
+      "to": "qReadLeafValidation",
+      "condition": "normal"
+    },
+    {
+      "from": "qReadLeafValidation",
+      "to": "qCbsCandidateGate",
+      "condition": "normal"
+    },
+    {
+      "from": "qPrepareParent",
+      "to": "qReadParentInput",
+      "condition": "normal"
+    },
+    {
+      "from": "qReadParentInput",
+      "to": "qParentInputGate",
+      "condition": "normal"
+    },
+    {
+      "from": "qCbsParentLLM",
+      "to": "qCbsParentValidate",
+      "condition": "normal"
+    },
+    {
+      "from": "qCbsParentValidate",
+      "to": "qReadParentValidation",
+      "condition": "normal"
+    },
+    {
+      "from": "qReadParentValidation",
+      "to": "qEnd",
+      "condition": "normal"
+    },
+    {
+      "from": "qResumeGate",
+      "to": "sLLM",
+      "condition": "STRUCTURE_INITIAL or STRUCTURE_REPAIR"
+    },
+    {
+      "from": "qResumeGate",
+      "to": "qPrepareLeaf",
+      "condition": "CBS_LEAF"
+    },
+    {
+      "from": "qResumeGate",
+      "to": "qPrepareParent",
+      "condition": "CBS_PARENT"
+    },
+    {
+      "from": "qResumeGate",
+      "to": "qEnd",
+      "condition": "RETURN"
+    },
+    {
+      "from": "sStructureGate",
+      "to": "qPrepareLeaf",
+      "condition": "CBS_LEAF"
+    },
+    {
+      "from": "sStructureGate",
+      "to": "qEnd",
+      "condition": "RETURN"
+    },
+    {
+      "from": "qLeafInputGate",
+      "to": "qCbsLeafLLM",
+      "condition": "RUN_LEAF"
+    },
+    {
+      "from": "qLeafInputGate",
+      "to": "qEnd",
+      "condition": "RETURN"
+    },
+    {
+      "from": "qCbsCandidateGate",
+      "to": "qPrepareParent",
+      "condition": "CBS_PARENT"
+    },
+    {
+      "from": "qCbsCandidateGate",
+      "to": "qEnd",
+      "condition": "RETURN"
+    },
+    {
+      "from": "qParentInputGate",
+      "to": "qCbsParentLLM",
+      "condition": "RUN_PARENT"
+    },
+    {
+      "from": "qParentInputGate",
+      "to": "qEnd",
+      "condition": "RETURN"
+    }
+  ],
+  "optional_serializers": [
+    {
+      "id": "sBuildProcessBody",
+      "type": "code",
+      "before": "sProcess",
+      "requires": "provider has structured_output but no complete text"
+    },
+    {
+      "id": "qBuildLeafBody",
+      "type": "code",
+      "before": "qCbsLeafValidate",
+      "requires": "provider has structured_output but no complete text"
+    },
+    {
+      "id": "qBuildParentBody",
+      "type": "code",
+      "before": "qCbsParentValidate",
+      "requires": "provider has structured_output but no complete text"
+    }
+  ],
+  "migration_from_57": [
+    {
+      "old_id": "qStart",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qStart"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qEnd",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qEnd"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qGetDispatch",
+      "action": "merge_or_rename",
+      "target_ids": [
+        "qClaimRun"
+      ],
+      "responsibility_owner": "Dify入口/阶段准备",
+      "reason": "合并成单文件阶段入口或回读准备"
+    },
+    {
+      "old_id": "sReadBatch",
+      "action": "merge_or_rename",
+      "target_ids": [
+        "qReadRunState"
+      ],
+      "responsibility_owner": "Dify入口/阶段准备",
+      "reason": "合并成单文件阶段入口或回读准备"
+    },
+    {
+      "old_id": "sIterFiles",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务调度 + qClaimRun/qReadRunState",
+      "reason": "单文件运行，无迭代上下文；身份、容量和输入随claim统一核验"
+    },
+    {
+      "old_id": "sIterFilesStart",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务调度 + qClaimRun/qReadRunState",
+      "reason": "单文件运行，无迭代上下文；身份、容量和输入随claim统一核验"
+    },
+    {
+      "old_id": "sItem",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务调度 + qClaimRun/qReadRunState",
+      "reason": "单文件运行，无迭代上下文；身份、容量和输入随claim统一核验"
+    },
+    {
+      "old_id": "sGetInput",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务调度 + qClaimRun/qReadRunState",
+      "reason": "单文件运行，无迭代上下文；身份、容量和输入随claim统一核验"
+    },
+    {
+      "old_id": "sReadInput",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务调度 + qClaimRun/qReadRunState",
+      "reason": "单文件运行，无迭代上下文；身份、容量和输入随claim统一核验"
+    },
+    {
+      "old_id": "sEligible",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务调度 + qClaimRun/qReadRunState",
+      "reason": "单文件运行，无迭代上下文；身份、容量和输入随claim统一核验"
+    },
+    {
+      "old_id": "sLLM",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "sLLM"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "sBuildProcessBody",
+      "action": "remove_when_full_text_available",
+      "target_ids": [],
+      "responsibility_owner": "HTTP raw body；必要时保留对象序列化适配",
+      "reason": "完整模型text直接提交；只有对象输出才保留该可选Code"
+    },
+    {
+      "old_id": "sSkip",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务运行追踪与有界恢复器",
+      "reason": "技术异常统一对账；已有合法结构时CBS失败保树；持久失败不依赖画布失败节点"
+    },
+    {
+      "old_id": "sProcess",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "sProcess"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "sReadProcess1",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "sReadProcess1"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "sRepairGate",
+      "action": "merge_or_rename",
+      "target_ids": [
+        "sStructureGate"
+      ],
+      "responsibility_owner": "Dify入口/阶段准备",
+      "reason": "合并成单文件阶段入口或回读准备"
+    },
+    {
+      "old_id": "sLLM2",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "sBuildProcessBody2",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "sProcess2",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "sFileEnvelope",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "服务公共幂等发布函数",
+      "reason": "由准备、CBS校验或恢复入口调用；事务/发布待办保证不可变完整结果，不重复生成"
+    },
+    {
+      "old_id": "sIterResult",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务持久任务对账 + qEnd",
+      "reason": "按file job及阶段对账；正常/异常结束均查持久状态，删除批次短回执包装"
+    },
+    {
+      "old_id": "sReconcile",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务持久任务对账 + qEnd",
+      "reason": "按file job及阶段对账；正常/异常结束均查持久状态，删除批次短回执包装"
+    },
+    {
+      "old_id": "sExport",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务持久任务对账 + qEnd",
+      "reason": "按file job及阶段对账；正常/异常结束均查持久状态，删除批次短回执包装"
+    },
+    {
+      "old_id": "sSemanticEnvelope",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务持久任务对账 + qEnd",
+      "reason": "按file job及阶段对账；正常/异常结束均查持久状态，删除批次短回执包装"
+    },
+    {
+      "old_id": "qBatchGate",
+      "action": "merge_or_rename",
+      "target_ids": [
+        "qResumeGate"
+      ],
+      "responsibility_owner": "Dify入口/阶段准备",
+      "reason": "合并成单文件阶段入口或回读准备"
+    },
+    {
+      "old_id": "qAcceptFirst",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "qReadProcess2",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "qRepairResultGate",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "qAcceptRepair",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "qStructureArgs",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务纠正调度 + sLLM/结构提交链",
+      "reason": "一次纠正持久计数，新dispatch复用同结构链；CBS准备从服务回读合法结构，不透传两套引用"
+    },
+    {
+      "old_id": "qCbsContext",
+      "action": "merge_or_rename",
+      "target_ids": [
+        "qPrepareLeaf"
+      ],
+      "responsibility_owner": "Dify入口/阶段准备",
+      "reason": "合并成单文件阶段入口或回读准备"
+    },
+    {
+      "old_id": "qReadCbsInput",
+      "action": "merge_or_rename",
+      "target_ids": [
+        "qReadLeafInput"
+      ],
+      "responsibility_owner": "Dify入口/阶段准备",
+      "reason": "合并成单文件阶段入口或回读准备"
+    },
+    {
+      "old_id": "qCbsStartGate",
+      "action": "merge_or_rename",
+      "target_ids": [
+        "qLeafInputGate"
+      ],
+      "responsibility_owner": "Dify入口/阶段准备",
+      "reason": "合并成单文件阶段入口或回读准备"
+    },
+    {
+      "old_id": "qCbsSkipResult",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "CBS准备/校验服务 + qEnd",
+      "reason": "服务先保存业务结论；End只引用入口身份，无互斥业务对象汇合"
+    },
+    {
+      "old_id": "qCbsLeafLLM",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qCbsLeafLLM"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qBuildLeafBody",
+      "action": "remove_when_full_text_available",
+      "target_ids": [],
+      "responsibility_owner": "HTTP raw body；必要时保留对象序列化适配",
+      "reason": "完整模型text直接提交；只有对象输出才保留该可选Code"
+    },
+    {
+      "old_id": "qCbsLeafValidate",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qCbsLeafValidate"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qReadLeafValidation",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qReadLeafValidation"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qCbsCandidateGate",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qCbsCandidateGate"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qCbsLeafFinal",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "CBS准备/校验服务 + qEnd",
+      "reason": "服务先保存业务结论；End只引用入口身份，无互斥业务对象汇合"
+    },
+    {
+      "old_id": "qCbsParentLLM",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qCbsParentLLM"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qBuildParentBody",
+      "action": "remove_when_full_text_available",
+      "target_ids": [],
+      "responsibility_owner": "HTTP raw body；必要时保留对象序列化适配",
+      "reason": "完整模型text直接提交；只有对象输出才保留该可选Code"
+    },
+    {
+      "old_id": "qCbsParentValidate",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qCbsParentValidate"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qReadParentValidation",
+      "action": "retain_and_adapt",
+      "target_ids": [
+        "qReadParentValidation"
+      ],
+      "responsibility_owner": "Dify节点及对应服务契约",
+      "reason": "保留必要模型、通信、读取或分支职责，按精简契约调整"
+    },
+    {
+      "old_id": "qCbsParentGate",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "CBS准备/校验服务 + qEnd",
+      "reason": "服务先保存业务结论；End只引用入口身份，无互斥业务对象汇合"
+    },
+    {
+      "old_id": "qCbsParentFinal",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "CBS准备/校验服务 + qEnd",
+      "reason": "服务先保存业务结论；End只引用入口身份，无互斥业务对象汇合"
+    },
+    {
+      "old_id": "qCbsFailureBody",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务运行追踪与有界恢复器",
+      "reason": "技术异常统一对账；已有合法结构时CBS失败保树；持久失败不依赖画布失败节点"
+    },
+    {
+      "old_id": "qSaveCbsFailure",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务运行追踪与有界恢复器",
+      "reason": "技术异常统一对账；已有合法结构时CBS失败保树；持久失败不依赖画布失败节点"
+    },
+    {
+      "old_id": "qReadCbsFailure",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务运行追踪与有界恢复器",
+      "reason": "技术异常统一对账；已有合法结构时CBS失败保树；持久失败不依赖画布失败节点"
+    },
+    {
+      "old_id": "qCbsResultArgs",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "CBS准备/校验服务 + qEnd",
+      "reason": "服务先保存业务结论；End只引用入口身份，无互斥业务对象汇合"
+    },
+    {
+      "old_id": "qBuildFinalizeBody",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "服务公共幂等发布函数",
+      "reason": "由准备、CBS校验或恢复入口调用；事务/发布待办保证不可变完整结果，不重复生成"
+    },
+    {
+      "old_id": "qFinalizeFile",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "服务公共幂等发布函数",
+      "reason": "由准备、CBS校验或恢复入口调用；事务/发布待办保证不可变完整结果，不重复生成"
+    },
+    {
+      "old_id": "qSaveFileFailure",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务运行追踪与有界恢复器",
+      "reason": "技术异常统一对账；已有合法结构时CBS失败保树；持久失败不依赖画布失败节点"
+    },
+    {
+      "old_id": "qReadFileFailure",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务运行追踪与有界恢复器",
+      "reason": "技术异常统一对账；已有合法结构时CBS失败保树；持久失败不依赖画布失败节点"
+    },
+    {
+      "old_id": "qDispatchFailure",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务持久任务对账 + qEnd",
+      "reason": "按file job及阶段对账；正常/异常结束均查持久状态，删除批次短回执包装"
+    },
+    {
+      "old_id": "qEndArgs",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务持久任务对账 + qEnd",
+      "reason": "按file job及阶段对账；正常/异常结束均查持久状态，删除批次短回执包装"
+    },
+    {
+      "old_id": "qReadEnd",
+      "action": "move_responsibility_or_merge",
+      "target_ids": [],
+      "responsibility_owner": "AI服务持久任务对账 + qEnd",
+      "reason": "按file job及阶段对账；正常/异常结束均查持久状态，删除批次短回执包装"
+    }
+  ],
+  "entry_phases": [
+    "STRUCTURE_INITIAL",
+    "STRUCTURE_REPAIR",
+    "CBS_LEAF",
+    "CBS_PARENT",
+    "RETURN"
+  ],
+  "runtime_rules": {
+    "one_file_per_dispatch": true,
+    "normal_model_calls": 3,
+    "max_semantic_repairs": 1,
+    "repair_reuses_structure_node": true,
+    "technical_retries_separate_budget": true,
+    "initial_global_single_file_runs": 4,
+    "concurrency_is_unverified_initial_value": true,
+    "all_run_outcomes_reconciled_by_service": true,
+    "business_completion_source": "durable_file_job_state",
+    "publish_once_per_build_generation": true,
+    "old_dispatch_late_writes_rejected": true,
+    "same_name_leaf_judgment_consistency": true,
+    "cbs_unattached_does_not_force_review": true,
+    "freeze_execution_config_across_runs": true,
+    "stop_ack_is_not_terminal": true,
+    "response_mode": "streaming",
+    "version_pin_modes": [
+      "WORKFLOW_ID",
+      "IMMUTABLE_APP"
+    ]
+  },
+  "notes": [
+    "本清单描述拟实施配置，非已部署DSL。",
+    "22节点以模型提供完整text为前提；仅对象输出增加3个安全序列化节点。",
+    "技术异常由服务统一查证和有界恢复；职责迁移不等于取消校验。",
+    "End仅返回入口身份，各分支不汇合可能未执行的业务变量。",
+    "同名候选判断冲突返回未挂接并保留完整树；semanticStatus只反映来源树质量。",
+    "停止使用task_id和原user；纠正及恢复绑定原workflow_id和execution_config_id。"
+  ],
+  "runtime_identity_fields": [
+    "dispatch_id",
+    "file_job_id",
+    "workflow_run_id",
+    "task_id",
+    "workflow_id",
+    "observed_workflow_id",
+    "execution_config_id",
+    "dify_user",
+    "dify_app_id",
+    "credential_ref"
+  ],
+  "internal_http_headers": [
+    "X-Quantity-Dispatch-Id",
+    "X-Quantity-Run-Id",
+    "X-Quantity-Workflow-Id",
+    "X-Quantity-Execution-Config-Id"
+  ]
+}

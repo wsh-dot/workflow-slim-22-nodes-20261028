@@ -1,0 +1,62 @@
+{
+	"type": "object",
+	"properties": {
+		"context_id": {
+			"type": "string"
+		},
+		"context_status": {
+			"type": "string",
+			"enum": [
+				"sufficient",
+				"insufficient",
+				"conflicting"
+			]
+		},
+		"context_reason": {
+			"type": "string"
+		},
+		"evaluations": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"leaf_id": {
+						"type": "string"
+					},
+					"judgment": {
+						"type": "string",
+						"enum": [
+							"match",
+							"possible",
+							"no_match"
+						]
+					},
+					"reason": {
+						"type": "string"
+					},
+					"evidence_refs": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"uniqueItems": true
+					}
+				},
+				"required": [
+					"leaf_id",
+					"judgment",
+					"reason",
+					"evidence_refs"
+				],
+				"additionalProperties": false
+			}
+		}
+	},
+	"required": [
+		"context_id",
+		"context_status",
+		"context_reason",
+		"evaluations"
+	],
+	"additionalProperties": false
+}

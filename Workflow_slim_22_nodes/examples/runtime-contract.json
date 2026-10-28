@@ -1,0 +1,53 @@
+{
+	"frozen_config": {
+		"execution_config_id": "quantity-slim-r2-demo",
+		"pin_mode": "WORKFLOW_ID",
+		"workflow_id": "published-version-demo-1",
+		"dify_api_base": "https://dify.example.test/v1",
+		"dify_app_id": "java-quantity-demo-app",
+		"credential_ref": "secret-ref-demo-app"
+	},
+	"run": {
+		"execution_config_id": "quantity-slim-r2-demo",
+		"workflow_id": "published-version-demo-1",
+		"dify_api_base": "https://dify.example.test/v1",
+		"dify_app_id": "java-quantity-demo-app",
+		"credential_ref": "secret-ref-demo-app",
+		"observed_workflow_id": "published-version-demo-1",
+		"dispatch_id": "dispatch-demo-1",
+		"workflow_run_id": "workflow-run-demo-1",
+		"task_id": "task-demo-1",
+		"dify_user": "tenant-demo-user-demo",
+		"run_terminal_confirmed": false,
+		"model_termination_confirmed": false,
+		"stop_acknowledged_at": "2026-10-27T12:00:00+08:00"
+	},
+	"start_request": {
+		"method": "POST",
+		"url": "https://dify.example.test/v1/workflows/published-version-demo-1/run",
+		"credential_ref": "secret-ref-demo-app",
+		"body": {
+			"inputs": {
+				"dispatch_id": "dispatch-demo-1"
+			},
+			"response_mode": "streaming",
+			"user": "tenant-demo-user-demo"
+		}
+	},
+	"claim_headers": {
+		"X-Quantity-Dispatch-Id": "dispatch-demo-1",
+		"X-Quantity-Run-Id": "workflow-run-demo-1",
+		"X-Quantity-Workflow-Id": "published-version-demo-1",
+		"X-Quantity-Execution-Config-Id": "quantity-slim-r2-demo"
+	},
+	"stop_request": {
+		"method": "POST",
+		"url": "https://dify.example.test/v1/workflows/tasks/task-demo-1/stop",
+		"credential_ref": "secret-ref-demo-app",
+		"body": {
+			"user": "tenant-demo-user-demo"
+		}
+	},
+	"release_run_slot": false,
+	"release_model_budget": false
+}

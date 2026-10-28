@@ -1,0 +1,31 @@
+{
+  "status": "PASSED",
+  "scope": "local_contract_regression_examples_only",
+  "checks": [
+    "same_name_both_retained",
+    "same_name_match_versus_possible",
+    "same_name_match_versus_no_match",
+    "same_name_whitespace_conflict",
+    "candidate_order_independent",
+    "conflict_preserves_ready_tree_as_unattached",
+    "pinned_version_and_stop_identity",
+    "reject_run_id_as_task_id",
+    "reject_wrong_stop_user",
+    "reject_stop_without_task_id",
+    "reject_latest_version_fallback",
+    "reject_changed_observed_version",
+    "reject_changed_execution_config",
+    "reject_changed_claim_version",
+    "reject_blocking_mode",
+    "stop_ack_does_not_release_run_slot",
+    "stop_ack_does_not_release_model_budget",
+    "claim_before_task_id_arrival",
+    "repair_keeps_original_execution_version",
+    "immutable_app_compatibility",
+    "reject_mutable_compatibility_app"
+  ],
+  "check_count": 21,
+  "live_workflow_test": "NOT_RUN",
+  "java_integration_test": "NOT_RUN",
+  "limitations": "Validates local examples and contract predicates; does not implement or test production scheduling, cancellation, version pinning, or models."
+}

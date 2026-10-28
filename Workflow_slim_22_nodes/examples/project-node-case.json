@@ -1,0 +1,590 @@
+{
+	"description": "工程节点专项契约片段；省略文件级请求和CBS返回外层，完整外层沿用build-request.json和build-result.json。分类规则仅供接口测试。",
+	"classificationRules": {
+		"version": "DEMO-ONLY-classification-1",
+		"notice": "以下规则为人工构造的接口测试数据，不是企业发布规则。",
+		"rules": [
+			{
+				"rule_id": "DEMO-E01",
+				"text": "仅用于本示例：光伏组件列为设备。"
+			},
+			{
+				"rule_id": "DEMO-M01",
+				"text": "仅用于本示例：电力电缆及其规格明细列为主材。"
+			},
+			{
+				"rule_id": "DEMO-E02",
+				"text": "仅用于本示例：箱变规格明细列为设备。"
+			},
+			{
+				"rule_id": "DEMO-E03",
+				"text": "仅用于本示例：成套配电柜列为设备。"
+			},
+			{
+				"rule_id": "DEMO-M02",
+				"text": "仅用于本示例：柜内接地导线列为主材，保留柜内组成关系。"
+			}
+		]
+	},
+	"rawItems": [
+		{
+			"rawItemId": "03d17ae7-34a3-5b17-842a-abc402b1220b",
+			"orderNo": 1,
+			"tableId": "PROJECT-DEMO-T1",
+			"rowIndex": 1,
+			"serialNo": null,
+			"equipmentTag": null,
+			"description": "西刘塬光伏场区（1.90216MWp）",
+			"specification": null,
+			"nominalSize": null,
+			"quantity": null,
+			"unit": null,
+			"unitWeight": null,
+			"totalWeight": null,
+			"remark": null,
+			"rawCells": [
+				{
+					"cellId": "PROJECT-DEMO-T1:R1C1",
+					"originCellId": "PROJECT-DEMO-T1:R1C1",
+					"columnIndex": 1,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": "西刘塬光伏场区（1.90216MWp）"
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R1C2",
+					"originCellId": "PROJECT-DEMO-T1:R1C2",
+					"columnIndex": 2,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R1C3",
+					"originCellId": "PROJECT-DEMO-T1:R1C3",
+					"columnIndex": 3,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R1C4",
+					"originCellId": "PROJECT-DEMO-T1:R1C4",
+					"columnIndex": 4,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				}
+			],
+			"fieldSources": {
+				"description": [
+					"PROJECT-DEMO-T1:R1C1"
+				],
+				"specification": [
+					"PROJECT-DEMO-T1:R1C2"
+				],
+				"quantity": [
+					"PROJECT-DEMO-T1:R1C3"
+				],
+				"unit": [
+					"PROJECT-DEMO-T1:R1C4"
+				]
+			}
+		},
+		{
+			"rawItemId": "4f810d1f-675e-58c5-bc67-bf348a58ba19",
+			"orderNo": 2,
+			"tableId": "PROJECT-DEMO-T1",
+			"rowIndex": 2,
+			"serialNo": null,
+			"equipmentTag": null,
+			"description": "安装部分",
+			"specification": null,
+			"nominalSize": null,
+			"quantity": null,
+			"unit": null,
+			"unitWeight": null,
+			"totalWeight": null,
+			"remark": null,
+			"rawCells": [
+				{
+					"cellId": "PROJECT-DEMO-T1:R2C1",
+					"originCellId": "PROJECT-DEMO-T1:R2C1",
+					"columnIndex": 1,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": "安装部分"
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R2C2",
+					"originCellId": "PROJECT-DEMO-T1:R2C2",
+					"columnIndex": 2,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R2C3",
+					"originCellId": "PROJECT-DEMO-T1:R2C3",
+					"columnIndex": 3,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R2C4",
+					"originCellId": "PROJECT-DEMO-T1:R2C4",
+					"columnIndex": 4,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				}
+			],
+			"fieldSources": {
+				"description": [
+					"PROJECT-DEMO-T1:R2C1"
+				],
+				"specification": [
+					"PROJECT-DEMO-T1:R2C2"
+				],
+				"quantity": [
+					"PROJECT-DEMO-T1:R2C3"
+				],
+				"unit": [
+					"PROJECT-DEMO-T1:R2C4"
+				]
+			}
+		},
+		{
+			"rawItemId": "cf29043f-3691-5ea2-ac22-e675afeb0b4f",
+			"orderNo": 3,
+			"tableId": "PROJECT-DEMO-T1",
+			"rowIndex": 3,
+			"serialNo": null,
+			"equipmentTag": null,
+			"description": "光伏组件",
+			"specification": null,
+			"nominalSize": null,
+			"quantity": null,
+			"unit": null,
+			"unitWeight": null,
+			"totalWeight": null,
+			"remark": null,
+			"rawCells": [
+				{
+					"cellId": "PROJECT-DEMO-T1:R3C1",
+					"originCellId": "PROJECT-DEMO-T1:R3C1",
+					"columnIndex": 1,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": "光伏组件"
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R3C2",
+					"originCellId": "PROJECT-DEMO-T1:R3C2",
+					"columnIndex": 2,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R3C3",
+					"originCellId": "PROJECT-DEMO-T1:R3C3",
+					"columnIndex": 3,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R3C4",
+					"originCellId": "PROJECT-DEMO-T1:R3C4",
+					"columnIndex": 4,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": ""
+				}
+			],
+			"fieldSources": {
+				"description": [
+					"PROJECT-DEMO-T1:R3C1"
+				],
+				"specification": [
+					"PROJECT-DEMO-T1:R3C2"
+				],
+				"quantity": [
+					"PROJECT-DEMO-T1:R3C3"
+				],
+				"unit": [
+					"PROJECT-DEMO-T1:R3C4"
+				]
+			}
+		},
+		{
+			"rawItemId": "82d7934c-6e42-5dba-8ac1-f2513ed62516",
+			"orderNo": 4,
+			"tableId": "PROJECT-DEMO-T1",
+			"rowIndex": 4,
+			"serialNo": null,
+			"equipmentTag": null,
+			"description": "光伏组件",
+			"specification": "620Wp",
+			"nominalSize": null,
+			"quantity": "3068",
+			"unit": "块",
+			"unitWeight": null,
+			"totalWeight": null,
+			"remark": null,
+			"rawCells": [
+				{
+					"cellId": "PROJECT-DEMO-T1:R4C1",
+					"originCellId": "PROJECT-DEMO-T1:R4C1",
+					"columnIndex": 1,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": "光伏组件"
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R4C2",
+					"originCellId": "PROJECT-DEMO-T1:R4C2",
+					"columnIndex": 2,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": "620Wp"
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R4C3",
+					"originCellId": "PROJECT-DEMO-T1:R4C3",
+					"columnIndex": 3,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": "3068"
+				},
+				{
+					"cellId": "PROJECT-DEMO-T1:R4C4",
+					"originCellId": "PROJECT-DEMO-T1:R4C4",
+					"columnIndex": 4,
+					"rowSpan": 1,
+					"colSpan": 1,
+					"text": "块"
+				}
+			],
+			"fieldSources": {
+				"description": [
+					"PROJECT-DEMO-T1:R4C1"
+				],
+				"specification": [
+					"PROJECT-DEMO-T1:R4C2"
+				],
+				"quantity": [
+					"PROJECT-DEMO-T1:R4C3"
+				],
+				"unit": [
+					"PROJECT-DEMO-T1:R4C4"
+				]
+			}
+		}
+	],
+	"modelOutput": {
+		"packet_id": "packet-project-case-001",
+		"rows": [
+			{
+				"r": 1,
+				"role": "project",
+				"parent": null,
+				"inherit": [],
+				"qty_from": null,
+				"unit_from": null,
+				"quantity_basis": "not_applicable",
+				"quantity_parent": null,
+				"quantity_basis_ref": null,
+				"reason": "原文工程标题统领安装部分及其下设备材料，保留为工程范围节点。",
+				"node_type": null,
+				"classification": {
+					"status": "not_applicable",
+					"rule_ids": [],
+					"source_rows": [],
+					"reason": null
+				}
+			},
+			{
+				"r": 2,
+				"role": "section",
+				"parent": 1,
+				"inherit": [],
+				"qty_from": null,
+				"unit_from": null,
+				"quantity_basis": "not_applicable",
+				"quantity_parent": null,
+				"quantity_basis_ref": null,
+				"reason": null,
+				"node_type": null,
+				"classification": {
+					"status": "not_applicable",
+					"rule_ids": [],
+					"source_rows": [],
+					"reason": null
+				}
+			},
+			{
+				"r": 3,
+				"role": "group",
+				"parent": 2,
+				"inherit": [],
+				"qty_from": null,
+				"unit_from": null,
+				"quantity_basis": "not_applicable",
+				"quantity_parent": null,
+				"quantity_basis_ref": null,
+				"reason": null,
+				"node_type": null,
+				"classification": {
+					"status": "not_applicable",
+					"rule_ids": [],
+					"source_rows": [],
+					"reason": null
+				}
+			},
+			{
+				"r": 4,
+				"role": "item",
+				"parent": 3,
+				"inherit": [],
+				"qty_from": null,
+				"unit_from": null,
+				"quantity_basis": "total",
+				"quantity_parent": null,
+				"quantity_basis_ref": null,
+				"reason": null,
+				"node_type": "EQUIPMENT",
+				"classification": {
+					"status": "resolved",
+					"rule_ids": [
+						"DEMO-E01"
+					],
+					"source_rows": [
+						4
+					],
+					"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+				}
+			}
+		]
+	},
+	"tree": [
+		{
+			"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:project-case-r1",
+			"parentResultKey": null,
+			"sortNo": 1,
+			"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+			"type": "PROJECT",
+			"semanticRole": "project",
+			"structureStatus": "READY",
+			"code": null,
+			"name": "西刘塬光伏场区（1.90216MWp）",
+			"specification": null,
+			"unit": null,
+			"quantity": null,
+			"sourceQuantity": null,
+			"quantityBasis": "NOT_APPLICABLE",
+			"quantityParentResultKey": null,
+			"quantityStatus": "NOT_APPLICABLE",
+			"summaryQuantity": null,
+			"assemblyOwnerResultKey": null,
+			"classification": {
+				"status": "RESOLVED",
+				"ruleIds": [],
+				"sourceRawItemIds": [
+					"03d17ae7-34a3-5b17-842a-abc402b1220b"
+				],
+				"reason": "依据原文结构角色映射为工程。"
+			},
+			"attributes": [],
+			"notes": [],
+			"sourceRawItemIds": [
+				"03d17ae7-34a3-5b17-842a-abc402b1220b"
+			],
+			"fieldSources": {
+				"name": [
+					{
+						"rawItemId": "03d17ae7-34a3-5b17-842a-abc402b1220b",
+						"field": "description",
+						"cellIds": [
+							"PROJECT-DEMO-T1:R1C1"
+						]
+					}
+				]
+			},
+			"remark": null,
+			"children": [
+				{
+					"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:project-case-r2",
+					"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:project-case-r1",
+					"sortNo": 1,
+					"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+					"type": "SUBSECTION",
+					"semanticRole": "section",
+					"structureStatus": "READY",
+					"code": null,
+					"name": "安装部分",
+					"specification": null,
+					"unit": null,
+					"quantity": null,
+					"sourceQuantity": null,
+					"quantityBasis": "NOT_APPLICABLE",
+					"quantityParentResultKey": null,
+					"quantityStatus": "NOT_APPLICABLE",
+					"summaryQuantity": null,
+					"assemblyOwnerResultKey": null,
+					"classification": {
+						"status": "RESOLVED",
+						"ruleIds": [],
+						"sourceRawItemIds": [
+							"4f810d1f-675e-58c5-bc67-bf348a58ba19"
+						],
+						"reason": "依据原文结构角色映射为分部。"
+					},
+					"attributes": [],
+					"notes": [],
+					"sourceRawItemIds": [
+						"4f810d1f-675e-58c5-bc67-bf348a58ba19"
+					],
+					"fieldSources": {
+						"name": [
+							{
+								"rawItemId": "4f810d1f-675e-58c5-bc67-bf348a58ba19",
+								"field": "description",
+								"cellIds": [
+									"PROJECT-DEMO-T1:R2C1"
+								]
+							}
+						]
+					},
+					"remark": null,
+					"children": [
+						{
+							"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:project-case-r3",
+							"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:project-case-r2",
+							"sortNo": 1,
+							"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+							"type": "SUBSECTION",
+							"semanticRole": "group",
+							"structureStatus": "READY",
+							"code": null,
+							"name": "光伏组件",
+							"specification": null,
+							"unit": null,
+							"quantity": null,
+							"sourceQuantity": null,
+							"quantityBasis": "NOT_APPLICABLE",
+							"quantityParentResultKey": null,
+							"quantityStatus": "NOT_APPLICABLE",
+							"summaryQuantity": null,
+							"assemblyOwnerResultKey": null,
+							"classification": {
+								"status": "RESOLVED",
+								"ruleIds": [],
+								"sourceRawItemIds": [
+									"cf29043f-3691-5ea2-ac22-e675afeb0b4f"
+								],
+								"reason": "依据原文结构角色映射为分部。"
+							},
+							"attributes": [],
+							"notes": [],
+							"sourceRawItemIds": [
+								"cf29043f-3691-5ea2-ac22-e675afeb0b4f"
+							],
+							"fieldSources": {
+								"name": [
+									{
+										"rawItemId": "cf29043f-3691-5ea2-ac22-e675afeb0b4f",
+										"field": "description",
+										"cellIds": [
+											"PROJECT-DEMO-T1:R3C1"
+										]
+									}
+								]
+							},
+							"remark": null,
+							"children": [
+								{
+									"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:project-case-r4",
+									"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:project-case-r3",
+									"sortNo": 1,
+									"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+									"type": "EQUIPMENT",
+									"semanticRole": "item",
+									"structureStatus": "READY",
+									"code": null,
+									"name": "光伏组件",
+									"specification": "620Wp",
+									"unit": "块",
+									"quantity": "3068",
+									"sourceQuantity": "3068",
+									"quantityBasis": "TOTAL",
+									"quantityParentResultKey": null,
+									"quantityStatus": "RESOLVED",
+									"summaryQuantity": null,
+									"assemblyOwnerResultKey": null,
+									"classification": {
+										"status": "RESOLVED",
+										"ruleIds": [
+											"DEMO-E01"
+										],
+										"sourceRawItemIds": [
+											"82d7934c-6e42-5dba-8ac1-f2513ed62516"
+										],
+										"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+									},
+									"attributes": [],
+									"notes": [],
+									"sourceRawItemIds": [
+										"82d7934c-6e42-5dba-8ac1-f2513ed62516"
+									],
+									"fieldSources": {
+										"name": [
+											{
+												"rawItemId": "82d7934c-6e42-5dba-8ac1-f2513ed62516",
+												"field": "description",
+												"cellIds": [
+													"PROJECT-DEMO-T1:R4C1"
+												]
+											}
+										],
+										"specification": [
+											{
+												"rawItemId": "82d7934c-6e42-5dba-8ac1-f2513ed62516",
+												"field": "specification",
+												"cellIds": [
+													"PROJECT-DEMO-T1:R4C2"
+												]
+											}
+										],
+										"quantity": [
+											{
+												"rawItemId": "82d7934c-6e42-5dba-8ac1-f2513ed62516",
+												"field": "quantity",
+												"cellIds": [
+													"PROJECT-DEMO-T1:R4C3"
+												]
+											}
+										],
+										"unit": [
+											{
+												"rawItemId": "82d7934c-6e42-5dba-8ac1-f2513ed62516",
+												"field": "unit",
+												"cellIds": [
+													"PROJECT-DEMO-T1:R4C4"
+												]
+											}
+										]
+									},
+									"remark": null,
+									"children": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

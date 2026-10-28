@@ -1,0 +1,37 @@
+{
+	"context_id": "6968e634a09e60f7b7a6fdc8283a01092ed0e32a757109017532cd806c69a58d",
+	"context_status": "sufficient",
+	"context_reason": "可根据完整可读表头、专业和章节判断单位工程专业范围。",
+	"evaluations": [
+		{
+			"leaf_id": "c431881f-a053-578e-bd68-234a1a07aa46",
+			"judgment": "match",
+			"reason": "表头工程部分和专业明确为电气，章节光伏场区与该专业范围兼容。",
+			"evidence_refs": [
+				"header.engineeringPart",
+				"header.specialtyName",
+				"internalSections.S1.title"
+			]
+		},
+		{
+			"leaf_id": "3ea60158-fd7a-5d2a-be09-ff904a46b52a",
+			"judgment": "no_match",
+			"reason": "料表明确为电气部分，没有工艺工程范围的证据。",
+			"evidence_refs": [
+				"header.engineeringPart",
+				"header.specialtyName",
+				"internalSections.S1.title"
+			]
+		},
+		{
+			"leaf_id": "f04010d1-02c0-5b46-9bb4-3befdcae5f81",
+			"judgment": "match",
+			"reason": "表头工程部分和专业明确为电气，章节光伏场区与该专业范围兼容。",
+			"evidence_refs": [
+				"header.engineeringPart",
+				"header.specialtyName",
+				"internalSections.S1.title"
+			]
+		}
+	]
+}

@@ -1,0 +1,199 @@
+{
+	"packet_id": "packet-demo-001",
+	"context": {
+		"project": "接口联调示例工程",
+		"header": {
+			"tableType": "MIXED",
+			"specialtyName": "电气",
+			"projectSection": "西刘塬光伏场区/电气部分",
+			"siteName": "西刘塬光伏场区",
+			"headerText": "接口联调示例工程\n西刘塬光伏场区\n电气部分\n设备材料表\n专业：电气",
+			"projectName": "接口联调示例工程",
+			"engineeringPart": "电气部分"
+		},
+		"tables": [
+			{
+				"tableId": "T1",
+				"title": "设备材料表",
+				"columns": [
+					{
+						"columnIndex": 1,
+						"label": "名称",
+						"field": "description"
+					},
+					{
+						"columnIndex": 2,
+						"label": "规格型号",
+						"field": "specification"
+					},
+					{
+						"columnIndex": 3,
+						"label": "单位",
+						"field": "unit"
+					},
+					{
+						"columnIndex": 4,
+						"label": "数量",
+						"field": "quantity"
+					},
+					{
+						"columnIndex": 5,
+						"label": "备注",
+						"field": "remark"
+					}
+				],
+				"continuationOfTableId": null
+			}
+		],
+		"internalSections": [
+			{
+				"sectionId": "S1",
+				"serialNo": "一",
+				"title": "光伏场区",
+				"sourceRawItemIds": [
+					"d8348917-0a53-5808-90a5-7b1c0ba27816"
+				]
+			}
+		]
+	},
+	"classification_rules": {
+		"version": "DEMO-ONLY-classification-1",
+		"notice": "以下规则为人工构造的接口测试数据，不是企业发布规则。",
+		"rules": [
+			{
+				"rule_id": "DEMO-E01",
+				"text": "仅用于本示例：光伏组件列为设备。"
+			},
+			{
+				"rule_id": "DEMO-M01",
+				"text": "仅用于本示例：电力电缆及其规格明细列为主材。"
+			},
+			{
+				"rule_id": "DEMO-E02",
+				"text": "仅用于本示例：箱变规格明细列为设备。"
+			},
+			{
+				"rule_id": "DEMO-E03",
+				"text": "仅用于本示例：成套配电柜列为设备。"
+			},
+			{
+				"rule_id": "DEMO-M02",
+				"text": "仅用于本示例：柜内接地导线列为主材，保留柜内组成关系。"
+			}
+		]
+	},
+	"confirmed_decisions": [],
+	"rows": [
+		{
+			"r": 1,
+			"table_id": "T1",
+			"seq": null,
+			"name": "一 光伏场区",
+			"specification": null,
+			"qty": null,
+			"unit": null,
+			"remark": null
+		},
+		{
+			"r": 2,
+			"table_id": "T1",
+			"seq": "2",
+			"name": "单晶双面光伏组件",
+			"specification": "620Wp",
+			"qty": "3068",
+			"unit": "块",
+			"remark": null
+		},
+		{
+			"r": 3,
+			"table_id": "T1",
+			"seq": null,
+			"name": "工作电压",
+			"specification": "40.74V",
+			"qty": null,
+			"unit": null,
+			"remark": null
+		},
+		{
+			"r": 4,
+			"table_id": "T1",
+			"seq": "4",
+			"name": "电力电缆",
+			"specification": null,
+			"qty": null,
+			"unit": null,
+			"remark": null
+		},
+		{
+			"r": 5,
+			"table_id": "T1",
+			"seq": null,
+			"name": null,
+			"specification": "ZC-YJHLY23-1.8/3kV-3x240mm²",
+			"qty": "2",
+			"unit": "km",
+			"remark": null
+		},
+		{
+			"r": 6,
+			"table_id": "T1",
+			"seq": null,
+			"name": null,
+			"specification": "ZC-YJHLY23-1.8/3kV-3x300mm²",
+			"qty": "1",
+			"unit": "km",
+			"remark": null
+		},
+		{
+			"r": 7,
+			"table_id": "T1",
+			"seq": "7",
+			"name": "箱变 华变 总计",
+			"specification": null,
+			"qty": "2",
+			"unit": "台",
+			"remark": null
+		},
+		{
+			"r": 8,
+			"table_id": "T1",
+			"seq": null,
+			"name": null,
+			"specification": "1000kVA",
+			"qty": "2",
+			"unit": "台",
+			"remark": "以上箱变的唯一规格"
+		},
+		{
+			"r": 9,
+			"table_id": "T1",
+			"seq": "9",
+			"name": "成套配电柜",
+			"specification": null,
+			"qty": "2",
+			"unit": "面",
+			"remark": "下列柜内接地导线为柜内组成，供货范围见确认资料"
+		},
+		{
+			"r": 10,
+			"table_id": "T1",
+			"seq": null,
+			"name": "柜内接地导线",
+			"specification": "BVR 16mm²",
+			"qty": "3",
+			"unit": "m",
+			"remark": "每面柜内用量3m"
+		},
+		{
+			"r": 11,
+			"table_id": "T1",
+			"seq": null,
+			"name": "35kV架空线路另见相关设计文件",
+			"specification": null,
+			"qty": null,
+			"unit": null,
+			"remark": null
+		}
+	],
+	"parse_warnings": []
+}

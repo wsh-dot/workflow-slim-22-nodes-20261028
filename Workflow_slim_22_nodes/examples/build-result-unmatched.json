@@ -1,0 +1,795 @@
+{
+	"requestId": "req-quantity-20261027-002",
+	"status": "1",
+	"data": {
+		"jobId": "job-quantity-002",
+		"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+		"fileRevision": "r2",
+		"buildGeneration": 2,
+		"cbsRevision": "cbs-demo-r1",
+		"classificationRuleVersion": "DEMO-ONLY-classification-1",
+		"resultRevision": "result-demo-unmatched-r1",
+		"executionStatus": "SUCCEEDED",
+		"semanticStatus": "REVIEW",
+		"rowDispositions": [
+			{
+				"rawItemId": "d8348917-0a53-5808-90a5-7b1c0ba27816",
+				"role": "section",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r1"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "fa006c61-b599-560b-ad5f-5fea28e299ce",
+				"role": "item",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r2"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "5eed21e8-059c-5012-a6a6-0c7e3bf9d516",
+				"role": "attribute",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r2"
+				],
+				"disposition": "ATTRIBUTE"
+			},
+			{
+				"rawItemId": "6a7c839b-5ca2-5f71-a66b-fb80dabce937",
+				"role": "group",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r4"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "2a6225bb-5004-5092-a654-e1818639e620",
+				"role": "item",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r5"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "66bbcd28-b1a9-5dae-bdd9-4015329aa48a",
+				"role": "item",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r6"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "114e2e1a-844a-57ef-8643-86dbd67ec2de",
+				"role": "summary",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r7"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "611da897-1b0e-55d4-ac26-857b74dbebeb",
+				"role": "item",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r8"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "31cd24cf-e502-5c4b-9d58-48d84962170e",
+				"role": "assembly",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r9"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "dd82ee16-c697-541f-bf18-c7558309e447",
+				"role": "component",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r10"
+				],
+				"disposition": "NODE"
+			},
+			{
+				"rawItemId": "ee114004-e6b5-5183-889a-a4368940aebb",
+				"role": "note",
+				"resultKeys": [
+					"9f939093-273a-5633-8e70-4d3d63826225:r1"
+				],
+				"disposition": "NOTE"
+			}
+		],
+		"issues": [
+			{
+				"code": "INSUFFICIENT_EVIDENCE",
+				"severity": "REVIEW",
+				"sourceRawItemIds": [],
+				"resultKeys": [],
+				"message": "场区表头未读到，无法确定CBS直接父节点。整张料表树保留，待人工挂接。"
+			}
+		],
+		"coverage": {
+			"inputRowCount": 11,
+			"accountedRowCount": 11,
+			"outputNodeCount": 9,
+			"complete": false,
+			"unreadRegions": [
+				{
+					"region": "header.siteName",
+					"reason": "样例：场区文字未识别"
+				}
+			]
+		},
+		"pagination": {
+			"rowDispositionsNextCursor": null,
+			"issuesNextCursor": null,
+			"treeNextCursor": null
+		},
+		"tree": [
+			{
+				"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r1",
+				"parentResultKey": null,
+				"sortNo": 1,
+				"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+				"type": "SUBSECTION",
+				"semanticRole": "section",
+				"structureStatus": "READY",
+				"code": null,
+				"name": "光伏场区",
+				"specification": null,
+				"unit": null,
+				"quantity": null,
+				"sourceQuantity": null,
+				"quantityBasis": "NOT_APPLICABLE",
+				"quantityParentResultKey": null,
+				"quantityStatus": "NOT_APPLICABLE",
+				"summaryQuantity": null,
+				"assemblyOwnerResultKey": null,
+				"classification": {
+					"status": "RESOLVED",
+					"ruleIds": [],
+					"sourceRawItemIds": [],
+					"reason": "程序根据结构角色映射为分部。"
+				},
+				"attributes": [],
+				"notes": [
+					{
+						"text": "35kV架空线路另见相关设计文件",
+						"sourceRawItemIds": [
+							"ee114004-e6b5-5183-889a-a4368940aebb"
+						]
+					}
+				],
+				"sourceRawItemIds": [
+					"d8348917-0a53-5808-90a5-7b1c0ba27816",
+					"ee114004-e6b5-5183-889a-a4368940aebb"
+				],
+				"fieldSources": {
+					"name": [
+						{
+							"rawItemId": "d8348917-0a53-5808-90a5-7b1c0ba27816",
+							"field": "description",
+							"cellIds": [
+								"T1:R1C1"
+							]
+						}
+					]
+				},
+				"remark": null,
+				"children": [
+					{
+						"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r2",
+						"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r1",
+						"sortNo": 1,
+						"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+						"type": "EQUIPMENT",
+						"semanticRole": "item",
+						"structureStatus": "READY",
+						"code": null,
+						"name": "单晶双面光伏组件",
+						"specification": "620Wp",
+						"unit": "块",
+						"quantity": "3068",
+						"sourceQuantity": "3068",
+						"quantityBasis": "TOTAL",
+						"quantityParentResultKey": null,
+						"quantityStatus": "RESOLVED",
+						"summaryQuantity": null,
+						"assemblyOwnerResultKey": null,
+						"classification": {
+							"status": "RESOLVED",
+							"ruleIds": [
+								"DEMO-E01"
+							],
+							"sourceRawItemIds": [
+								"fa006c61-b599-560b-ad5f-5fea28e299ce"
+							],
+							"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+						},
+						"attributes": [
+							{
+								"text": "工作电压 40.74V",
+								"sourceRawItemIds": [
+									"5eed21e8-059c-5012-a6a6-0c7e3bf9d516"
+								]
+							}
+						],
+						"notes": [],
+						"sourceRawItemIds": [
+							"fa006c61-b599-560b-ad5f-5fea28e299ce",
+							"5eed21e8-059c-5012-a6a6-0c7e3bf9d516"
+						],
+						"fieldSources": {
+							"name": [
+								{
+									"rawItemId": "fa006c61-b599-560b-ad5f-5fea28e299ce",
+									"field": "description",
+									"cellIds": [
+										"T1:R2C1"
+									]
+								}
+							],
+							"specification": [
+								{
+									"rawItemId": "fa006c61-b599-560b-ad5f-5fea28e299ce",
+									"field": "specification",
+									"cellIds": [
+										"T1:R2C2"
+									]
+								}
+							],
+							"quantity": [
+								{
+									"rawItemId": "fa006c61-b599-560b-ad5f-5fea28e299ce",
+									"field": "quantity",
+									"cellIds": [
+										"T1:R2C4"
+									]
+								}
+							],
+							"unit": [
+								{
+									"rawItemId": "fa006c61-b599-560b-ad5f-5fea28e299ce",
+									"field": "unit",
+									"cellIds": [
+										"T1:R2C3"
+									]
+								}
+							]
+						},
+						"remark": null,
+						"children": []
+					},
+					{
+						"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r4",
+						"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r1",
+						"sortNo": 2,
+						"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+						"type": "SUBSECTION",
+						"semanticRole": "group",
+						"structureStatus": "READY",
+						"code": null,
+						"name": "电力电缆",
+						"specification": null,
+						"unit": null,
+						"quantity": null,
+						"sourceQuantity": null,
+						"quantityBasis": "NOT_APPLICABLE",
+						"quantityParentResultKey": null,
+						"quantityStatus": "NOT_APPLICABLE",
+						"summaryQuantity": null,
+						"assemblyOwnerResultKey": null,
+						"classification": {
+							"status": "RESOLVED",
+							"ruleIds": [],
+							"sourceRawItemIds": [],
+							"reason": "程序根据结构角色映射为分部。"
+						},
+						"attributes": [],
+						"notes": [],
+						"sourceRawItemIds": [
+							"6a7c839b-5ca2-5f71-a66b-fb80dabce937"
+						],
+						"fieldSources": {
+							"name": [
+								{
+									"rawItemId": "6a7c839b-5ca2-5f71-a66b-fb80dabce937",
+									"field": "description",
+									"cellIds": [
+										"T1:R4C1"
+									]
+								}
+							]
+						},
+						"remark": null,
+						"children": [
+							{
+								"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r5",
+								"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r4",
+								"sortNo": 1,
+								"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+								"type": "MATERIAL",
+								"semanticRole": "item",
+								"structureStatus": "READY",
+								"code": null,
+								"name": "电力电缆",
+								"specification": "ZC-YJHLY23-1.8/3kV-3x240mm²",
+								"unit": "km",
+								"quantity": "2",
+								"sourceQuantity": "2",
+								"quantityBasis": "TOTAL",
+								"quantityParentResultKey": null,
+								"quantityStatus": "RESOLVED",
+								"summaryQuantity": null,
+								"assemblyOwnerResultKey": null,
+								"classification": {
+									"status": "RESOLVED",
+									"ruleIds": [
+										"DEMO-M01"
+									],
+									"sourceRawItemIds": [
+										"6a7c839b-5ca2-5f71-a66b-fb80dabce937",
+										"2a6225bb-5004-5092-a654-e1818639e620"
+									],
+									"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+								},
+								"attributes": [],
+								"notes": [],
+								"sourceRawItemIds": [
+									"2a6225bb-5004-5092-a654-e1818639e620",
+									"6a7c839b-5ca2-5f71-a66b-fb80dabce937"
+								],
+								"fieldSources": {
+									"name": [
+										{
+											"rawItemId": "6a7c839b-5ca2-5f71-a66b-fb80dabce937",
+											"field": "description",
+											"cellIds": [
+												"T1:R4C1"
+											]
+										}
+									],
+									"specification": [
+										{
+											"rawItemId": "2a6225bb-5004-5092-a654-e1818639e620",
+											"field": "specification",
+											"cellIds": [
+												"T1:R5C2"
+											]
+										}
+									],
+									"quantity": [
+										{
+											"rawItemId": "2a6225bb-5004-5092-a654-e1818639e620",
+											"field": "quantity",
+											"cellIds": [
+												"T1:R5C4"
+											]
+										}
+									],
+									"unit": [
+										{
+											"rawItemId": "2a6225bb-5004-5092-a654-e1818639e620",
+											"field": "unit",
+											"cellIds": [
+												"T1:R5C3"
+											]
+										}
+									]
+								},
+								"remark": null,
+								"children": []
+							},
+							{
+								"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r6",
+								"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r4",
+								"sortNo": 2,
+								"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+								"type": "MATERIAL",
+								"semanticRole": "item",
+								"structureStatus": "READY",
+								"code": null,
+								"name": "电力电缆",
+								"specification": "ZC-YJHLY23-1.8/3kV-3x300mm²",
+								"unit": "km",
+								"quantity": "1",
+								"sourceQuantity": "1",
+								"quantityBasis": "TOTAL",
+								"quantityParentResultKey": null,
+								"quantityStatus": "RESOLVED",
+								"summaryQuantity": null,
+								"assemblyOwnerResultKey": null,
+								"classification": {
+									"status": "RESOLVED",
+									"ruleIds": [
+										"DEMO-M01"
+									],
+									"sourceRawItemIds": [
+										"6a7c839b-5ca2-5f71-a66b-fb80dabce937",
+										"66bbcd28-b1a9-5dae-bdd9-4015329aa48a"
+									],
+									"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+								},
+								"attributes": [],
+								"notes": [],
+								"sourceRawItemIds": [
+									"66bbcd28-b1a9-5dae-bdd9-4015329aa48a",
+									"6a7c839b-5ca2-5f71-a66b-fb80dabce937"
+								],
+								"fieldSources": {
+									"name": [
+										{
+											"rawItemId": "6a7c839b-5ca2-5f71-a66b-fb80dabce937",
+											"field": "description",
+											"cellIds": [
+												"T1:R4C1"
+											]
+										}
+									],
+									"specification": [
+										{
+											"rawItemId": "66bbcd28-b1a9-5dae-bdd9-4015329aa48a",
+											"field": "specification",
+											"cellIds": [
+												"T1:R6C2"
+											]
+										}
+									],
+									"quantity": [
+										{
+											"rawItemId": "66bbcd28-b1a9-5dae-bdd9-4015329aa48a",
+											"field": "quantity",
+											"cellIds": [
+												"T1:R6C4"
+											]
+										}
+									],
+									"unit": [
+										{
+											"rawItemId": "66bbcd28-b1a9-5dae-bdd9-4015329aa48a",
+											"field": "unit",
+											"cellIds": [
+												"T1:R6C3"
+											]
+										}
+									]
+								},
+								"remark": null,
+								"children": []
+							}
+						]
+					},
+					{
+						"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r7",
+						"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r1",
+						"sortNo": 3,
+						"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+						"type": "SUBSECTION",
+						"semanticRole": "summary",
+						"structureStatus": "READY",
+						"code": null,
+						"name": "箱变 华变",
+						"specification": null,
+						"unit": null,
+						"quantity": null,
+						"sourceQuantity": null,
+						"quantityBasis": "NOT_APPLICABLE",
+						"quantityParentResultKey": null,
+						"quantityStatus": "NOT_APPLICABLE",
+						"summaryQuantity": {
+							"value": "2",
+							"unit": "台",
+							"source": [
+								{
+									"rawItemId": "114e2e1a-844a-57ef-8643-86dbd67ec2de",
+									"field": "quantity",
+									"cellIds": [
+										"T1:R7C4"
+									]
+								}
+							]
+						},
+						"assemblyOwnerResultKey": null,
+						"classification": {
+							"status": "RESOLVED",
+							"ruleIds": [],
+							"sourceRawItemIds": [],
+							"reason": "程序根据结构角色映射为分部。"
+						},
+						"attributes": [],
+						"notes": [],
+						"sourceRawItemIds": [
+							"114e2e1a-844a-57ef-8643-86dbd67ec2de"
+						],
+						"fieldSources": {
+							"name": [
+								{
+									"rawItemId": "114e2e1a-844a-57ef-8643-86dbd67ec2de",
+									"field": "description",
+									"cellIds": [
+										"T1:R7C1"
+									]
+								}
+							]
+						},
+						"remark": null,
+						"children": [
+							{
+								"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r8",
+								"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r7",
+								"sortNo": 1,
+								"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+								"type": "EQUIPMENT",
+								"semanticRole": "item",
+								"structureStatus": "READY",
+								"code": null,
+								"name": "箱变 华变",
+								"specification": "1000kVA",
+								"unit": "台",
+								"quantity": "2",
+								"sourceQuantity": "2",
+								"quantityBasis": "TOTAL",
+								"quantityParentResultKey": null,
+								"quantityStatus": "RESOLVED",
+								"summaryQuantity": null,
+								"assemblyOwnerResultKey": null,
+								"classification": {
+									"status": "RESOLVED",
+									"ruleIds": [
+										"DEMO-E02"
+									],
+									"sourceRawItemIds": [
+										"114e2e1a-844a-57ef-8643-86dbd67ec2de",
+										"611da897-1b0e-55d4-ac26-857b74dbebeb"
+									],
+									"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+								},
+								"attributes": [],
+								"notes": [],
+								"sourceRawItemIds": [
+									"611da897-1b0e-55d4-ac26-857b74dbebeb",
+									"114e2e1a-844a-57ef-8643-86dbd67ec2de"
+								],
+								"fieldSources": {
+									"name": [
+										{
+											"rawItemId": "114e2e1a-844a-57ef-8643-86dbd67ec2de",
+											"field": "description",
+											"cellIds": [
+												"T1:R7C1"
+											]
+										}
+									],
+									"specification": [
+										{
+											"rawItemId": "611da897-1b0e-55d4-ac26-857b74dbebeb",
+											"field": "specification",
+											"cellIds": [
+												"T1:R8C2"
+											]
+										}
+									],
+									"quantity": [
+										{
+											"rawItemId": "611da897-1b0e-55d4-ac26-857b74dbebeb",
+											"field": "quantity",
+											"cellIds": [
+												"T1:R8C4"
+											]
+										}
+									],
+									"unit": [
+										{
+											"rawItemId": "611da897-1b0e-55d4-ac26-857b74dbebeb",
+											"field": "unit",
+											"cellIds": [
+												"T1:R8C3"
+											]
+										}
+									]
+								},
+								"remark": "以上箱变的唯一规格",
+								"children": []
+							}
+						]
+					},
+					{
+						"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r9",
+						"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r1",
+						"sortNo": 4,
+						"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+						"type": "EQUIPMENT",
+						"semanticRole": "assembly",
+						"structureStatus": "READY",
+						"code": null,
+						"name": "成套配电柜",
+						"specification": null,
+						"unit": "面",
+						"quantity": "2",
+						"sourceQuantity": "2",
+						"quantityBasis": "TOTAL",
+						"quantityParentResultKey": null,
+						"quantityStatus": "RESOLVED",
+						"summaryQuantity": null,
+						"assemblyOwnerResultKey": null,
+						"classification": {
+							"status": "RESOLVED",
+							"ruleIds": [
+								"DEMO-E03"
+							],
+							"sourceRawItemIds": [
+								"31cd24cf-e502-5c4b-9d58-48d84962170e"
+							],
+							"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+						},
+						"attributes": [],
+						"notes": [],
+						"sourceRawItemIds": [
+							"31cd24cf-e502-5c4b-9d58-48d84962170e"
+						],
+						"fieldSources": {
+							"name": [
+								{
+									"rawItemId": "31cd24cf-e502-5c4b-9d58-48d84962170e",
+									"field": "description",
+									"cellIds": [
+										"T1:R9C1"
+									]
+								}
+							],
+							"quantity": [
+								{
+									"rawItemId": "31cd24cf-e502-5c4b-9d58-48d84962170e",
+									"field": "quantity",
+									"cellIds": [
+										"T1:R9C4"
+									]
+								}
+							],
+							"unit": [
+								{
+									"rawItemId": "31cd24cf-e502-5c4b-9d58-48d84962170e",
+									"field": "unit",
+									"cellIds": [
+										"T1:R9C3"
+									]
+								}
+							]
+						},
+						"remark": "下列柜内接地导线为柜内组成，供货范围见确认资料",
+						"children": [
+							{
+								"resultKey": "9f939093-273a-5633-8e70-4d3d63826225:r10",
+								"parentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r9",
+								"sortNo": 1,
+								"fileId": "9f939093-273a-5633-8e70-4d3d63826225",
+								"type": "MATERIAL",
+								"semanticRole": "component",
+								"structureStatus": "READY",
+								"code": null,
+								"name": "柜内接地导线",
+								"specification": "BVR 16mm²",
+								"unit": "m",
+								"quantity": "6",
+								"sourceQuantity": "3",
+								"quantityBasis": "PER_PARENT",
+								"quantityParentResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r9",
+								"quantityStatus": "RESOLVED",
+								"summaryQuantity": null,
+								"assemblyOwnerResultKey": "9f939093-273a-5633-8e70-4d3d63826225:r9",
+								"classification": {
+									"status": "RESOLVED",
+									"ruleIds": [
+										"DEMO-M02"
+									],
+									"sourceRawItemIds": [
+										"31cd24cf-e502-5c4b-9d58-48d84962170e",
+										"dd82ee16-c697-541f-bf18-c7558309e447"
+									],
+									"reason": "符合本次接口测试规则，正式分类须替换企业规则。"
+								},
+								"attributes": [],
+								"notes": [],
+								"sourceRawItemIds": [
+									"dd82ee16-c697-541f-bf18-c7558309e447",
+									"31cd24cf-e502-5c4b-9d58-48d84962170e"
+								],
+								"fieldSources": {
+									"name": [
+										{
+											"rawItemId": "dd82ee16-c697-541f-bf18-c7558309e447",
+											"field": "description",
+											"cellIds": [
+												"T1:R10C1"
+											]
+										}
+									],
+									"specification": [
+										{
+											"rawItemId": "dd82ee16-c697-541f-bf18-c7558309e447",
+											"field": "specification",
+											"cellIds": [
+												"T1:R10C2"
+											]
+										}
+									],
+									"quantity": [
+										{
+											"rawItemId": "dd82ee16-c697-541f-bf18-c7558309e447",
+											"field": "quantity",
+											"cellIds": [
+												"T1:R10C4"
+											]
+										}
+									],
+									"unit": [
+										{
+											"rawItemId": "dd82ee16-c697-541f-bf18-c7558309e447",
+											"field": "unit",
+											"cellIds": [
+												"T1:R10C3"
+											]
+										}
+									],
+									"quantityBasis": [
+										{
+											"rawItemId": "dd82ee16-c697-541f-bf18-c7558309e447",
+											"field": "remark",
+											"cellIds": [
+												"T1:R10C5"
+											]
+										}
+									],
+									"quantityParent": [
+										{
+											"rawItemId": "31cd24cf-e502-5c4b-9d58-48d84962170e",
+											"field": "quantity",
+											"cellIds": [
+												"T1:R9C4"
+											]
+										}
+									]
+								},
+								"remark": "每面柜内用量3m",
+								"children": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"cbsMatch": {
+			"scope": "FILE",
+			"executionStatus": "SUCCEEDED",
+			"cbsMatchStatus": "0",
+			"projectCbsId": null,
+			"parentCbsNodeId": null,
+			"contextId": "6968e634a09e60f7b7a6fdc8283a01092ed0e32a757109017532cd806c69a58d",
+			"reasonCode": "INSUFFICIENT_EVIDENCE",
+			"reason": "场区文字未识别，无法唯一确定直接父节点。",
+			"evidenceRefs": [
+				"header.headerText",
+				"header.engineeringPart",
+				"header.specialtyName",
+				"internalSections.S1.title",
+				"parseWarnings"
+			],
+			"stageOne": {
+				"executionStatus": "SUCCEEDED",
+				"candidateLeafIds": [
+					"c431881f-a053-578e-bd68-234a1a07aa46",
+					"f04010d1-02c0-5b46-9bb4-3befdcae5f81"
+				]
+			},
+			"stageTwo": {
+				"executionStatus": "SUCCEEDED",
+				"evaluatedLeafIds": [
+					"c431881f-a053-578e-bd68-234a1a07aa46",
+					"f04010d1-02c0-5b46-9bb4-3befdcae5f81"
+				]
+			}
+		}
+	}
+}

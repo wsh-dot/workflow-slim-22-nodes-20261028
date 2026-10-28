@@ -1,0 +1,45 @@
+{
+	"file_id": "9f939093-273a-5633-8e70-4d3d63826225",
+	"cbs_revision": "cbs-demo-r1",
+	"context_id": "dc0a4115d63f6032a402864d27105d5cc29616516f99e26799e2f4fb8dfada6a",
+	"match_context": {
+		"header": {
+			"tableType": "MIXED",
+			"specialtyName": "电气",
+			"projectSection": "西刘塬光伏场区/电气部分",
+			"siteName": "西刘塬光伏场区",
+			"headerText": "接口联调示例工程\n西刘塬光伏场区\n电气部分\n设备材料表\n专业：电气",
+			"projectName": "接口联调示例工程",
+			"engineeringPart": "电气部分"
+		},
+		"internalSections": [
+			{
+				"sectionId": "S1",
+				"serialNo": "一",
+				"title": "光伏场区",
+				"sourceRawItemIds": [
+					"d8348917-0a53-5808-90a5-7b1c0ba27816"
+				]
+			}
+		],
+		"parseWarnings": [],
+		"coverage": {
+			"complete": true,
+			"unreadRegions": []
+		}
+	},
+	"candidates": [
+		{
+			"leaf_id": "c431881f-a053-578e-bd68-234a1a07aa46",
+			"leaf_name": "电气部分"
+		},
+		{
+			"leaf_id": "3ea60158-fd7a-5d2a-be09-ff904a46b52a",
+			"leaf_name": "工艺部分"
+		},
+		{
+			"leaf_id": "f04010d1-02c0-5b46-9bb4-3befdcae5f81",
+			"leaf_name": "电气部分"
+		}
+	]
+}

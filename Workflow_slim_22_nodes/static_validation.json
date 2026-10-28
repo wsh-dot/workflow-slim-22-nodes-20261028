@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "scope": "static_documentation_and_configuration_only",
+  "core_nodes": 22,
+  "optional_serializers": 3,
+  "compatibility_max_nodes": 25,
+  "business_edges": 28,
+  "original_nodes_accounted_for": 57,
+  "distinct_static_paths_checked": 12,
+  "local_links_checked": 71,
+  "schema_sha256": {
+    "model-output.schema.json": "6c0eafdb57af4ba787473c6b8bc8c5d46aead35c184b3cea159f10921ada8e7c",
+    "cbs-leaf-output.schema.json": "9fad54f703e92092cebf0fe547b579e9be5e6161e5184e9d836fca228ec29acf",
+    "cbs-parent-output.schema.json": "217981e5a4f1524424562f4552aeea57f124f929620a263064de6f05460ac124"
+  },
+  "live_workflow_test": "NOT_RUN",
+  "provider_model_test": "NOT_RUN",
+  "java_integration_test": "NOT_RUN",
+  "business_fixture_test": "NOT_RUN_BY_THIS_SCRIPT_use_verify_examples.py",
+  "contract_regression_test": "NOT_RUN_BY_THIS_SCRIPT_use_verify_regressions.py",
+  "limitations": "Counts, reachability and proposal consistency only; not a Dify DSL import, runtime binding, service implementation or business accuracy test."
+}
