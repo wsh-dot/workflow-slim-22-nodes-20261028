@@ -1,0 +1,32 @@
+{
+  "scope": "PLANNED_DEFINITION_SOURCE_CONSISTENCY_ONLY",
+  "authority": {
+    "business_document": "实施方案.md",
+    "business_version": "1.17",
+    "integration_document": "项目接入实施细则.md",
+    "integration_version": "1.12",
+    "derivation": "最终Markdown字节派生；计划定义不是业务验收结果。"
+  },
+  "source_documents": [
+    {
+      "path": "实施方案.md",
+      "sha256": "9e87a96e8cc30b4b7d767b785ae24cfaa0fc9377119356c83292daeb592fb4b9"
+    },
+    {
+      "path": "项目接入实施细则.md",
+      "sha256": "f4d31c41988a3633822d751bc40beb1bb61fd98950e742734583f159facf7716"
+    }
+  ],
+  "case_count": 294,
+  "updated_case_ids": [
+    "T14",
+    "Q49",
+    "Q61"
+  ],
+  "current_applicable": 290,
+  "historical": 4,
+  "stable_case_ids_preserved": true,
+  "old_registry_sha256": "a4af399d378edc4b45cc7988a2beea87b254b13c436c190d16be91ef7219b1d2",
+  "not_business_acceptance": true,
+  "passed": true
+}

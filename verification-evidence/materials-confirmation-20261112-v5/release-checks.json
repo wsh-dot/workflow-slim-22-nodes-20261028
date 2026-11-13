@@ -1,0 +1,20 @@
+{
+  "version": "0903-20261112-v5",
+  "manifest_sha256": "0e43ca1a2cda2d226f55cfd2e618d88e1af34feeccb9cbcc979197fe84de097d",
+  "stage_byte_identical": true,
+  "second_build": "IDENTICAL_RELEASE_REUSED",
+  "fixed_cases": 220,
+  "passed": true,
+  "old_release_files_checked": 45,
+  "old_release_changed_files": [],
+  "existing_ai_files_checked": 50,
+  "existing_ai_changed_files": [],
+  "runtime_inputs_checked": 19,
+  "runtime_inputs_outside_baseline": [],
+  "source_or_tool_hash_mismatches": [],
+  "old_registry_unchanged": true,
+  "database_calls_this_round": 0,
+  "model_calls_this_round": 0,
+  "dify_calls_this_round": 0,
+  "business_services_started": false
+}

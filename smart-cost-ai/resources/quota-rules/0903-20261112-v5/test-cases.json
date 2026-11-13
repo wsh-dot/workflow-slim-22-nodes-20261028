@@ -1,0 +1,3067 @@
+{
+  "cases": [
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.profession": "石油",
+        "object.kinds": [
+          "pipeline"
+        ],
+        "pipeline.obstacle_crossing": false,
+        "pipeline.outer_diameter_mm": "457",
+        "pipeline.outside_source_region": false,
+        "pipeline.service": "oil"
+      },
+      "id": "PIPE-457-NO-OTHER-ENTRY",
+      "kind": "CONDITION",
+      "rule_id": "A05-R011"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.profession": "石油",
+        "object.kinds": [
+          "pipeline"
+        ],
+        "pipeline.outer_diameter_mm": "458"
+      },
+      "id": "PIPE-458",
+      "kind": "CONDITION",
+      "rule_id": "A05-R011"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.profession": "石油",
+        "object.kinds": [
+          "pipeline"
+        ],
+        "pipeline.outer_diameter_mm": "457",
+        "pipeline.outside_source_region": true,
+        "pipeline.route_length_km": "25",
+        "pipeline.service": "oil"
+      },
+      "id": "PIPE-457-25KM",
+      "kind": "CONDITION",
+      "rule_id": "A05-R011"
+    },
+    {
+      "expected": "UNKNOWN",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.profession": "石油",
+        "object.kinds": [
+          "pipeline"
+        ]
+      },
+      "id": "PIPE-UNKNOWN-NOT-FALSE",
+      "kind": "CONDITION",
+      "rule_id": "A05-R011"
+    },
+    {
+      "expected": "CONFLICT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.profession": "石油",
+        "object.kinds": [
+          "pipeline"
+        ],
+        "pipeline.outer_diameter_mm": {
+          "state": "CONFLICT"
+        }
+      },
+      "id": "PIPE-CONFLICT",
+      "kind": "CONDITION",
+      "rule_id": "A05-R011"
+    },
+    {
+      "expected": true,
+      "id": "BORROW-KEEP-ROUTE",
+      "kind": "PROPERTY",
+      "path": "effect.keep_original_route",
+      "rule_id": "A05-R010-BORROW"
+    },
+    {
+      "expected": "TECHNICAL_EVIDENCE",
+      "id": "INVALID-35KV-TARGET",
+      "kind": "PENDING",
+      "rule_id": "A05-R021"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "motor.explosion_proof": false,
+        "motor.power_kw": "3",
+        "object.kinds": [
+          "pump"
+        ],
+        "selection.main_quota_id": "f4aa35fe-e184-3cac-8c07-2201f18d5986"
+      },
+      "id": "PUMP-3KW",
+      "kind": "CONDITION",
+      "rule_id": "A06-R003"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "motor.explosion_proof": false,
+        "motor.power_kw": "3",
+        "object.kinds": [
+          "pump"
+        ],
+        "selection.main_quota_id": "f4aa35fe-e184-3cac-8c07-2201f18d5986"
+      },
+      "id": "PUMP-3KW-NOT-LARGE",
+      "kind": "CONDITION",
+      "rule_id": "A06-R004"
+    },
+    {
+      "expected": true,
+      "id": "PUMP-NOT-DOUBLE-COMMISSION",
+      "kind": "PROPERTY",
+      "path": "effect.includes_commissioning_no_extra_item",
+      "rule_id": "A06-R003"
+    },
+    {
+      "expected_decimal": "4.88",
+      "facts": {
+        "group.total_physical_length_m": "1220"
+      },
+      "id": "CABLE-GROUP-1220M",
+      "kind": "FORMULA",
+      "rule_id": "A06-R037"
+    },
+    {
+      "expected_decimal": "3.66",
+      "facts": {
+        "group.total_physical_length_m": "1220"
+      },
+      "id": "CABLE-GROUP-OTHER-WORK",
+      "kind": "FORMULA",
+      "rule_id": "A06-R038"
+    },
+    {
+      "expected_decimal": "5.2",
+      "facts": {
+        "group.total_physical_length_m": "1300"
+      },
+      "id": "CABLE-REVISED-GROUP",
+      "kind": "FORMULA",
+      "rule_id": "A06-R037"
+    },
+    {
+      "expected_decimal": "4",
+      "facts": {
+        "group.total_physical_length_m": "1000"
+      },
+      "id": "PHONE-1KM-ONCE",
+      "kind": "FORMULA",
+      "rule_id": "A06-R054"
+    },
+    {
+      "expected": "exclude_association",
+      "id": "PHONE-WRONG-ASSOCIATION-EXCLUDED",
+      "kind": "PROPERTY",
+      "path": "effect.type",
+      "rule_id": "A06-R055"
+    },
+    {
+      "expected_decimal": "0.875",
+      "facts": {
+        "io.digital_inputs": "3",
+        "io.digital_outputs": "4"
+      },
+      "id": "IO-7-NO-ROUND",
+      "kind": "FORMULA",
+      "rule_id": "A06-R045"
+    },
+    {
+      "expected_decimal": "1.125",
+      "facts": {
+        "io.digital_inputs": "4",
+        "io.digital_outputs": "5"
+      },
+      "id": "IO-9-NO-ROUND",
+      "kind": "FORMULA",
+      "rule_id": "A06-R045"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "io.digital_inputs": "3"
+      },
+      "id": "IO-MISSING-IS-NOT-ZERO",
+      "kind": "FORMULA",
+      "rule_id": "A06-R045"
+    },
+    {
+      "expected_decimal": "4",
+      "facts": {
+        "alarm.physical_points": "5"
+      },
+      "id": "ALARM-N-MINUS-ONE",
+      "kind": "FORMULA",
+      "rule_id": "A06-R041"
+    },
+    {
+      "expected_decimal": "100",
+      "facts": {
+        "group.total_physical_length_m": "100",
+        "trench.actual_depth_m": "1.8",
+        "trench.actual_width_m": "0.7",
+        "trench.already_counted_volume_m3": "26"
+      },
+      "id": "TRENCH-DEDUCT",
+      "kind": "FORMULA",
+      "rule_id": "A06-R057"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "group.total_physical_length_m": "100",
+        "trench.actual_depth_m": "1.8",
+        "trench.actual_width_m": "0.7"
+      },
+      "id": "TRENCH-UNKNOWN-DEDUCTION",
+      "kind": "FORMULA",
+      "rule_id": "A06-R057"
+    },
+    {
+      "expected": true,
+      "id": "TRENCH-NONPOSITIVE-NO-ROW",
+      "kind": "PROPERTY",
+      "path": "effect.emit_only_positive",
+      "rule_id": "A06-R057"
+    },
+    {
+      "expected": "exclude_association",
+      "id": "REV4-R70-WITHDRAWN",
+      "kind": "PROPERTY",
+      "path": "effect.type",
+      "rule_id": "A06-R070-POLICY"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "project.kind": "solar_pv"
+      },
+      "id": "WIND-PROJECT-ONLY",
+      "kind": "CONDITION",
+      "rule_id": "A06-R084"
+    },
+    {
+      "expected_decimal": "1",
+      "facts": {},
+      "id": "WIND-ONCE",
+      "kind": "FORMULA",
+      "path": "effect.quantity",
+      "rule_id": "A06-R084"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "fees.environmental_protection.basis": "1000000"
+      },
+      "id": "WIND-MISSING-RATE",
+      "kind": "FORMULA",
+      "path": "effect.amount_policy.feasibility",
+      "rule_id": "A06-R084"
+    },
+    {
+      "expected_decimal": "10000",
+      "facts": {
+        "fees.environmental_protection.basis": "1000000",
+        "fees.environmental_protection.rate": "0.01"
+      },
+      "id": "WIND-AMOUNT-EXPLICIT",
+      "kind": "FORMULA",
+      "path": "effect.amount_policy.feasibility",
+      "rule_id": "A06-R084"
+    },
+    {
+      "expected": null,
+      "id": "WIND-NO-BASIS-DEFAULT",
+      "kind": "PROPERTY",
+      "path": "effect.basis_default",
+      "rule_id": "A06-R084"
+    },
+    {
+      "expected_decimal": "1",
+      "facts": {
+        "tray.actual_section_length_m": "2",
+        "tray.section_count": "5"
+      },
+      "id": "TRAY-LENGTH",
+      "kind": "FORMULA",
+      "rule_id": "A07-R007"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "tray.section_count": "5"
+      },
+      "id": "TRAY-MISSING-LENGTH",
+      "kind": "FORMULA",
+      "rule_id": "A07-R007"
+    },
+    {
+      "expected_decimal": "2",
+      "facts": {
+        "lug.count": "40"
+      },
+      "id": "GROUND-LUG-40",
+      "kind": "FORMULA",
+      "rule_id": "A07-R008"
+    },
+    {
+      "expected_decimal": "16",
+      "facts": {
+        "screen.complete_screen_count": "2",
+        "screen.outer_height_m": "2",
+        "screen.outer_width_m": "4"
+      },
+      "id": "SCREEN-OUTER-AREA",
+      "kind": "FORMULA",
+      "rule_id": "A07-R010"
+    },
+    {
+      "expected_decimal": "2.46",
+      "facts": {
+        "heat_shrink.eligible_fitting_count": "20",
+        "heat_shrink.main_cut_length_km": "2"
+      },
+      "id": "HEAT-SHRINK-SAME-GROUP",
+      "kind": "FORMULA",
+      "rule_id": "A07-R011"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "project.rooftop_pv": true
+      },
+      "id": "PV-ROOF-PRIORITY",
+      "kind": "CONDITION",
+      "rule_id": "A09-R040"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "project.production_distributed_pv": true,
+        "project.rooftop_pv": true,
+        "project.special_pv_project": false
+      },
+      "id": "PV-NOT-DOUBLE-CHARGE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R039"
+    },
+    {
+      "expected": "UNKNOWN",
+      "facts": {
+        "project.production_distributed_pv": true,
+        "project.special_pv_project": false
+      },
+      "id": "PV-ROOF-UNKNOWN",
+      "kind": "CONDITION",
+      "rule_id": "A09-R039"
+    },
+    {
+      "expected_decimal": "63",
+      "facts": {
+        "feature.pressure_mpa": "6.3"
+      },
+      "id": "PN-FORWARD",
+      "kind": "FORMULA",
+      "rule_id": "A11-R004"
+    },
+    {
+      "expected": false,
+      "id": "PN-NOT-DESIGN-FACT",
+      "kind": "PROPERTY",
+      "path": "effect.creates_design_fact",
+      "rule_id": "A11-R004"
+    },
+    {
+      "expected": false,
+      "id": "MATERIAL-NOT-EQUIVALENCE",
+      "kind": "PROPERTY",
+      "path": "effect.material_equivalence",
+      "rule_id": "A11-R037"
+    },
+    {
+      "expected": false,
+      "id": "MATERIAL-NOT-REVERSE",
+      "kind": "PROPERTY",
+      "path": "effect.inverse_mapping",
+      "rule_id": "A11-R037"
+    },
+    {
+      "expected": "PHASE_DEFERRED",
+      "id": "PRICE-CAPACITY-DEFERRED",
+      "kind": "PENDING",
+      "rule_id": "A11-R005"
+    },
+    {
+      "expected": "PHASE_DEFERRED",
+      "id": "BARE-STEEL-DEFERRED",
+      "kind": "PENDING",
+      "rule_id": "A11-R017"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.profession": "电气",
+        "object.kinds": [
+          "cable",
+          "power_cable"
+        ]
+      },
+      "id": "CABLE-PARENT-KIND-RETAINED",
+      "kind": "CONDITION",
+      "rule_id": "A05-R014"
+    },
+    {
+      "expected_decimal": "16",
+      "facts": {
+        "screen.complete_screen_count": "3",
+        "screen.total_outer_area_m2": "16"
+      },
+      "id": "SCREEN-TOTAL-NOT-MULTIPLIED",
+      "kind": "FORMULA",
+      "rule_id": "A07-R010-TOTAL"
+    },
+    {
+      "expected": "5-4019",
+      "id": "FCS-H1-TARGET",
+      "kind": "PROPERTY",
+      "path": "effect.catalog_references.0.code",
+      "rule_id": "A06-R047-H1"
+    },
+    {
+      "expected": true,
+      "id": "FCS-H1-SOURCE-NAME",
+      "kind": "PROPERTY",
+      "path": "effect.source_database_name_preserved",
+      "rule_id": "A06-R047-H1"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "inspection.ultrasonic.quantity_basis_verified": true,
+        "inspection.ultrasonic.required_by_specification": true,
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6"
+      },
+      "id": "REV2-NDT-REQUIRED",
+      "kind": "CONDITION",
+      "rule_id": "A06-R009"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "inspection.ultrasonic.quantity_basis_verified": true,
+        "inspection.ultrasonic.required_by_specification": false,
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6"
+      },
+      "id": "REV2-NDT-NOT-REQUIRED",
+      "kind": "CONDITION",
+      "rule_id": "A06-R009"
+    },
+    {
+      "expected": "UNKNOWN",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "inspection.ultrasonic.quantity_basis_verified": true,
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6"
+      },
+      "id": "REV2-NDT-MISSING-SPEC",
+      "kind": "CONDITION",
+      "rule_id": "A06-R009"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "inspection.ultrasonic.quantity_basis_verified": true,
+        "inspection.ultrasonic.required_by_specification": true,
+        "pipeline.lined": true,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6"
+      },
+      "id": "REV2-NDT-LINED",
+      "kind": "CONDITION",
+      "rule_id": "A06-R009"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "inspection.ultrasonic.quantity_basis_verified": true,
+        "inspection.ultrasonic.required_by_specification": true,
+        "pipeline.lined": false,
+        "selection.main_quota_id": "2ed45585-715f-3482-abce-ea406592a501"
+      },
+      "id": "REV2-NDT-EXCLUDED-CODE",
+      "kind": "CONDITION",
+      "rule_id": "A06-R009"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "inspection.ultrasonic.quantity_basis_verified": true,
+        "inspection.ultrasonic.required_by_specification": true,
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3"
+      },
+      "id": "REV2-NDT-ROW13",
+      "kind": "CONDITION",
+      "rule_id": "A06-R013"
+    },
+    {
+      "expected_decimal": "2.3",
+      "facts": {
+        "inspection.ultrasonic.verified_physical_quantity": "23"
+      },
+      "id": "REV2-NDT-23-WELDS",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A06-R009"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {},
+      "id": "REV2-NDT-MISSING-QUANTITY",
+      "kind": "FORMULA",
+      "rule_id": "A06-R009"
+    },
+    {
+      "expected_decimal": "1.3",
+      "facts": {
+        "inspection.radiographic.verified_physical_quantity": "13"
+      },
+      "id": "REV2-FILM-13-SHEETS",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.ultrasonic.quantity_basis_verified": true,
+        "inspection.ultrasonic.required_by_specification": true,
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6"
+      },
+      "id": "REV2-FILM-BLOCK-CANNOT-BYPASS",
+      "kind": "POLICY_STATUS",
+      "revision_note": "v5限定用途闭合，保留本例缺参行为。",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": false,
+      "id": "REV2-ROW13-OWN-NOTES",
+      "kind": "PROPERTY",
+      "path": "effect.inspection_policy.automatic_all_methods",
+      "rule_id": "A06-R013"
+    },
+    {
+      "expected_decimal": "2.5",
+      "facts": {
+        "pipe.physical_length_m": "250"
+      },
+      "id": "REV2-STAINLESS-LENGTH",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A06-R064-POLICY"
+    },
+    {
+      "expected_decimal": "7.6",
+      "facts": {
+        "group.total_physical_length_m": "10",
+        "trench.actual_depth_m": "1.8",
+        "trench.actual_width_m": "0.7",
+        "trench.already_counted_volume_m3": "5"
+      },
+      "id": "REV2-STAINLESS-DEDUCT",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A06-R065-POLICY"
+    },
+    {
+      "expected": true,
+      "id": "REV4-R70-PHYSICAL-ITEM-PRESERVED",
+      "kind": "PROPERTY",
+      "path": "effect.preserve_physical_item",
+      "rule_id": "A06-R070-POLICY"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "binding.source_rule_id": "A06-R067"
+      },
+      "id": "REV4-R70-OTHER-ROW-UNAFFECTED",
+      "kind": "CONDITION",
+      "rule_id": "A06-R070-POLICY"
+    },
+    {
+      "expected_decimal": "4.88",
+      "facts": {
+        "group.total_physical_length_m": "1220"
+      },
+      "id": "REV2-CABLE72-SOURCE-LENGTH",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A06-R072-POLICY"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "binding.source_rule_id": "A06-R073",
+        "group.distinct_model_or_spec_count": "2",
+        "group.members_complete": true,
+        "object.kinds": [
+          "power_cable"
+        ],
+        "selection.main_quota_id": "12ce9007-f454-3d6d-aacc-8653c84ee9bf"
+      },
+      "id": "REV2-CABLE73-TWO-KINDS",
+      "kind": "CONDITION",
+      "revision_note": "v4光伏分支加真实候选库/主项选择器；原三种型号门槛预期不变，发行阻断另测。",
+      "rule_id": "A06-R073-POLICY"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "binding.source_rule_id": "A06-R073",
+        "group.distinct_model_or_spec_count": "3",
+        "group.members_complete": true,
+        "object.kinds": [
+          "power_cable"
+        ],
+        "selection.main_quota_id": "12ce9007-f454-3d6d-aacc-8653c84ee9bf"
+      },
+      "id": "REV2-CABLE73-THREE-KINDS",
+      "kind": "CONDITION",
+      "revision_note": "v4光伏分支加真实候选库/主项选择器；原三种型号门槛预期不变，发行阻断另测。",
+      "rule_id": "A06-R073-POLICY"
+    },
+    {
+      "expected": {
+        "G-b37": 1
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "1"
+      },
+      "id": "REV2-PV-1",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": {
+        "G-b38": 1
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "1.86"
+      },
+      "id": "REV2-PV-1.86",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": {
+        "G-b38": 1
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "2"
+      },
+      "id": "REV2-PV-2",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": {
+        "G-b39": 1
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "3"
+      },
+      "id": "REV2-PV-3",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": {
+        "G-b40": 1
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "4"
+      },
+      "id": "REV2-PV-4",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": {
+        "G-b40": 2
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "8"
+      },
+      "id": "REV2-PV-8",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": {
+        "G-b37": 1,
+        "G-b40": 2
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "9"
+      },
+      "id": "REV2-PV-9",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": {
+        "G-b37": 1,
+        "G-b40": 2
+      },
+      "facts": {
+        "pv.subarray_capacity_mwp": "8.1"
+      },
+      "id": "REV2-PV-8.1",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": "INVALID_CAPACITY",
+      "facts": {
+        "pv.subarray_capacity_mwp": "0"
+      },
+      "id": "REV2-PV-NO-ZERO",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {},
+      "id": "REV2-PV-MISSING",
+      "kind": "PV_PLAN",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": "ONE_DESIGN_SUBARRAY_AT_A_TIME",
+      "id": "REV2-PV-PER-SUBARRAY",
+      "kind": "PROPERTY",
+      "path": "effect.capacity_split.partition",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "evidence.target_identity_unit_and_chapter_verified": true
+      },
+      "id": "REV2-PV-BINDING-BLOCK",
+      "kind": "POLICY_STATUS",
+      "revision_note": "v5限定用途闭合，保留本例缺参行为。",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected_decimal": "101926",
+      "facts": {
+        "wind.turbine_count": "2"
+      },
+      "id": "REV2-WIND-ASSEMBLY-2",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R078-POLICY"
+    },
+    {
+      "expected_decimal": "35760",
+      "facts": {
+        "wind.transport_km_per_turbine": "60",
+        "wind.turbine_count": "2"
+      },
+      "id": "REV2-WIND-TRANSPORT-2X60",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R079-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "wind.turbine_count": "1"
+      },
+      "id": "REV2-WIND-NO-DEFAULT-50KM",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R079-POLICY"
+    },
+    {
+      "expected_decimal": "11938",
+      "facts": {
+        "wind.turbine_count": "2"
+      },
+      "id": "REV2-WIND-INSURANCE-2",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R080-POLICY"
+    },
+    {
+      "expected_decimal": "37832",
+      "facts": {
+        "wind.turbine_count": "2"
+      },
+      "id": "REV2-WIND-LOADING-2",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R081-POLICY"
+    },
+    {
+      "expected_decimal": "270000",
+      "facts": {
+        "wind.foundation_count": "3",
+        "wind.test_pile.verified_amount_per_foundation": "90000"
+      },
+      "id": "REV2-PILE-PROJECT-AMOUNT",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R082"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "wind.foundation_count": "3"
+      },
+      "id": "REV2-PILE-NO-DEFAULT-80000",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R082"
+    },
+    {
+      "expected_decimal": "36000",
+      "facts": {
+        "wind.foundation_count": "3",
+        "wind.pile_corrosion.verified_amount_per_foundation": "12000"
+      },
+      "id": "REV2-PILE-CORROSION-PROJECT-AMOUNT",
+      "kind": "FORMULA",
+      "path": "effect.amount_formula",
+      "rule_id": "A06-R083"
+    },
+    {
+      "expected": "exclude_association",
+      "id": "REV2-EXCLUDE-YS7-163",
+      "kind": "PROPERTY",
+      "path": "effect.type",
+      "rule_id": "A06-R091"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "1e0c920b-5a33-3496-8ce5-21eafaffe7d8",
+        "object.kinds": [
+          "synchronous_condenser"
+        ],
+        "selection.main_quota_code": "YJ16-2"
+      },
+      "id": "REV2-EXCLUSION-SCOPE",
+      "kind": "CONDITION",
+      "rule_id": "A06-R091"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "another-library",
+        "object.kinds": [
+          "synchronous_condenser"
+        ],
+        "selection.main_quota_code": "YJ16-2"
+      },
+      "id": "REV2-EXCLUSION-NOT-GLOBAL",
+      "kind": "CONDITION",
+      "rule_id": "A06-R091"
+    },
+    {
+      "expected_decimal": "350",
+      "facts": {
+        "group.total_physical_length_m": "1000"
+      },
+      "id": "REV2-ELECTRICAL-HALF-LENGTH",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A06-R096-POLICY"
+    },
+    {
+      "expected_decimal": "720",
+      "facts": {
+        "grounding.trench_depth_m": "1.2",
+        "grounding.trench_width_m": "0.6",
+        "group.total_physical_length_m": "1000"
+      },
+      "id": "REV2-GROUNDING-DESIGN-DIMENSIONS",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A06-R099-POLICY"
+    },
+    {
+      "expected_decimal": "12.5",
+      "facts": {
+        "pv_support.count": "100",
+        "pv_support.design_total_mass_t": "12.5"
+      },
+      "id": "REV2-SUPPORT-TOTAL-NOT-TIMES-COUNT",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A07-R012-TOTAL"
+    },
+    {
+      "expected_decimal": "1.5",
+      "facts": {
+        "pv_support.count": "100",
+        "pv_support.design_mass_per_unit_t": "0.015"
+      },
+      "id": "REV2-SUPPORT-PER-UNIT",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A07-R012-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "pv_support.count": "100"
+      },
+      "id": "REV2-SUPPORT-MISSING-MASS",
+      "kind": "FORMULA",
+      "rule_id": "A07-R012-POLICY"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "context.location": "offsite",
+        "context.route_subject": "天然气-站外系统 -站外管线",
+        "indicator.applicable_standard_module_exists": false,
+        "object.kinds": [
+          "pipeline"
+        ],
+        "pipeline.outer_diameter_mm": "458",
+        "pipeline.service_role": "storage_high_pressure_injection_withdrawal"
+      },
+      "id": "REV2-GAS-CHAPTER9",
+      "kind": "CONDITION",
+      "rule_id": "A09-R020"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "context.location": "offsite",
+        "context.route_subject": "天然气-站外系统 -站外管线",
+        "indicator.applicable_standard_module_exists": false,
+        "object.kinds": [
+          "pipeline"
+        ],
+        "pipeline.outer_diameter_mm": "458",
+        "pipeline.service_role": "storage_high_pressure_injection_withdrawal"
+      },
+      "id": "REV2-GAS-CHAPTER8-EXCLUSIVE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R019"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {
+        "evidence.source_diameter_scope_verified": true,
+        "evidence.source_object_scope_verified": true
+      },
+      "id": "REV2-WILDCARD-NOT-INVENTED",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A09-R023-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {},
+      "id": "REV4-FALLBACK-UNKNOWN-WAITS",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A09-R006"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "context.route_subject": "给排水-站场",
+        "indicator.capacity_exact_match": true,
+        "indicator.module_identity_verified": true,
+        "object.kinds": [
+          "storage_tank"
+        ],
+        "tank.capacity_m3": "20"
+      },
+      "id": "REV2-TANK-EXACT",
+      "kind": "CONDITION",
+      "rule_id": "A09-R062"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "context.route_subject": "给排水-站场",
+        "indicator.capacity_exact_match": false,
+        "indicator.module_identity_verified": true,
+        "object.kinds": [
+          "storage_tank"
+        ],
+        "tank.capacity_m3": "30"
+      },
+      "id": "REV2-TANK-NOT-CLAMP",
+      "kind": "CONDITION",
+      "rule_id": "A09-R062"
+    },
+    {
+      "expected": "ORIGINAL_VERIFIED_FACTS_ONLY",
+      "id": "REV2-CLASS-NO-HARD-FACT",
+      "kind": "PROPERTY",
+      "path": "effect.candidate_policy.hard_constraints_source",
+      "rule_id": "A11-R009"
+    },
+    {
+      "expected": false,
+      "id": "REV2-NOMINAL-NO-INVERSE",
+      "kind": "PROPERTY",
+      "path": "effect.inverse_mapping",
+      "rule_id": "A11-R023"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "feature.kind": "pressure_class",
+        "feature.source_expression": "压力等级 Class 150"
+      },
+      "id": "REV2-QUERY-EXACT",
+      "kind": "CONDITION",
+      "rule_id": "A11-R009"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "feature.kind": "pressure_class",
+        "feature.source_expression": "压力等级 Class 1500"
+      },
+      "id": "REV2-QUERY-NOT-SUBSTRING",
+      "kind": "CONDITION",
+      "rule_id": "A11-R009"
+    },
+    {
+      "expected": false,
+      "id": "REV2-QHN-MOTOR-POWER-NOTE",
+      "kind": "PROPERTY",
+      "path": "effect.creates_design_fact",
+      "rule_id": "A11-R033"
+    },
+    {
+      "expected_decimal": "100",
+      "facts": {
+        "pump.flow_m3_per_h": "22.7"
+      },
+      "id": "REV2-US-GPM-DIRECTION",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A11-R034"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "feature.kind": "pump_flow",
+        "pump.gallon_system": "UK"
+      },
+      "id": "REV2-UK-GPM-REJECT",
+      "kind": "CONDITION",
+      "rule_id": "A11-R034"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "feature.kind": "pump_head",
+        "pump.density_kg_m3": "1000",
+        "pump.fluid": "clear_water",
+        "pump.temperature_c": "4"
+      },
+      "id": "REV2-CLEAR-WATER-VALID",
+      "kind": "CONDITION",
+      "rule_id": "A11-R035"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "feature.kind": "pump_head",
+        "pump.density_kg_m3": "800",
+        "pump.fluid": "oil",
+        "pump.temperature_c": "4"
+      },
+      "id": "REV2-OTHER-FLUID-NO-WATER-FACTOR",
+      "kind": "CONDITION",
+      "rule_id": "A11-R035"
+    },
+    {
+      "expected_decimal": "100",
+      "facts": {
+        "pump.head_m": "70.3"
+      },
+      "id": "REV2-CLEAR-WATER-PSI",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A11-R035"
+    },
+    {
+      "expected_decimal": "10",
+      "facts": {
+        "pump.head_m": "102"
+      },
+      "id": "REV2-CLEAR-WATER-BAR",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A11-R036"
+    },
+    {
+      "expected_decimal": "8",
+      "facts": {
+        "pump.density_kg_m3": "800",
+        "pump.gravity_m_s2": "10",
+        "pump.head_m": "100",
+        "pump.pa_per_bar": "100000"
+      },
+      "id": "REV2-OTHER-FLUID-DENSITY",
+      "kind": "FORMULA",
+      "path": "effect.formula",
+      "rule_id": "A11-R036-GENERAL"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "pump.gravity_m_s2": "10",
+        "pump.head_m": "100",
+        "pump.pa_per_bar": "100000"
+      },
+      "id": "REV2-OTHER-FLUID-MISSING-DENSITY",
+      "kind": "FORMULA",
+      "rule_id": "A11-R036-GENERAL"
+    },
+    {
+      "expected": false,
+      "id": "REV2-FLANGE-NO-FORCED-PRESSURE",
+      "kind": "PROPERTY",
+      "path": "effect.candidate_policy.auto_accept_candidate",
+      "rule_id": "A11-R056"
+    },
+    {
+      "expected": false,
+      "id": "REV2-IP4X-NOT-FACT-EQUAL-IP40",
+      "kind": "PROPERTY",
+      "path": "effect.creates_design_fact",
+      "rule_id": "A11-R066"
+    },
+    {
+      "expected": false,
+      "id": "REV2-IP-KEEP-ORIGINAL",
+      "kind": "PROPERTY",
+      "path": "effect.candidate_policy.replace_original_query",
+      "rule_id": "A11-R066"
+    },
+    {
+      "expected": "ORIGINAL_VERIFIED_FACTS_ONLY",
+      "id": "REV2-HEAT-EXCHANGER-KEEP-TEMPERATURE",
+      "kind": "PROPERTY",
+      "path": "effect.candidate_policy.hard_constraints_source",
+      "rule_id": "A11-R068"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "1e0c920b-5a33-3496-8ce5-21eafaffe7d8",
+        "context.location": "station",
+        "electrical.voltage_kv": "35",
+        "material.source_spec": "电力电缆 ZC-YJHLY23-26/35-3×95mm²",
+        "object.kinds": [
+          "power_cable"
+        ]
+      },
+      "id": "REV3-CABLE-STATION",
+      "kind": "CONDITION",
+      "rule_id": "A05-R021-POLICY"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "1e0c920b-5a33-3496-8ce5-21eafaffe7d8",
+        "context.location": "offsite",
+        "electrical.voltage_kv": "35",
+        "material.source_spec": "电力电缆 ZC-YJHLY23-26/35-3×95mm²",
+        "object.kinds": [
+          "power_cable"
+        ]
+      },
+      "id": "REV3-CABLE-OFFSITE",
+      "kind": "CONDITION",
+      "rule_id": "A05-R021-POLICY"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "1e0c920b-5a33-3496-8ce5-21eafaffe7d8",
+        "context.location": "station",
+        "electrical.voltage_kv": "20",
+        "material.source_spec": "电力电缆 ZC-YJHLY23-26/35-3×95mm²",
+        "object.kinds": [
+          "power_cable"
+        ]
+      },
+      "id": "REV3-CABLE-20KV",
+      "kind": "CONDITION",
+      "rule_id": "A05-R021-POLICY"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "1e0c920b-5a33-3496-8ce5-21eafaffe7d8",
+        "context.location": "station",
+        "electrical.voltage_kv": "35",
+        "material.source_spec": "另一规格35kV电缆",
+        "object.kinds": [
+          "power_cable"
+        ]
+      },
+      "id": "REV3-CABLE-OTHER-SAMPLE",
+      "kind": "CONDITION",
+      "rule_id": "A05-R021-POLICY"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {
+        "binding.library_id": "1e0c920b-5a33-3496-8ce5-21eafaffe7d8",
+        "context.location": "station",
+        "electrical.voltage_kv": "35",
+        "evidence.method_target_in_allowed_scope_verified": true,
+        "material.source_spec": "电力电缆 ZC-YJHLY23-26/35-3×95mm²",
+        "object.kinds": [
+          "power_cable"
+        ]
+      },
+      "id": "REV3-NO-TARGET-STILL-BLOCKED",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A05-R021-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "selection.main_quota_id": "4ca9530b-1ad0-351a-bf9b-5746071107bb"
+      },
+      "id": "REV4-OIL64-BOUND",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R064-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "selection.main_quota_id": "4ca9530b-1ad0-351a-bf9b-5746071107bb"
+      },
+      "id": "REV4-OIL64-WRONG-LIB",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R064-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {},
+      "id": "REV4-FILM69-STILL-BLOCKED",
+      "kind": "POLICY_STATUS",
+      "revision_note": "v5限定用途闭合，保留本例缺参行为。",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "power_cable"
+        ],
+        "selection.main_quota_id": "759b8939-727a-33cd-a7ec-221b83ef23ab"
+      },
+      "id": "REV4-OIL72-PASSES",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R072-OIL2022"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {},
+      "id": "REV4-PV72-BLOCKED",
+      "kind": "POLICY_STATUS",
+      "revision_note": "v5限定用途闭合，保留本例缺参行为。",
+      "rule_id": "A06-R072-POLICY"
+    },
+    {
+      "expected": true,
+      "expected_decimal": "4.88",
+      "facts": {
+        "group.total_physical_length_m": "1220"
+      },
+      "id": "REV4-OIL72-COEFFICIENT",
+      "kind": "FORMULA",
+      "rule_id": "A06-R072-OIL2022"
+    },
+    {
+      "expected": true,
+      "expected_decimal": "3.66",
+      "facts": {
+        "group.total_physical_length_m": "1220"
+      },
+      "id": "REV4-OIL73-COEFFICIENT",
+      "kind": "FORMULA",
+      "rule_id": "A06-R073-OIL2022"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.distinct_model_or_spec_count": "2",
+        "group.members_complete": true,
+        "object.kinds": [
+          "power_cable"
+        ],
+        "selection.main_quota_id": "759b8939-727a-33cd-a7ec-221b83ef23ab"
+      },
+      "id": "REV4-OIL73-TWO-KINDS",
+      "kind": "CONDITION",
+      "rule_id": "A06-R073-OIL2022"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.distinct_model_or_spec_count": "3",
+        "group.members_complete": true,
+        "object.kinds": [
+          "power_cable"
+        ],
+        "selection.main_quota_id": "759b8939-727a-33cd-a7ec-221b83ef23ab"
+      },
+      "id": "REV4-OIL73-THREE-KINDS",
+      "kind": "CONDITION",
+      "rule_id": "A06-R073-OIL2022"
+    },
+    {
+      "expected": "exclude_association",
+      "id": "REV4-WIND72-WITHDRAWN",
+      "kind": "PROPERTY",
+      "path": "effect.type",
+      "rule_id": "A06-R072-WIND_WITHDRAWN"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "binding.source_rule_id": "A06-R072",
+        "selection.main_quota_code": "4-3176"
+      },
+      "id": "REV4-WIND72-SCOPED",
+      "kind": "CONDITION",
+      "rule_id": "A06-R072-WIND_WITHDRAWN"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "binding.source_rule_id": "A06-R074",
+        "selection.main_quota_code": "4-3176"
+      },
+      "id": "REV4-WIND72-NOT-OTHER-ROW",
+      "kind": "CONDITION",
+      "rule_id": "A06-R072-WIND_WITHDRAWN"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_module_available_for_work": true,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-PRIMARY-AVAILABLE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R005"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_module_available_for_work": true,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-FALLBACK-NOT-WITH-PRIMARY",
+      "kind": "CONDITION",
+      "rule_id": "A09-R006"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-PRIMARY-UNAVAILABLE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R005"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-FALLBACK-VERIFIED-MISSING",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A09-R006"
+    },
+    {
+      "expected": "UNKNOWN",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-PRIMARY-UNKNOWN",
+      "kind": "CONDITION",
+      "rule_id": "A09-R005"
+    },
+    {
+      "expected": "UNKNOWN",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-FALLBACK-UNKNOWN",
+      "kind": "CONDITION",
+      "rule_id": "A09-R006"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "offsite",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": false,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-OTHER-WORK-SCOPE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R006"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.location": "station",
+        "context.route_subject": "油气集输-站外系统 -站外管线",
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-PIPE-STATION-NOT-ROUTED",
+      "kind": "CONDITION",
+      "rule_id": "A09-R006"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "防腐",
+        "coverage.corrosion_work_included": false,
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-CORROSION-UNCOVERED",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A09-R087"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "防腐",
+        "coverage.corrosion_work_included": true,
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-CORROSION-ALREADY-INCLUDED",
+      "kind": "CONDITION",
+      "rule_id": "A09-R087"
+    },
+    {
+      "expected": "UNKNOWN",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "防腐",
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "evidence.method_target_in_allowed_scope_verified": true
+      },
+      "id": "REV4-CORROSION-UNKNOWN-COVERAGE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R087"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "穿跨越",
+        "coverage.crossing_work_included": false,
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "coverage.supplement_basis_verified": true,
+        "crossing.separate_drawing": true,
+        "evidence.method_target_in_allowed_scope_verified": true,
+        "object.kinds": [
+          "crossing"
+        ],
+        "selection.target_directory_id": "ed08d77c-17e2-3a65-b052-9c309f6b8699"
+      },
+      "id": "REV4-CROSSING-FALLBACK-9-2",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A09-R091"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "穿跨越",
+        "coverage.crossing_work_included": false,
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "coverage.supplement_basis_verified": true,
+        "crossing.separate_drawing": true,
+        "evidence.method_target_in_allowed_scope_verified": true,
+        "object.kinds": [
+          "crossing"
+        ],
+        "selection.target_directory_id": "outside-chapter"
+      },
+      "id": "REV4-CROSSING-WRONG-CHAPTER",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A09-R091"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "穿跨越",
+        "coverage.crossing_work_included": false,
+        "coverage.standard_module_available_for_work": false,
+        "coverage.standard_scope_matches_current_work": true,
+        "coverage.supplement_basis_verified": true,
+        "crossing.separate_drawing": false,
+        "evidence.method_target_in_allowed_scope_verified": true,
+        "object.kinds": [
+          "crossing"
+        ],
+        "selection.target_directory_id": "ed08d77c-17e2-3a65-b052-9c309f6b8699"
+      },
+      "id": "REV4-CROSSING-NO-DRAWING",
+      "kind": "CONDITION",
+      "rule_id": "A09-R091"
+    },
+    {
+      "expected": "TRUE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "穿跨越",
+        "coverage.crossing_work_included": false,
+        "coverage.standard_module_available_for_work": true,
+        "coverage.standard_scope_matches_current_work": true,
+        "coverage.supplement_basis_verified": true,
+        "crossing.separate_drawing": true,
+        "evidence.method_target_in_allowed_scope_verified": true,
+        "object.kinds": [
+          "crossing"
+        ],
+        "selection.target_directory_id": "ed08d77c-17e2-3a65-b052-9c309f6b8699"
+      },
+      "id": "REV4-CROSSING-PRIMARY-AVAILABLE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R090"
+    },
+    {
+      "expected": "FALSE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "context.route_subject": "穿跨越",
+        "coverage.crossing_work_included": false,
+        "coverage.standard_module_available_for_work": true,
+        "coverage.standard_scope_matches_current_work": true,
+        "coverage.supplement_basis_verified": true,
+        "crossing.separate_drawing": true,
+        "evidence.method_target_in_allowed_scope_verified": true,
+        "object.kinds": [
+          "crossing"
+        ],
+        "selection.target_directory_id": "ed08d77c-17e2-3a65-b052-9c309f6b8699"
+      },
+      "id": "REV4-CROSSING-NO-DOUBLE-ROUTE",
+      "kind": "CONDITION",
+      "rule_id": "A09-R091"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-EXPLICIT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": true,
+      "expected_decimal": "2",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-20-SHEETS",
+      "kind": "FORMULA",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-MISSING-plan_evidence_verified",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-MISSING-film_spec_mm",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-MISSING-wall_thickness_mm",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6"
+      },
+      "id": "REV5-FILM10-MISSING-target_quota_id",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-MISSING-verified_physical_quantity",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": true,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-LINED",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "2ed45585-715f-3482-abce-ea406592a501",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM10-EXCLUDED-2061",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-WRONG-LIB",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x300",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-WRONG-FILM",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "9",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-WRONG-THICKNESS",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "2f5926bc-0a19-33a4-9f1e-c99a81876282"
+      },
+      "id": "REV5-FILM-WRONG-TARGET",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": false,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-REPEATED-WORK",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": false,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-MIXED-SCOPE",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NO_ASSOCIATION",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "0",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-ZERO",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "INVALID_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "-1",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-NEGATIVE",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "CONFLICT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": {
+          "state": "CONFLICT"
+        },
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM-CONFLICT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "21c2d188-be02-36ff-8242-febbbc6f6875"
+      },
+      "id": "REV5-FILM-BOUNDARY-3-2203-8",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x300",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "21",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "13439971-334b-3324-9cbf-2090b37f5134"
+      },
+      "id": "REV5-FILM-BOUNDARY-3-2206-21",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x300",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "21",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "e3f0deb2-2d6e-3052-b0a9-e6a1054156b3"
+      },
+      "id": "REV5-FILM-BOUNDARY-3-2207-21",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x300",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "21.1",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6",
+        "selection.target_quota_id": "e3f0deb2-2d6e-3052-b0a9-e6a1054156b3"
+      },
+      "id": "REV5-FILM-BOUNDARY-3-2207-21.1",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R010-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM14-EXPLICIT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": true,
+      "expected_decimal": "2",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM14-20-SHEETS",
+      "kind": "FORMULA",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM14-MISSING-plan_evidence_verified",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM14-MISSING-film_spec_mm",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM14-MISSING-wall_thickness_mm",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3"
+      },
+      "id": "REV5-FILM14-MISSING-target_quota_id",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM14-MISSING-verified_physical_quantity",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": true,
+        "selection.main_quota_id": "87979209-4021-35ce-986c-3d1cd904fdf3",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM14-LINED",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R014-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM69-EXPLICIT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": true,
+      "expected_decimal": "2",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM69-20-SHEETS",
+      "kind": "FORMULA",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM69-MISSING-plan_evidence_verified",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM69-MISSING-film_spec_mm",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM69-MISSING-wall_thickness_mm",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524"
+      },
+      "id": "REV5-FILM69-MISSING-target_quota_id",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": false,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM69-MISSING-verified_physical_quantity",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "inspection.radiographic.film_spec_mm": "80x150",
+        "inspection.radiographic.plan_evidence_verified": true,
+        "inspection.radiographic.quantity_basis_verified": true,
+        "inspection.radiographic.required_by_specification": true,
+        "inspection.radiographic.target_and_quantity_same_scope_verified": true,
+        "inspection.radiographic.verified_physical_quantity": "20",
+        "inspection.radiographic.wall_thickness_mm": "8",
+        "pipeline.lined": true,
+        "selection.main_quota_id": "f3409b7a-923c-3cb3-a7b9-fd4e4efc7524",
+        "selection.target_quota_id": "f47d6e78-ab20-37b1-beb7-04988999c2fc"
+      },
+      "id": "REV5-FILM69-LINED",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R069-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV74-BOUND",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": false,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV74-INCOMPLETE",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV74-WRONG-LIB",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R074-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV75-BOUND",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R075-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": false,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV75-INCOMPLETE",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R075-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV75-WRONG-LIB",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R075-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV76-BOUND",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R076-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": false,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV76-INCOMPLETE",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R076-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV76-WRONG-LIB",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R076-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV77-BOUND",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R077-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": false,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV77-INCOMPLETE",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R077-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+        "evidence.same_work_not_already_charged": true,
+        "evidence.target_identity_unit_and_chapter_verified": true,
+        "group.members_complete": true,
+        "object.kinds": [
+          "pv_module"
+        ],
+        "pv.design_subarray_partition_verified": true,
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-PV77-WRONG-LIB",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R077-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "object.kinds": [
+          "pv_support"
+        ],
+        "pv_support.mass_basis": "design_total",
+        "selection.main_quota_id": "bd6f1af4-9ce4-393d-b225-0b9e830dabc1"
+      },
+      "id": "REV5-SUPPORT-TOTAL-BOUND",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A07-R012-TOTAL"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "object.kinds": [
+          "pv_support"
+        ],
+        "pv_support.mass_basis": "design_total",
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-SUPPORT-TOTAL-WRONG-TARGET",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A07-R012-TOTAL"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "object.kinds": [
+          "pv_support"
+        ],
+        "pv_support.mass_basis": "design_per_unit",
+        "selection.main_quota_id": "bd6f1af4-9ce4-393d-b225-0b9e830dabc1"
+      },
+      "id": "REV5-SUPPORT-POLICY-BOUND",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A07-R012-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "055bdc17-447b-34e8-900e-130e48e06793",
+        "object.kinds": [
+          "pv_support"
+        ],
+        "pv_support.mass_basis": "design_per_unit",
+        "selection.main_quota_id": "5393bf2c-8f2a-3b3b-89f2-72ccb5b4c217"
+      },
+      "id": "REV5-SUPPORT-POLICY-WRONG-TARGET",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A07-R012-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND78-FB4",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R078-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "140"
+      },
+      "id": "REV5-WIND78-OTHER-HEIGHT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R078-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "da344c96-8144-3d15-9bcd-b1425d8b338b",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND78-OTHER-TARGET",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R078-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND79-FB4",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R079-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "140"
+      },
+      "id": "REV5-WIND79-OTHER-HEIGHT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R079-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "da344c96-8144-3d15-9bcd-b1425d8b338b",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND79-OTHER-TARGET",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R079-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND80-FB4",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R080-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "140"
+      },
+      "id": "REV5-WIND80-OTHER-HEIGHT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R080-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "da344c96-8144-3d15-9bcd-b1425d8b338b",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND80-OTHER-TARGET",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R080-POLICY"
+    },
+    {
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND81-FB4",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R081-POLICY"
+    },
+    {
+      "expected": "NEEDS_INPUT",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "a1179f9f-3226-322a-afea-e035e2c84575",
+        "wind.hub_height_m": "140"
+      },
+      "id": "REV5-WIND81-OTHER-HEIGHT",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R081-POLICY"
+    },
+    {
+      "expected": "NOT_APPLICABLE",
+      "facts": {
+        "binding.library_id": "f45f2420-211b-3281-bedb-14b4391d1c1c",
+        "evidence.main_quota_applicability_verified": true,
+        "evidence.same_work_not_already_charged": true,
+        "object.kinds": [
+          "wind_turbine"
+        ],
+        "project.kind": "wind_farm",
+        "selection.main_quota_id": "da344c96-8144-3d15-9bcd-b1425d8b338b",
+        "wind.hub_height_m": "125"
+      },
+      "id": "REV5-WIND81-OTHER-TARGET",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R081-POLICY"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {},
+      "id": "REV5-RETAIN-A05-R021-POLICY",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A05-R021-POLICY"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {},
+      "id": "REV5-RETAIN-A06-R087-POLICY",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R087-POLICY"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {},
+      "id": "REV5-RETAIN-A06-R096-POLICY",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R096-POLICY"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {},
+      "id": "REV5-RETAIN-A06-R097-POLICY",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R097-POLICY"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {},
+      "id": "REV5-RETAIN-A06-R098-POLICY",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R098-POLICY"
+    },
+    {
+      "expected": "BLOCKED_EVIDENCE",
+      "facts": {},
+      "id": "REV5-RETAIN-A06-R099-POLICY",
+      "kind": "POLICY_STATUS",
+      "rule_id": "A06-R099-POLICY"
+    }
+  ],
+  "schema_version": "0903-offline-cases-v2",
+  "scope": "Hand-authored fixed offline cases; v4 user corrections supersede four historical cases, recorded below. Not model/Dify/UI acceptance.",
+  "superseded_cases": [
+    {
+      "authority": "confirmed-changes:D09",
+      "case": {
+        "expected": "TECHNICAL_EVIDENCE",
+        "id": "TRENCH-R70-SCOPE-NOT-INHERITED",
+        "kind": "PENDING",
+        "rule_id": "A06-R070"
+      },
+      "replacement_id": "REV4-R70-WITHDRAWN"
+    },
+    {
+      "authority": "confirmed-changes:D09",
+      "case": {
+        "expected_decimal": "1.26",
+        "facts": {
+          "pipe.physical_length_m": "1",
+          "trench.actual_depth_m": "1.8",
+          "trench.actual_width_m": "0.7"
+        },
+        "id": "REV2-ROW70-ONE-METRE",
+        "kind": "FORMULA",
+        "path": "effect.formula",
+        "rule_id": "A06-R070-POLICY"
+      },
+      "replacement_id": "REV4-R70-PHYSICAL-ITEM-PRESERVED"
+    },
+    {
+      "authority": "confirmed-changes:D09",
+      "case": {
+        "expected": "NEEDS_INPUT",
+        "facts": {
+          "pipe.physical_length_m": "1",
+          "trench.actual_depth_m": "1.8"
+        },
+        "id": "REV2-ROW70-NO-DEFAULT-WIDTH",
+        "kind": "FORMULA",
+        "rule_id": "A06-R070-POLICY"
+      },
+      "replacement_id": "REV4-R70-OTHER-ROW-UNAFFECTED"
+    },
+    {
+      "authority": "confirmed-changes:D12",
+      "case": {
+        "expected": "TECHNICAL_EVIDENCE",
+        "id": "REV2-EMPTY-SOURCE-SCOPE",
+        "kind": "PENDING",
+        "rule_id": "A09-R006"
+      },
+      "replacement_id": "REV4-FALLBACK-UNKNOWN-WAITS"
+    },
+    {
+      "authority": "confirmed-changes:D04",
+      "case": {
+        "expected": "BLOCKED_EVIDENCE",
+        "facts": {
+          "binding.library_id": "60812664-be98-3733-b099-3a8e35e6128a",
+          "evidence.target_identity_unit_and_chapter_verified": true,
+          "inspection.ultrasonic.quantity_basis_verified": true,
+          "inspection.ultrasonic.required_by_specification": true,
+          "pipeline.lined": false,
+          "selection.main_quota_id": "c3bf5c02-2ca8-3abd-a68f-efc1114fdcd6"
+        },
+        "id": "REV2-FILM-BLOCK-CANNOT-BYPASS",
+        "kind": "POLICY_STATUS",
+        "rule_id": "A06-R010-POLICY"
+      },
+      "reason": "限定依据已答，发行阻断解除；相同缺失项目输入仍NEEDS_INPUT。",
+      "release": "0903-20261112-v5"
+    },
+    {
+      "authority": "confirmed-changes:D02",
+      "case": {
+        "expected": "BLOCKED_EVIDENCE",
+        "facts": {
+          "evidence.target_identity_unit_and_chapter_verified": true
+        },
+        "id": "REV2-PV-BINDING-BLOCK",
+        "kind": "POLICY_STATUS",
+        "rule_id": "A06-R074-POLICY"
+      },
+      "reason": "限定依据已答，发行阻断解除；相同缺失项目输入仍NEEDS_INPUT。",
+      "release": "0903-20261112-v5"
+    },
+    {
+      "authority": "confirmed-changes:D04",
+      "case": {
+        "expected": "BLOCKED_EVIDENCE",
+        "facts": {},
+        "id": "REV4-FILM69-STILL-BLOCKED",
+        "kind": "POLICY_STATUS",
+        "rule_id": "A06-R069-POLICY"
+      },
+      "reason": "限定依据已答，发行阻断解除；相同缺失项目输入仍NEEDS_INPUT。",
+      "release": "0903-20261112-v5"
+    },
+    {
+      "authority": "confirmed-changes:D02",
+      "case": {
+        "expected": "BLOCKED_EVIDENCE",
+        "facts": {},
+        "id": "REV4-PV72-BLOCKED",
+        "kind": "POLICY_STATUS",
+        "rule_id": "A06-R072-POLICY"
+      },
+      "reason": "限定依据已答，发行阻断解除；相同缺失项目输入仍NEEDS_INPUT。",
+      "release": "0903-20261112-v5"
+    }
+  ]
+}

@@ -1,0 +1,1416 @@
+{
+  "approved_rules": 251,
+  "case_count": 220,
+  "cases": [
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "PIPE-457-NO-OTHER-ENTRY",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "PIPE-458",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "PIPE-457-25KM",
+      "passed": true
+    },
+    {
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN",
+      "id": "PIPE-UNKNOWN-NOT-FALSE",
+      "passed": true
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "PIPE-CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "BORROW-KEEP-ROUTE",
+      "passed": true
+    },
+    {
+      "actual": "TECHNICAL_EVIDENCE",
+      "expected": "TECHNICAL_EVIDENCE",
+      "id": "INVALID-35KV-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "PUMP-3KW",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "PUMP-3KW-NOT-LARGE",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "PUMP-NOT-DOUBLE-COMMISSION",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "CABLE-GROUP-1220M",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "CABLE-GROUP-OTHER-WORK",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "CABLE-REVISED-GROUP",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "PHONE-1KM-ONCE",
+      "passed": true
+    },
+    {
+      "actual": "exclude_association",
+      "expected": "exclude_association",
+      "id": "PHONE-WRONG-ASSOCIATION-EXCLUDED",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "IO-7-NO-ROUND",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "IO-9-NO-ROUND",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "IO-MISSING-IS-NOT-ZERO",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "ALARM-N-MINUS-ONE",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "TRENCH-DEDUCT",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "TRENCH-UNKNOWN-DEDUCTION",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "TRENCH-NONPOSITIVE-NO-ROW",
+      "passed": true
+    },
+    {
+      "actual": "exclude_association",
+      "expected": "exclude_association",
+      "id": "REV4-R70-WITHDRAWN",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "WIND-PROJECT-ONLY",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "WIND-ONCE",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "WIND-MISSING-RATE",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "WIND-AMOUNT-EXPLICIT",
+      "passed": true
+    },
+    {
+      "actual": null,
+      "expected": null,
+      "id": "WIND-NO-BASIS-DEFAULT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "TRAY-LENGTH",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "TRAY-MISSING-LENGTH",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "GROUND-LUG-40",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "SCREEN-OUTER-AREA",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "HEAT-SHRINK-SAME-GROUP",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "PV-ROOF-PRIORITY",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "PV-NOT-DOUBLE-CHARGE",
+      "passed": true
+    },
+    {
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN",
+      "id": "PV-ROOF-UNKNOWN",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "PN-FORWARD",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "PN-NOT-DESIGN-FACT",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "MATERIAL-NOT-EQUIVALENCE",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "MATERIAL-NOT-REVERSE",
+      "passed": true
+    },
+    {
+      "actual": "PHASE_DEFERRED",
+      "expected": "PHASE_DEFERRED",
+      "id": "PRICE-CAPACITY-DEFERRED",
+      "passed": true
+    },
+    {
+      "actual": "PHASE_DEFERRED",
+      "expected": "PHASE_DEFERRED",
+      "id": "BARE-STEEL-DEFERRED",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "CABLE-PARENT-KIND-RETAINED",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "SCREEN-TOTAL-NOT-MULTIPLIED",
+      "passed": true
+    },
+    {
+      "actual": "5-4019",
+      "expected": "5-4019",
+      "id": "FCS-H1-TARGET",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "FCS-H1-SOURCE-NAME",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-NDT-REQUIRED",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-NDT-NOT-REQUIRED",
+      "passed": true
+    },
+    {
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN",
+      "id": "REV2-NDT-MISSING-SPEC",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-NDT-LINED",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-NDT-EXCLUDED-CODE",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-NDT-ROW13",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-NDT-23-WELDS",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-NDT-MISSING-QUANTITY",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-FILM-13-SHEETS",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-FILM-BLOCK-CANNOT-BYPASS",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "REV2-ROW13-OWN-NOTES",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-STAINLESS-LENGTH",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-STAINLESS-DEDUCT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV4-R70-PHYSICAL-ITEM-PRESERVED",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-R70-OTHER-ROW-UNAFFECTED",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-CABLE72-SOURCE-LENGTH",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-CABLE73-TWO-KINDS",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-CABLE73-THREE-KINDS",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b37": 1
+      },
+      "expected": {
+        "G-b37": 1
+      },
+      "id": "REV2-PV-1",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b38": 1
+      },
+      "expected": {
+        "G-b38": 1
+      },
+      "id": "REV2-PV-1.86",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b38": 1
+      },
+      "expected": {
+        "G-b38": 1
+      },
+      "id": "REV2-PV-2",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b39": 1
+      },
+      "expected": {
+        "G-b39": 1
+      },
+      "id": "REV2-PV-3",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b40": 1
+      },
+      "expected": {
+        "G-b40": 1
+      },
+      "id": "REV2-PV-4",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b40": 2
+      },
+      "expected": {
+        "G-b40": 2
+      },
+      "id": "REV2-PV-8",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b37": 1,
+        "G-b40": 2
+      },
+      "expected": {
+        "G-b37": 1,
+        "G-b40": 2
+      },
+      "id": "REV2-PV-9",
+      "passed": true
+    },
+    {
+      "actual": {
+        "G-b37": 1,
+        "G-b40": 2
+      },
+      "expected": {
+        "G-b37": 1,
+        "G-b40": 2
+      },
+      "id": "REV2-PV-8.1",
+      "passed": true
+    },
+    {
+      "actual": "INVALID_CAPACITY",
+      "expected": "INVALID_CAPACITY",
+      "id": "REV2-PV-NO-ZERO",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-PV-MISSING",
+      "passed": true
+    },
+    {
+      "actual": "ONE_DESIGN_SUBARRAY_AT_A_TIME",
+      "expected": "ONE_DESIGN_SUBARRAY_AT_A_TIME",
+      "id": "REV2-PV-PER-SUBARRAY",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-PV-BINDING-BLOCK",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-WIND-ASSEMBLY-2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-WIND-TRANSPORT-2X60",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-WIND-NO-DEFAULT-50KM",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-WIND-INSURANCE-2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-WIND-LOADING-2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-PILE-PROJECT-AMOUNT",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-PILE-NO-DEFAULT-80000",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-PILE-CORROSION-PROJECT-AMOUNT",
+      "passed": true
+    },
+    {
+      "actual": "exclude_association",
+      "expected": "exclude_association",
+      "id": "REV2-EXCLUDE-YS7-163",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-EXCLUSION-SCOPE",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-EXCLUSION-NOT-GLOBAL",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-ELECTRICAL-HALF-LENGTH",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-GROUNDING-DESIGN-DIMENSIONS",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-SUPPORT-TOTAL-NOT-TIMES-COUNT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-SUPPORT-PER-UNIT",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-SUPPORT-MISSING-MASS",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-GAS-CHAPTER9",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-GAS-CHAPTER8-EXCLUSIVE",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV2-WILDCARD-NOT-INVENTED",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV4-FALLBACK-UNKNOWN-WAITS",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-TANK-EXACT",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-TANK-NOT-CLAMP",
+      "passed": true
+    },
+    {
+      "actual": "ORIGINAL_VERIFIED_FACTS_ONLY",
+      "expected": "ORIGINAL_VERIFIED_FACTS_ONLY",
+      "id": "REV2-CLASS-NO-HARD-FACT",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "REV2-NOMINAL-NO-INVERSE",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-QUERY-EXACT",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-QUERY-NOT-SUBSTRING",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "REV2-QHN-MOTOR-POWER-NOTE",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-US-GPM-DIRECTION",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-UK-GPM-REJECT",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV2-CLEAR-WATER-VALID",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV2-OTHER-FLUID-NO-WATER-FACTOR",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-CLEAR-WATER-PSI",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-CLEAR-WATER-BAR",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV2-OTHER-FLUID-DENSITY",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV2-OTHER-FLUID-MISSING-DENSITY",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "REV2-FLANGE-NO-FORCED-PRESSURE",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "REV2-IP4X-NOT-FACT-EQUAL-IP40",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "id": "REV2-IP-KEEP-ORIGINAL",
+      "passed": true
+    },
+    {
+      "actual": "ORIGINAL_VERIFIED_FACTS_ONLY",
+      "expected": "ORIGINAL_VERIFIED_FACTS_ONLY",
+      "id": "REV2-HEAT-EXCHANGER-KEEP-TEMPERATURE",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV3-CABLE-STATION",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV3-CABLE-OFFSITE",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV3-CABLE-20KV",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV3-CABLE-OTHER-SAMPLE",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV3-NO-TARGET-STILL-BLOCKED",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV4-OIL64-BOUND",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV4-OIL64-WRONG-LIB",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV4-FILM69-STILL-BLOCKED",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV4-OIL72-PASSES",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV4-PV72-BLOCKED",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV4-OIL72-COEFFICIENT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV4-OIL73-COEFFICIENT",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-OIL73-TWO-KINDS",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV4-OIL73-THREE-KINDS",
+      "passed": true
+    },
+    {
+      "actual": "exclude_association",
+      "expected": "exclude_association",
+      "id": "REV4-WIND72-WITHDRAWN",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV4-WIND72-SCOPED",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-WIND72-NOT-OTHER-ROW",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV4-PIPE-PRIMARY-AVAILABLE",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-PIPE-FALLBACK-NOT-WITH-PRIMARY",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-PIPE-PRIMARY-UNAVAILABLE",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV4-PIPE-FALLBACK-VERIFIED-MISSING",
+      "passed": true
+    },
+    {
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN",
+      "id": "REV4-PIPE-PRIMARY-UNKNOWN",
+      "passed": true
+    },
+    {
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN",
+      "id": "REV4-PIPE-FALLBACK-UNKNOWN",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-PIPE-OTHER-WORK-SCOPE",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-PIPE-STATION-NOT-ROUTED",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV4-CORROSION-UNCOVERED",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-CORROSION-ALREADY-INCLUDED",
+      "passed": true
+    },
+    {
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN",
+      "id": "REV4-CORROSION-UNKNOWN-COVERAGE",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV4-CROSSING-FALLBACK-9-2",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV4-CROSSING-WRONG-CHAPTER",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-CROSSING-NO-DRAWING",
+      "passed": true
+    },
+    {
+      "actual": "TRUE",
+      "expected": "TRUE",
+      "id": "REV4-CROSSING-PRIMARY-AVAILABLE",
+      "passed": true
+    },
+    {
+      "actual": "FALSE",
+      "expected": "FALSE",
+      "id": "REV4-CROSSING-NO-DOUBLE-ROUTE",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-FILM10-EXPLICIT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV5-FILM10-20-SHEETS",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM10-MISSING-plan_evidence_verified",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM10-MISSING-film_spec_mm",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM10-MISSING-wall_thickness_mm",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM10-MISSING-target_quota_id",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM10-MISSING-verified_physical_quantity",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-FILM10-LINED",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-FILM10-EXCLUDED-2061",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-FILM-WRONG-LIB",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM-WRONG-FILM",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM-WRONG-THICKNESS",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM-WRONG-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM-REPEATED-WORK",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM-MIXED-SCOPE",
+      "passed": true
+    },
+    {
+      "actual": "NO_ASSOCIATION",
+      "expected": "NO_ASSOCIATION",
+      "id": "REV5-FILM-ZERO",
+      "passed": true
+    },
+    {
+      "actual": "INVALID_INPUT",
+      "expected": "INVALID_INPUT",
+      "id": "REV5-FILM-NEGATIVE",
+      "passed": true
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "REV5-FILM-CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-FILM-BOUNDARY-3-2203-8",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-FILM-BOUNDARY-3-2206-21",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM-BOUNDARY-3-2207-21",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-FILM-BOUNDARY-3-2207-21.1",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-FILM14-EXPLICIT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV5-FILM14-20-SHEETS",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM14-MISSING-plan_evidence_verified",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM14-MISSING-film_spec_mm",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM14-MISSING-wall_thickness_mm",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM14-MISSING-target_quota_id",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM14-MISSING-verified_physical_quantity",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-FILM14-LINED",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-FILM69-EXPLICIT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "REV5-FILM69-20-SHEETS",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM69-MISSING-plan_evidence_verified",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM69-MISSING-film_spec_mm",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM69-MISSING-wall_thickness_mm",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM69-MISSING-target_quota_id",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-FILM69-MISSING-verified_physical_quantity",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-FILM69-LINED",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-PV74-BOUND",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV74-INCOMPLETE",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV74-WRONG-LIB",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-PV75-BOUND",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV75-INCOMPLETE",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV75-WRONG-LIB",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-PV76-BOUND",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV76-INCOMPLETE",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV76-WRONG-LIB",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-PV77-BOUND",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV77-INCOMPLETE",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-PV77-WRONG-LIB",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-SUPPORT-TOTAL-BOUND",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-SUPPORT-TOTAL-WRONG-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-SUPPORT-POLICY-BOUND",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-SUPPORT-POLICY-WRONG-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-WIND78-FB4",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-WIND78-OTHER-HEIGHT",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-WIND78-OTHER-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-WIND79-FB4",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-WIND79-OTHER-HEIGHT",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-WIND79-OTHER-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-WIND80-FB4",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-WIND80-OTHER-HEIGHT",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-WIND80-OTHER-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "expected": "CONDITIONS_AND_GUARDS_PASS_INPUTS_STILL_REQUIRED",
+      "id": "REV5-WIND81-FB4",
+      "passed": true
+    },
+    {
+      "actual": "NEEDS_INPUT",
+      "expected": "NEEDS_INPUT",
+      "id": "REV5-WIND81-OTHER-HEIGHT",
+      "passed": true
+    },
+    {
+      "actual": "NOT_APPLICABLE",
+      "expected": "NOT_APPLICABLE",
+      "id": "REV5-WIND81-OTHER-TARGET",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV5-RETAIN-A05-R021-POLICY",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV5-RETAIN-A06-R087-POLICY",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV5-RETAIN-A06-R096-POLICY",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV5-RETAIN-A06-R097-POLICY",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV5-RETAIN-A06-R098-POLICY",
+      "passed": true
+    },
+    {
+      "actual": "BLOCKED_EVIDENCE",
+      "expected": "BLOCKED_EVIDENCE",
+      "id": "REV5-RETAIN-A06-R099-POLICY",
+      "passed": true
+    }
+  ],
+  "catalog_references": 3794,
+  "field_fragments": 1636,
+  "materials_request_summary": {
+    "active_groups": 6,
+    "baseline_unique_rules": 32,
+    "deferred_0904": 5,
+    "group_rule_links": 21,
+    "groups": 12,
+    "newly_closed": 14,
+    "unique_rules": 18
+  },
+  "not_tested": [
+    "production rule_runtime",
+    "Dify updated libraries",
+    "0903 business integration",
+    "model selection",
+    "UI",
+    "0904"
+  ],
+  "passed": true,
+  "pending_review_summary": {
+    "blocked_policy_rules": 18,
+    "by_family": {
+      "A05": {
+        "PARTIALLY_COMPILED_BLOCKED": 1
+      },
+      "A06": {
+        "CLOSED_FOR_DECLARED_USAGE": 28,
+        "PARTIALLY_COMPILED_BLOCKED": 12
+      },
+      "A07": {
+        "CLOSED_FOR_DECLARED_USAGE": 1
+      },
+      "A09": {
+        "CLOSED_FOR_DECLARED_USAGE": 8,
+        "PARTIALLY_COMPILED_BLOCKED": 5
+      },
+      "A11": {
+        "CLOSED_FOR_DECLARED_USAGE": 40
+      }
+    },
+    "deferred_0904": 5,
+    "normalized_rules_total": 251,
+    "remaining_technical": 18,
+    "reviewed": 95,
+    "states": {
+      "CLOSED_FOR_DECLARED_USAGE": 77,
+      "PARTIALLY_COMPILED_BLOCKED": 18
+    }
+  },
+  "pending_rules": 23,
+  "raw_cells": 1307,
+  "scope": "OFFLINE_RESOURCE_CONTRACT_AND_FIXED_CASES",
+  "source_records": 272
+}

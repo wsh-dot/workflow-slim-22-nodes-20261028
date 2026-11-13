@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-13",
+  "scope": "DOCUMENTATION_SOURCE_CONSISTENCY_ONLY",
+  "passed": true,
+  "authority": {
+    "business_document": "实施方案.md",
+    "business_version": "1.20",
+    "integration_document": "项目接入实施细则.md",
+    "integration_version": "1.15",
+    "derivation": "当前Markdown原始字节派生；撤除项目级费用生成，保留稳定ID，全部仍为计划定义。"
+  },
+  "source_documents": [
+    {
+      "path": "实施方案.md",
+      "sha256": "8bfa8b7e294f969244a6c23024048f6156c7fe95a8243091a8db7fe1a3a1c15f"
+    },
+    {
+      "path": "项目接入实施细则.md",
+      "sha256": "5ae73d48606cbb09eb2612f4a1e858d0d0f91fa0eb7a4a48b4f952c78ac6c41a"
+    }
+  ],
+  "catalog_sha256": "f7c2191949dd8d64847e8720d3f13c6e88a4a417abb4bd768e89848a1af14ab5",
+  "case_count": 302,
+  "current_applicable": 298,
+  "historical": 4,
+  "updated_case_ids": [
+    "Q27",
+    "Q28",
+    "Q37",
+    "Q41",
+    "Q62",
+    "Q80",
+    "T36",
+    "T53",
+    "T54"
+  ],
+  "stable_ids_preserved": true,
+  "source_lines_expected_and_hashes_match": true,
+  "removed_planned_table": "sc_project_cost_object",
+  "remaining_new_0903_tables": [
+    "sc_file_quota_snapshot",
+    "sc_match_revision"
+  ],
+  "out_of_execution_scope_rule_ids": [
+    "A06-R084",
+    "A06-R085",
+    "A06-R086"
+  ],
+  "planned_online_modules": 14,
+  "planned_java_files": 10,
+  "completion_receipt_retained_without_fee_generation": true,
+  "implementation_prompt_sha256": "24fd23c9ed3e4e04fcb19415af02db19a7bc8b1ede6f32648b2f932ed321371e",
+  "protected_file_count": 581,
+  "protected_files_unchanged": true,
+  "runtime_or_ddl_references_found": [],
+  "immutable_v5_declared_file_hashes_verified": 13,
+  "business_source_edits": false,
+  "database_inspection": "NOT_PERFORMED",
+  "database_calls": 0,
+  "dify_calls": 0,
+  "model_calls": 0,
+  "business_tests": "NOT_RUN",
+  "services_restarted": false,
+  "svn_commit": false
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:smart-cost:0903-rule-package:v2",
+  "title": "0903 offline rule package v2 (not a running 0902 schema)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["package_schema_version", "release_version", "approved_rules", "pending_rules", "scope_index", "evaluation_contract"],
+  "properties": {
+    "package_schema_version": {"const": "0903-rule-package-v2"},
+    "release_version": {"type": "string", "pattern": "^0903-[0-9]{8}-v[0-9]+$"},
+    "approved_rules": {"type": "array", "items": {"$ref": "#/$defs/rule"}},
+    "pending_rules": {"type": "array", "items": {"$ref": "#/$defs/pending"}},
+    "scope_index": {"type": "object", "additionalProperties": false, "required": ["A05", "A06", "A07", "A09", "A11"], "properties": {
+      "A05": {"$ref":"#/$defs/ids"}, "A06": {"$ref":"#/$defs/ids"}, "A07": {"$ref":"#/$defs/ids"}, "A09": {"$ref":"#/$defs/ids"}, "A11": {"$ref":"#/$defs/ids"}
+    }},
+    "evaluation_contract": {"type":"object", "required":["runtime_activation", "phase", "excluded_phase", "llmlingua2_enabled"], "properties": {
+      "runtime_activation":{"const":false}, "phase":{"const":"0903"}, "excluded_phase":{"const":"0904"}, "llmlingua2_enabled":{"const":false}
+    }}
+  },
+  "$defs": {
+    "ids":{"type":"array", "uniqueItems":true, "items":{"type":"string", "minLength":1}},
+    "family":{"enum":["A05","A06","A07","A09","A11"]},
+    "rule":{
+      "type":"object", "additionalProperties":false,
+      "required":["rule_id","revision","family","source_record_id","source_refs","usage","evaluation_scope","object_scope","context","library_scope","conditions","effect","strength","relation_direction","information_loss","review_status","review_evidence","source_interpretation","open_issue_ids","activation","priority","dependencies","required_inputs"],
+      "properties":{
+        "rule_id":{"type":"string", "pattern":"^A(05|06|07|09|11)-R[0-9]{3}(-[A-Z_0-9]+)?$"},
+        "revision":{"type":"string"}, "family":{"$ref":"#/$defs/family"}, "source_record_id":{"type":"string"},
+        "source_refs":{"$ref":"#/$defs/ids"}, "usage":{"type":"array","minItems":1,"uniqueItems":true,"items":{"enum":["QUOTA_MATCH","QUANTITY_CONVERT","COST_COVERAGE"]}},
+        "evaluation_scope":{"enum":["ITEM","GROUP","PROJECT"]}, "object_scope":{"type":"object"}, "context":{"type":"object"},
+        "library_scope":{"type":"object", "required":["domain","mode","libraries","basis"], "additionalProperties":false,"properties":{
+          "domain":{"enum":["QUOTA","NONE"]}, "mode":{"enum":["ALLOWLIST","ANY"]}, "libraries":{"type":"array","items":{"type":"object","required":["id","code","name","version_kind","version"]}}, "basis":{"type":"string"}
+        }},
+        "conditions":{"$ref":"#/$defs/condition"},
+        "effect":{"type":"object","required":["type"],"properties":{"type":{"enum":["normalize_feature","expand_query","restrict_candidate","prefer_candidate","exclude_candidate","convert_quantity","associate_item","exclude_association","borrow_item_on_missing","check_coverage","select_pricing_method"]}}},
+        "strength":{"enum":["HARD","PREFERENCE","RETRIEVAL_ONLY"]}, "relation_direction":{"const":"FORWARD"},
+        "information_loss":{"type":"object","required":["present","attributes"],"properties":{"present":{"type":"boolean"},"attributes":{"$ref":"#/$defs/ids"}}},
+        "review_status":{"const":"APPROVED"},"review_evidence":{"$ref":"#/$defs/ids"}, "source_interpretation":{"type":"string"},
+        "open_issue_ids":{"type":"array","maxItems":0},"activation":{"const":"OFFLINE_ONLY_NOT_CONNECTED"},"priority":{"type":"null"},
+        "dependencies":{"$ref":"#/$defs/ids"},"required_inputs":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["field","type","unit","unknown_policy","source_required"],"properties":{
+          "field":{"type":"string"},"type":{"enum":["string","string_set","boolean","decimal"]},"unit":{"type":["string","null"]},"unknown_policy":{"const":"NEEDS_INPUT"},"source_required":{"const":true}
+        }}}
+      }
+    },
+    "pending":{
+      "type":"object", "additionalProperties":false,
+      "required":["rule_id","family","source_record_id","review_status","pending_kind","business_answer_status","reason","source_refs","source_interpretation","context","affects","conservative_scope","on_possible_match","executable"],
+      "properties":{
+        "rule_id":{"type":"string"},"family":{"$ref":"#/$defs/family"},"source_record_id":{"type":"string"},"review_status":{"const":"NEEDS_CONFIRMATION"},
+        "pending_kind":{"enum":["TECHNICAL_EVIDENCE","PHASE_DEFERRED"]},"business_answer_status":{"const":"USE_LATEST_RECORDED_ANSWERS_DO_NOT_REASK"},
+        "reason":{"type":"string","minLength":1},"source_refs":{"$ref":"#/$defs/ids"},"source_interpretation":{"type":"string"},"context":{"type":"object"},
+        "affects":{"type":"array","items":{"enum":["0903","0904"]}},"conservative_scope":{"type":"object"},"on_possible_match":{"const":"RULE_PENDING_REQUIRE_EVIDENCE"},"executable":{"const":false}
+      }
+    },
+    "condition":{
+      "oneOf":[
+        {"type":"object","additionalProperties":false,"required":["op","args"],"properties":{"op":{"enum":["AND","OR"]},"args":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/condition"}}}},
+        {"type":"object","additionalProperties":false,"required":["op","arg"],"properties":{"op":{"const":"NOT"},"arg":{"$ref":"#/$defs/condition"}}},
+        {"type":"object","additionalProperties":false,"required":["op","field","value"],"properties":{"op":{"enum":["EQ","IN","HAS_ANY"]},"field":{"type":"string"},"value":{"type":["string","boolean","array"]}}},
+        {"type":"object","additionalProperties":false,"required":["op","field","unit","min","max","include_min","include_max"],"properties":{"op":{"const":"RANGE"},"field":{"type":"string"},"unit":{"type":"string"},"min":{"type":["string","null"]},"max":{"type":["string","null"]},"include_min":{"type":"boolean"},"include_max":{"type":"boolean"}}}
+      ]
+    }
+  }
+}

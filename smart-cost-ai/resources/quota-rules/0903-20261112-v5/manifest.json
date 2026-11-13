@@ -1,0 +1,527 @@
+{
+  "approved_scope": {
+    "phase": "0903",
+    "rule_ids": [
+      "A05-R003",
+      "A05-R004",
+      "A05-R005",
+      "A05-R006",
+      "A05-R007",
+      "A05-R008",
+      "A05-R009",
+      "A05-R010",
+      "A05-R010-BORROW",
+      "A05-R011",
+      "A05-R012",
+      "A05-R013",
+      "A05-R014",
+      "A05-R015",
+      "A05-R016",
+      "A05-R017",
+      "A05-R021-POLICY",
+      "A06-R003",
+      "A06-R004",
+      "A06-R005",
+      "A06-R006",
+      "A06-R007",
+      "A06-R008",
+      "A06-R009",
+      "A06-R010-POLICY",
+      "A06-R011",
+      "A06-R012",
+      "A06-R013",
+      "A06-R014-POLICY",
+      "A06-R015",
+      "A06-R016",
+      "A06-R017",
+      "A06-R018",
+      "A06-R019",
+      "A06-R020",
+      "A06-R021",
+      "A06-R022",
+      "A06-R023",
+      "A06-R024",
+      "A06-R025",
+      "A06-R026",
+      "A06-R027",
+      "A06-R028",
+      "A06-R029",
+      "A06-R030",
+      "A06-R031",
+      "A06-R032",
+      "A06-R033",
+      "A06-R034",
+      "A06-R035",
+      "A06-R036",
+      "A06-R037",
+      "A06-R038",
+      "A06-R039",
+      "A06-R040",
+      "A06-R041",
+      "A06-R042",
+      "A06-R043",
+      "A06-R044",
+      "A06-R045",
+      "A06-R046",
+      "A06-R047",
+      "A06-R047-H1",
+      "A06-R048",
+      "A06-R049",
+      "A06-R050",
+      "A06-R051",
+      "A06-R052",
+      "A06-R053",
+      "A06-R054",
+      "A06-R055",
+      "A06-R056",
+      "A06-R057",
+      "A06-R058",
+      "A06-R059",
+      "A06-R060",
+      "A06-R061",
+      "A06-R062",
+      "A06-R063",
+      "A06-R064-POLICY",
+      "A06-R065-POLICY",
+      "A06-R066-POLICY",
+      "A06-R067-POLICY",
+      "A06-R068-POLICY",
+      "A06-R069-POLICY",
+      "A06-R070-POLICY",
+      "A06-R072-OIL2022",
+      "A06-R072-POLICY",
+      "A06-R072-WIND_WITHDRAWN",
+      "A06-R073-OIL2022",
+      "A06-R073-POLICY",
+      "A06-R073-WIND_WITHDRAWN",
+      "A06-R074-POLICY",
+      "A06-R075-POLICY",
+      "A06-R076-POLICY",
+      "A06-R077-POLICY",
+      "A06-R078-POLICY",
+      "A06-R079-POLICY",
+      "A06-R080-POLICY",
+      "A06-R081-POLICY",
+      "A06-R082",
+      "A06-R083",
+      "A06-R084",
+      "A06-R085",
+      "A06-R086",
+      "A06-R087-POLICY",
+      "A06-R088-POLICY",
+      "A06-R089-POLICY",
+      "A06-R090-POLICY",
+      "A06-R091",
+      "A06-R092-POLICY",
+      "A06-R093-POLICY",
+      "A06-R094-POLICY",
+      "A06-R095-POLICY",
+      "A06-R096-POLICY",
+      "A06-R097-POLICY",
+      "A06-R098-POLICY",
+      "A06-R099-POLICY",
+      "A07-R007",
+      "A07-R008",
+      "A07-R009",
+      "A07-R010",
+      "A07-R010-TOTAL",
+      "A07-R011",
+      "A07-R012-POLICY",
+      "A07-R012-TOTAL",
+      "A09-R004",
+      "A09-R005",
+      "A09-R006",
+      "A09-R007",
+      "A09-R008",
+      "A09-R009",
+      "A09-R011-POLICY",
+      "A09-R016",
+      "A09-R017",
+      "A09-R018",
+      "A09-R019",
+      "A09-R020",
+      "A09-R021",
+      "A09-R022",
+      "A09-R023-POLICY",
+      "A09-R024-POLICY",
+      "A09-R025-POLICY",
+      "A09-R028",
+      "A09-R029",
+      "A09-R032",
+      "A09-R033",
+      "A09-R034",
+      "A09-R035",
+      "A09-R036",
+      "A09-R037",
+      "A09-R038",
+      "A09-R039",
+      "A09-R040",
+      "A09-R043",
+      "A09-R044",
+      "A09-R047",
+      "A09-R048",
+      "A09-R049",
+      "A09-R050",
+      "A09-R051",
+      "A09-R052",
+      "A09-R053",
+      "A09-R054",
+      "A09-R055",
+      "A09-R056",
+      "A09-R059",
+      "A09-R062",
+      "A09-R063",
+      "A09-R066",
+      "A09-R067",
+      "A09-R068-POLICY",
+      "A09-R069",
+      "A09-R070",
+      "A09-R073",
+      "A09-R074",
+      "A09-R076",
+      "A09-R079",
+      "A09-R080",
+      "A09-R083",
+      "A09-R086",
+      "A09-R087",
+      "A09-R090",
+      "A09-R091",
+      "A09-R094",
+      "A09-R097",
+      "A11-R003",
+      "A11-R004",
+      "A11-R009",
+      "A11-R010",
+      "A11-R011",
+      "A11-R012",
+      "A11-R013",
+      "A11-R014",
+      "A11-R015",
+      "A11-R016",
+      "A11-R018",
+      "A11-R019",
+      "A11-R020",
+      "A11-R021",
+      "A11-R022",
+      "A11-R023",
+      "A11-R024",
+      "A11-R025",
+      "A11-R026",
+      "A11-R027",
+      "A11-R028",
+      "A11-R029",
+      "A11-R030",
+      "A11-R031",
+      "A11-R032",
+      "A11-R033",
+      "A11-R034",
+      "A11-R035",
+      "A11-R035-GENERAL",
+      "A11-R036",
+      "A11-R036-GENERAL",
+      "A11-R037",
+      "A11-R038",
+      "A11-R039",
+      "A11-R040",
+      "A11-R041",
+      "A11-R042",
+      "A11-R043",
+      "A11-R044",
+      "A11-R045",
+      "A11-R046",
+      "A11-R047",
+      "A11-R048",
+      "A11-R049",
+      "A11-R050",
+      "A11-R051",
+      "A11-R052",
+      "A11-R053",
+      "A11-R054",
+      "A11-R055",
+      "A11-R056",
+      "A11-R057",
+      "A11-R058",
+      "A11-R059",
+      "A11-R060",
+      "A11-R061",
+      "A11-R062",
+      "A11-R063",
+      "A11-R064",
+      "A11-R065",
+      "A11-R066",
+      "A11-R067",
+      "A11-R068",
+      "A11-R069",
+      "A11-R070"
+    ]
+  },
+  "blocked_policy_rule_ids": [
+    "A05-R021-POLICY",
+    "A06-R087-POLICY",
+    "A06-R088-POLICY",
+    "A06-R089-POLICY",
+    "A06-R090-POLICY",
+    "A06-R092-POLICY",
+    "A06-R093-POLICY",
+    "A06-R094-POLICY",
+    "A06-R095-POLICY",
+    "A06-R096-POLICY",
+    "A06-R097-POLICY",
+    "A06-R098-POLICY",
+    "A06-R099-POLICY",
+    "A09-R011-POLICY",
+    "A09-R023-POLICY",
+    "A09-R024-POLICY",
+    "A09-R025-POLICY",
+    "A09-R068-POLICY"
+  ],
+  "build_tool": "offline-quota-rule-authoring-v5",
+  "confirmation_schema": "0903-confirmed-changes-v2",
+  "deferred": [
+    "0904 price matching",
+    "runtime loader/0903 business integration",
+    "LLMLingua-2 activation"
+  ],
+  "files": {
+    "confirmed-changes.json": "1c88da75e0b6bcf40bb5874dcfb90aed124e34b9ac935948c482ad1ad3137d19",
+    "existing-evidence.json": "c33a17c15756aa67efbff6e271280531ed602bc0da7a33d7f9e49360f7ecb66b",
+    "materials-request.json": "2378c35601494d4edd07de846b3205617e6c12fb93f565840cae3b57fcdec5ae",
+    "materials-request.md": "ed82176f8dda7647246f0b33e287367d33f64010deba815cec7c598ab5ce36ea",
+    "pending-review.json": "7501c9bad10e19b00ead47ad83ca8973dad4ff9baf4eed605298d8d2eec398e1",
+    "pending-review.md": "00695433959bc6f73bc17071b24824b556ee4b8fa965488caaaf4206141bf2ea",
+    "rule-cards.jsonl": "35af0c0f9a35646eca2816f5cf1c9ef2633f1e6f10a66b2cec17cbc16a0d2e34",
+    "rule-package.schema.json": "243552aef3e92ec8d09d4f3978b3d4292b6db2d4aae8e11101cb5eadd9d81554",
+    "rules.json": "800a399c59ee2a73521baa667b0adec4b3780839286c5309e8ec47d19921c37f",
+    "source-map.json": "e2bc69dd536b2727eeea8ecdb0ce8745d137c77c574ae340030edd6d33dc2956",
+    "test-cases.json": "934b1e32297a0c8fde0ad811bd52bbf6a3c3b63789de85c78e5665731414d1e4",
+    "unit-dictionary.json": "57e6c3aeaa6f14969362bc79b0d2ec70f7750475614d68bfd4924a209888f9b3",
+    "validation-report.json": "0241cfbaed928be703baff89c69738eb31d87c6353ee088ea600bc681e80e2a8"
+  },
+  "manifest_hash_policy": "Compute SHA-256 of this file externally; do not write a self hash.",
+  "materials_request_schema": "0903-materials-request-v3",
+  "materials_request_summary": {
+    "active_groups": 6,
+    "baseline_unique_rules": 32,
+    "deferred_0904": 5,
+    "group_rule_links": 21,
+    "groups": 12,
+    "newly_closed": 14,
+    "unique_rules": 18
+  },
+  "original_files": [
+    {
+      "bytes": 320893,
+      "name": "智能组价_规则梳理总表-最新版.xlsx",
+      "sha256": "85098adb247a7b02ad5741cae0ce18e0da692a47f0d469a7c83ce0bd5fadbc12"
+    },
+    {
+      "bytes": 18972,
+      "name": "定额规则待专家确认问题_已回答.xlsx",
+      "sha256": "204032a9216574d6db1d7c9270031835c31329eca3da03c851e9ed4d0294075b"
+    }
+  ],
+  "package_schema_version": "0903-rule-package-v2",
+  "pending_review_summary": {
+    "blocked_policy_rules": 18,
+    "by_family": {
+      "A05": {
+        "PARTIALLY_COMPILED_BLOCKED": 1
+      },
+      "A06": {
+        "CLOSED_FOR_DECLARED_USAGE": 28,
+        "PARTIALLY_COMPILED_BLOCKED": 12
+      },
+      "A07": {
+        "CLOSED_FOR_DECLARED_USAGE": 1
+      },
+      "A09": {
+        "CLOSED_FOR_DECLARED_USAGE": 8,
+        "PARTIALLY_COMPILED_BLOCKED": 5
+      },
+      "A11": {
+        "CLOSED_FOR_DECLARED_USAGE": 40
+      }
+    },
+    "deferred_0904": 5,
+    "normalized_rules_total": 251,
+    "remaining_technical": 18,
+    "reviewed": 95,
+    "states": {
+      "CLOSED_FOR_DECLARED_USAGE": 77,
+      "PARTIALLY_COMPILED_BLOCKED": 18
+    }
+  },
+  "pending_scope": {
+    "policy": "MUST_CHECK_POSSIBLE_IMPACT",
+    "rule_ids": [
+      "A05-R021",
+      "A06-R087",
+      "A06-R088",
+      "A06-R089",
+      "A06-R090",
+      "A06-R092",
+      "A06-R093",
+      "A06-R094",
+      "A06-R095",
+      "A06-R096",
+      "A06-R097",
+      "A06-R098",
+      "A06-R099",
+      "A09-R011",
+      "A09-R023",
+      "A09-R024",
+      "A09-R025",
+      "A09-R068",
+      "A11-R005",
+      "A11-R006",
+      "A11-R007",
+      "A11-R008",
+      "A11-R017"
+    ]
+  },
+  "previous_release": {
+    "manifest_sha256": "5ad64fd437405d91c9824afc186fc2469868582cf38f7af2b2acdbc72e1e0989",
+    "rules_sha256": "376fdea01e4db91444cc4a4096fe7947f2ed09c52f4991411be8423b84dbf932",
+    "version": "0903-20261112-v1"
+  },
+  "release_status": "OFFLINE_RESOURCE_READY_WITH_EXPLICIT_PENDING",
+  "release_version": "0903-20261112-v5",
+  "runtime_activation": false,
+  "schema_version": "0903-manifest-v1",
+  "semantic_hash": "0ddfc4f39e4b6fae51b61de2ccdb28454c9e5fbfbd7022b91bb3b69165887f8e",
+  "source_inputs": [
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/规则逐条拆解-20261110.json",
+      "sha256": "0829453f7a35ec52266f29105a7d27511b54e30785528cc08f758d3e71bb4e8e"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/source-update-20261110.json",
+      "sha256": "f7aa92aba1a060cef21f00d9db90ac309454bc5364960e3b05003c7227de6fdd"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/quota-source-db-20261110.json",
+      "sha256": "44f9b505cc7903177262f4351ec3c2f953cb2b325a11426c2050bcc8c5a0f2f7"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/待答复问题清单.md",
+      "sha256": "f00d25eed9aa17bdde8036ffe0ca9c61d23926848b8cbe391a46eda1b62ca26b"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/实施方案.md",
+      "sha256": "9e87a96e8cc30b4b7d767b785ae24cfaa0fc9377119356c83292daeb592fb4b9"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/项目接入实施细则.md",
+      "sha256": "f4d31c41988a3633822d751bc40beb1bb61fd98950e742734583f159facf7716"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/定额原文核验与未闭项-20261110.md",
+      "sha256": "1da0234d6163ca8005855867ce107e1222be48235c4d637dc4d7160b14335526"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/acceptance-cases.v1.12.json",
+      "sha256": "69fce74ef50467167df79abba9917293f377afa82a837c7bf01f94957e31b147"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/baseline-integration-checks-v1.12-20261112.json",
+      "sha256": "59a6398f9f7b80b9e204aedb56741492bbe0a67190fc0290bf5c3295cac3118e"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/existing-evidence.json",
+      "sha256": "5338b7e9c75f20640773e348dff229c2001fc740954bff8acd2969f4e6559683"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/current-quota-catalog.json",
+      "sha256": "ec03bd65d9150f51168d525513075466ea1d7b5dc36888a2f8fc5070e6e723a1"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/confirmed-changes.json",
+      "sha256": "4b92f1634775ccbde5fe8032ed0799e7e469230ea2f2e05e07dbe9616acde059"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/用户第二轮原始答复.txt",
+      "sha256": "70226c82aead8b067168633a0cf85296250ecb5896140dc44f2087cef126ced4"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/用户定向确认.json",
+      "sha256": "83588d644ca17487cbbae85178f74a0d3261597dbd8f5623debdf18fca34333c"
+    }
+  ],
+  "source_record_dispositions": {
+    "COMPILED": 217,
+    "COMPILED_EXCLUSION": 6,
+    "DEFERRED_0904": 5,
+    "EXCLUDED": 4,
+    "EXPLANATORY_EXAMPLE": 3,
+    "LINKED_RULE": 3,
+    "METADATA": 16,
+    "PARTIAL_COMPILED": 18
+  },
+  "supersedes_release": {
+    "manifest_sha256": "6fe6b5a4253488cf76a2272c54bf08238ae8afbf1b2252b30c2df329b587df88",
+    "version": "0903-20261112-v4"
+  },
+  "tool_inputs": [
+    {
+      "path": "smart-cost-ai/tools/quota_rules/build.py",
+      "sha256": "f304dbd1bcfb54b0b59345248f5f8b58ae75b1303a1b2841a7aeeff129a15ef1"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring.py",
+      "sha256": "ce11279dd85d5f1bf06c98b49d48a94208d1da1069b37a437b6f1ef6efb038a4"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring_revision.py",
+      "sha256": "a74e1d6b34a7c103c93bff2ad3706dc15eb8bbe5d41f1a494eef59023b98a9ca"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring_confirmations.py",
+      "sha256": "958b52a1ec532db3c5093efada44c23a59dc61359243ce06f25b7fb1010f544e"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring_round2.py",
+      "sha256": "fae4b03e81f008b7cf16a3255f1e2af5c521341b79a5c7413a42248979b083eb"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/materials_round2.py",
+      "sha256": "d8c297d572003f435efd0b3fdcc996fff7203ea070f3151dde6864ab0d3b98d1"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/verify_round2.py",
+      "sha256": "4800776a1bdbccc1565a007e1b04c2f7738fb09931bbf089f74f5fd86960d93a"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/review_pending.py",
+      "sha256": "e39c072e31c1b7c03d474f641096f927ba32a56e7b3768e285539dd90bbb0504"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/materials_request.py",
+      "sha256": "6aa93a932725110c12ce54f956f32cf86e568744004c2c64a437f2c8520a294c"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/materials_followup.py",
+      "sha256": "b812ac50771b45006d7a57ecf2b7c2b168f167d98408d4b441ccdaebca8782d8"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/verify.py",
+      "sha256": "bf0e2644641cd2ed602556e5ecc22dd95dfc734314e00991eef6183839c50d03"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/test-cases.json",
+      "sha256": "841ac5a8e87200c335cd9ae02052e5227f91b2689ede8ad6a0108415aefe5f06"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/test_package.py",
+      "sha256": "a4082abaad3e8d736f5584e35cc9b0b0846fdff4be960e50712ca78840e48132"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/rule-package.schema.json",
+      "sha256": "243552aef3e92ec8d09d4f3978b3d4292b6db2d4aae8e11101cb5eadd9d81554"
+    }
+  ],
+  "verification": {
+    "cases": 220,
+    "passed": true,
+    "report": "validation-report.json"
+  }
+}

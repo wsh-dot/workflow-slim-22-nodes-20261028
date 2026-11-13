@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-13",
+  "scope": "DOCUMENTATION_SOURCE_CONSISTENCY_ONLY",
+  "passed": true,
+  "authority": {
+    "business_document": "实施方案.md",
+    "business_version": "1.19",
+    "integration_document": "项目接入实施细则.md",
+    "integration_version": "1.14",
+    "derivation": "最终Markdown原始字节派生；用户确认候选内通用选档，新增8项、修订4项；均非运行结果。"
+  },
+  "source_documents": [
+    {
+      "path": "实施方案.md",
+      "sha256": "aa00dd03310a099ca72c6234051afd2522a1f992fde7422325b46f056390a0f9"
+    },
+    {
+      "path": "项目接入实施细则.md",
+      "sha256": "99f75396c0ce458e0707595f587ecf9d6a57f598b2763146927781f3aa32b72b"
+    }
+  ],
+  "catalog_sha256": "4f0b6716dd92f61b89a1d75784126fa6bdb9009a52655497602d269ea5ff5767",
+  "case_count": 302,
+  "current_applicable": 298,
+  "historical": 4,
+  "new_case_ids": [
+    "Q99",
+    "Q100",
+    "Q101",
+    "Q102",
+    "Q103",
+    "Q104",
+    "Q105",
+    "Q106"
+  ],
+  "updated_case_ids": [
+    "O26",
+    "O27",
+    "Q07",
+    "Q39",
+    "Q52"
+  ],
+  "definition_change_note": "4条业务定义改动；Q39仅同步登记总数；新增8条计划定义。",
+  "stable_prior_ids_preserved": true,
+  "source_lines_expected_and_hashes_match": true,
+  "protected_file_count": 452,
+  "protected_files_unchanged": true,
+  "implementation_prompt_sha256": "2e61692fa95e7f4703fc8d793e8a8ac435da9ea49f35d637fdb862f56d2d2644",
+  "business_source_edits": false,
+  "immutable_rule_releases_changed": false,
+  "online_business_tests": "NOT_RUN",
+  "database_calls": 0,
+  "dify_calls": 0,
+  "model_calls": 0,
+  "svn_commit": false
+}

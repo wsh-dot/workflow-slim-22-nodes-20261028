@@ -1,0 +1,1411 @@
+{
+  "contract": {
+    "count_units": "Scope-bound; matching dimensions never authorizes 台/套/个 conversion.",
+    "decimal_encoding": "STRING",
+    "facts": "KNOWN/UNKNOWN/CONFLICT/NOT_APPLICABLE plus source_refs",
+    "formula_inputs": "Caller supplies exactly the declared unit; no implicit second conversion.",
+    "prohibit_defaults": true,
+    "unknown_fields": "REJECT"
+  },
+  "fields": {
+    "air_cooler.fan_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "台",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "air_cooler.frame_mass": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "t",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "air_cooler.louver_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "个",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "alarm.physical_points": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "binding.library_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "binding.source_rule_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "condenser.actual_machine_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "台",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "context.geology": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "context.location": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "context.profession": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "context.route_subject": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "coverage.corrosion_work_included": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "coverage.crossing_work_included": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "coverage.standard_module_available_for_work": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "coverage.standard_scope_matches_current_work": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "coverage.supplement_basis_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "crossing.separate_drawing": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "electrical.voltage_kv": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "kV",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "electrical.voltage_label": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "evidence.main_quota_applicability_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "evidence.method_target_in_allowed_scope_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "evidence.original_chapter_missing_proven": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "evidence.same_work_not_already_charged": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "evidence.source_diameter_scope_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "evidence.source_object_scope_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "evidence.target_identity_unit_and_chapter_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fcs.high_speed_h2": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fcs.independent_master_or_system_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "套",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fcs.protocol": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fcs.same_segment_master_configuration": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fcs.segment_test_and_communication_diagnostics": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fcs.system_class": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "feature.kind": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "feature.pressure_context_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "feature.pressure_mpa": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "MPa",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "feature.source_expression": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.environmental_protection.basis": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.environmental_protection.rate": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.environmental_protection.report_amount": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.occupational_health_safety.basis": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.occupational_health_safety.rate": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.occupational_health_safety.report_amount": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.water_soil_conservation.basis": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.water_soil_conservation.rate": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "fees.water_soil_conservation.report_amount": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "grounding.trench_depth_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "grounding.trench_width_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.alarm_loop_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.cable_category": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.corrosion_protection_grade": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.design_subarray_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.distinct_model_or_spec_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.file_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.grounding_scope_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.library_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.library_version": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.logical_table_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.main_code_group": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.members_complete": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.pipe_category": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.pipe_diameter": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.pipe_material": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.single_project_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.total_physical_length_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "group.trench_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "heat_shrink.eligible_butt_weld_fittings_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "heat_shrink.eligible_fitting_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "heat_shrink.main_cut_length_km": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "km",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "indicator.applicable_standard_module_exists": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "indicator.atlas_number_from_design": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "indicator.capacity_exact_match": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "indicator.main_work": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "indicator.module_identity_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.heat_treatment.quantity_basis_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.heat_treatment.required_by_specification": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.heat_treatment.verified_physical_quantity": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "口",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.pre_post_heat.quantity_basis_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.pre_post_heat.required_by_specification": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.pre_post_heat.verified_physical_quantity": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "口",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.radiographic.film_spec_mm": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.radiographic.plan_evidence_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.radiographic.quantity_basis_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.radiographic.required_by_specification": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.radiographic.target_and_quantity_same_scope_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.radiographic.verified_physical_quantity": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "张",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.radiographic.wall_thickness_mm": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "mm",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.ultrasonic.quantity_basis_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.ultrasonic.required_by_specification": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "inspection.ultrasonic.verified_physical_quantity": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "口",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "io.analog_inputs": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "io.analog_outputs": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "io.digital_inputs": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "io.digital_outputs": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "io.physical_points_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "io.pulse_points": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "io.virtual_bus_points_excluded": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "lug.count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "个",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "lug.use": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "material.source_spec": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "motor.actual_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "台",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "motor.explosion_proof": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "motor.power_kw": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "kW",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "object.kinds": {
+      "source_required": true,
+      "type": "string_set",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "optical_terminal.complete_pair_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "对",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "optical_terminal.supply_scope": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipe.physical_length_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.lined": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.obstacle_crossing": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.outer_diameter_mm": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "mm",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.outside_processing_plant": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.outside_source_region": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.plant_to_first_distribution": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.route_length_km": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "km",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.service": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.service_role": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.source_to_first_reservoir": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pipeline.steel": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "project.kind": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "project.new_energy": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "project.production_distributed_pv": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "project.production_type": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "project.rooftop_pv": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "project.special_pv_project": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "project.stage": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.density_kg_m3": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "kg_per_m3",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.design_density_and_gravity_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.flow_m3_per_h": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m3_per_h",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.fluid": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.gallon_system": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.gravity_m_s2": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m_per_s2",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.head_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.pa_per_bar": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "Pa_per_bar",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.pa_per_psi": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "Pa_per_psi",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.pressure_unit_factor_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pump.temperature_c": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "degC",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pv.design_subarray_partition_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pv.subarray_capacity_mwp": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "MWp",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pv_support.count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "个",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pv_support.design_mass_per_unit_t": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "t",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pv_support.design_total_mass_t": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "t",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "pv_support.mass_basis": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "screen.complete_screen_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "1",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "screen.dimensions_include_frame": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "screen.outer_height_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "screen.outer_width_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "screen.quantity_basis": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "screen.total_outer_area_m2": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m2",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "selection.main_quota_code": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "selection.main_quota_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "selection.main_work": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "selection.original_chapter": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "selection.target_directory_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "selection.target_quota_id": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "tank.capacity_m3": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m3",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "transformer.design_oil_mass_t": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "t",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "transformer.low_voltage_distribution_box_listed": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "tray.actual_section_length_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "tray.section_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "节",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "trench.actual_depth_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "trench.actual_width_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "trench.already_counted_scope_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "trench.already_counted_volume_m3": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m3",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "valve.actual_actuator_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "台",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "valve.actuator_type": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "valve.connection": {
+      "source_required": true,
+      "type": "string",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "wind.foundation_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "座",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "wind.foundation_scope_verified": {
+      "source_required": true,
+      "type": "boolean",
+      "unit": null,
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "wind.hub_height_m": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "m",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "wind.pile_corrosion.verified_amount_per_foundation": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "wind.test_pile.verified_amount_per_foundation": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "CNY",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "wind.transport_km_per_turbine": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "km",
+      "unknown_policy": "NEEDS_INPUT"
+    },
+    "wind.turbine_count": {
+      "source_required": true,
+      "type": "decimal",
+      "unit": "台",
+      "unknown_policy": "NEEDS_INPUT"
+    }
+  },
+  "schema_version": "0903-units-v1",
+  "units": {
+    "1": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "100m": {
+      "dimension": {
+        "length": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "100"
+    },
+    "10m": {
+      "dimension": {
+        "length": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "10"
+    },
+    "10口": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "10"
+    },
+    "10处": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "10"
+    },
+    "10张": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "10"
+    },
+    "8点": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "8"
+    },
+    "CNY": {
+      "dimension": {
+        "currency": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "CNY_per_km": {
+      "dimension": {
+        "currency": 1,
+        "length": -1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "0.001"
+    },
+    "GPM_US": {
+      "dimension": {
+        "length": 3,
+        "time": -1
+      },
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "MPa": {
+      "dimension": {
+        "pressure": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000000"
+    },
+    "MWp": {
+      "dimension": {
+        "peak_power": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000000"
+    },
+    "Pa_per_bar": {
+      "dimension": {},
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "Pa_per_psi": {
+      "dimension": {},
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "Wp": {
+      "dimension": {
+        "peak_power": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "bar": {
+      "dimension": {
+        "length": -1,
+        "mass": 1,
+        "time": -2
+      },
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "degC": {
+      "dimension": {
+        "temperature": 1
+      },
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "kPa": {
+      "dimension": {
+        "pressure": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000"
+    },
+    "kV": {
+      "dimension": {
+        "voltage": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000"
+    },
+    "kW": {
+      "dimension": {
+        "power": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000"
+    },
+    "kg": {
+      "dimension": {
+        "mass": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "kg_per_m3": {
+      "dimension": {
+        "length": -3,
+        "mass": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "km": {
+      "dimension": {
+        "length": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000"
+    },
+    "m": {
+      "dimension": {
+        "length": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "m2": {
+      "dimension": {
+        "length": 2
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "m3": {
+      "dimension": {
+        "length": 3
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "m3_per_h": {
+      "dimension": {
+        "length": 3,
+        "time": -1
+      },
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "m3_per_h_per_GPM": {
+      "dimension": {},
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "m_per_bar": {
+      "dimension": {
+        "length": 2,
+        "mass": -1,
+        "time": 2
+      },
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "m_per_psi": {
+      "dimension": {
+        "length": 2,
+        "mass": -1,
+        "time": 2
+      },
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "m_per_s2": {
+      "dimension": {
+        "length": 1,
+        "time": -2
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "mm": {
+      "dimension": {
+        "length": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "0.001"
+    },
+    "m²": {
+      "dimension": {
+        "length": 2
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "m³": {
+      "dimension": {
+        "length": 3
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "per_MPa": {
+      "dimension": {
+        "pressure": -1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "0.000001"
+    },
+    "psi": {
+      "dimension": {
+        "length": -1,
+        "mass": 1,
+        "time": -2
+      },
+      "purpose": "FORMULA_SCOPED_ONLY_NO_GENERIC_UNIT_CONVERSION",
+      "scale_to_base": null
+    },
+    "t": {
+      "dimension": {
+        "mass": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000"
+    },
+    "万元": {
+      "dimension": {
+        "currency": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "10000"
+    },
+    "个": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "元": {
+      "dimension": {
+        "currency": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "千克": {
+      "dimension": {
+        "mass": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "口": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "台": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "吨": {
+      "dimension": {
+        "mass": 1
+      },
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1000"
+    },
+    "块": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "处": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "套": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "子方阵": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "对": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "座": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "张": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "橇": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "点": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "片": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "组": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "节": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    },
+    "项": {
+      "dimension": {},
+      "purpose": "UNIT_ONLY_NOT_OBJECT_EQUIVALENCE",
+      "scale_to_base": "1"
+    }
+  }
+}

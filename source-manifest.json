@@ -1,0 +1,840 @@
+{
+  "description": "本包是选取的本地文件字节快照；不是线上部署证明，也不是全部引用的完整闭包。",
+  "files": [
+    {
+      "path": "docs/adr/0006-file-stage-reexecution-and-resume.md",
+      "bytes": 10820,
+      "sha256": "22e822785895b7b67b38f5993c4e5692500c5621ca1758f1194dfa43e5a0e627"
+    },
+    {
+      "path": "GLOSSARY.md",
+      "bytes": 4801,
+      "sha256": "5fd2ce224619c009cecda0a547dbf5c6c8c98d53998040078d064927d6129ad1"
+    },
+    {
+      "path": "smart-cost-ai/ai_service.py",
+      "bytes": 44364,
+      "sha256": "d0dc9922bb987b77f65e7fbd8715b0dec9c28f483e23f8bbcb1360e239adf48a"
+    },
+    {
+      "path": "smart-cost-ai/analysis_snapshot.py",
+      "bytes": 12021,
+      "sha256": "f6e7dc818c12257f6cabbaf444352254daa3dd14e8b2f488ad542851a5aa1707"
+    },
+    {
+      "path": "smart-cost-ai/cbs_matching.py",
+      "bytes": 24413,
+      "sha256": "4f3de57deadc06d59b28ec8d3cd12c55fff3a8500088d20a20d21ca010b99750"
+    },
+    {
+      "path": "smart-cost-ai/chunking.py",
+      "bytes": 7001,
+      "sha256": "e7cefd6c79edf8f661ee34f0dd904a8410c1247ae3ab613c765c68235a2923fe"
+    },
+    {
+      "path": "smart-cost-ai/classification.py",
+      "bytes": 10776,
+      "sha256": "182dbb9e98b801fdfe87c78586a9d479708f5bfe5da9d38281be4de7d22e28f2"
+    },
+    {
+      "path": "smart-cost-ai/config.py",
+      "bytes": 11867,
+      "sha256": "e19807f71b3469156f21cda4cab53e23558a32799ccb7549c4c322bb49ca1ddf"
+    },
+    {
+      "path": "smart-cost-ai/execution_profile.py",
+      "bytes": 2772,
+      "sha256": "85cb909c1fd1a8408c74a0f67f72552d4a244cd3f04413b2f65a3719fbb94500"
+    },
+    {
+      "path": "smart-cost-ai/quantity.py",
+      "bytes": 11610,
+      "sha256": "9625f87e3ac235395675aa69d69234659e2e0e01b641320793ae57fe08fb60d3"
+    },
+    {
+      "path": "smart-cost-ai/repository.py",
+      "bytes": 26032,
+      "sha256": "03ac442cb5aafbc2ad4f19d4ff072504ffd153ee488d622d4ba733878c50490e"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/confirmed-changes.json",
+      "bytes": 70425,
+      "sha256": "1c88da75e0b6bcf40bb5874dcfb90aed124e34b9ac935948c482ad1ad3137d19"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/existing-evidence.json",
+      "bytes": 16718,
+      "sha256": "c33a17c15756aa67efbff6e271280531ed602bc0da7a33d7f9e49360f7ecb66b"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/manifest.json",
+      "bytes": 14978,
+      "sha256": "0e43ca1a2cda2d226f55cfd2e618d88e1af34feeccb9cbcc979197fe84de097d"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/materials-request.json",
+      "bytes": 141879,
+      "sha256": "2378c35601494d4edd07de846b3205617e6c12fb93f565840cae3b57fcdec5ae"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/materials-request.md",
+      "bytes": 19588,
+      "sha256": "ed82176f8dda7647246f0b33e287367d33f64010deba815cec7c598ab5ce36ea"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/pending-review.json",
+      "bytes": 262023,
+      "sha256": "7501c9bad10e19b00ead47ad83ca8973dad4ff9baf4eed605298d8d2eec398e1"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/pending-review.md",
+      "bytes": 80926,
+      "sha256": "00695433959bc6f73bc17071b24824b556ee4b8fa965488caaaf4206141bf2ea"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/rule-cards.jsonl",
+      "bytes": 3460584,
+      "sha256": "35af0c0f9a35646eca2816f5cf1c9ef2633f1e6f10a66b2cec17cbc16a0d2e34"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/rule-package.schema.json",
+      "bytes": 6076,
+      "sha256": "243552aef3e92ec8d09d4f3978b3d4292b6db2d4aae8e11101cb5eadd9d81554"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/rules.json",
+      "bytes": 4093994,
+      "sha256": "800a399c59ee2a73521baa667b0adec4b3780839286c5309e8ec47d19921c37f"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/source-map.json",
+      "bytes": 4205070,
+      "sha256": "e2bc69dd536b2727eeea8ecdb0ce8745d137c77c574ae340030edd6d33dc2956"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/test-cases.json",
+      "bytes": 107055,
+      "sha256": "934b1e32297a0c8fde0ad811bd52bbf6a3c3b63789de85c78e5665731414d1e4"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/unit-dictionary.json",
+      "bytes": 36232,
+      "sha256": "57e6c3aeaa6f14969362bc79b0d2ec70f7750475614d68bfd4924a209888f9b3"
+    },
+    {
+      "path": "smart-cost-ai/resources/quota-rules/0903-20261112-v5/validation-report.json",
+      "bytes": 32088,
+      "sha256": "0241cfbaed928be703baff89c69738eb31d87c6353ee088ea600bc681e80e2a8"
+    },
+    {
+      "path": "smart-cost-ai/runner.py",
+      "bytes": 7373,
+      "sha256": "5c176f4ed4c2a1daa0472b43b884f0f4f6359ef0e90f7185038132f4a9e23905"
+    },
+    {
+      "path": "smart-cost-ai/schemas/file-analysis-snapshot.schema.json",
+      "bytes": 3417,
+      "sha256": "d193351deed9d297bcb64edc3511f78ae8ce1cc08ecdece0886db79957f9f8bd"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring.py",
+      "bytes": 34579,
+      "sha256": "ce11279dd85d5f1bf06c98b49d48a94208d1da1069b37a437b6f1ef6efb038a4"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring_confirmations.py",
+      "bytes": 9346,
+      "sha256": "958b52a1ec532db3c5093efada44c23a59dc61359243ce06f25b7fb1010f544e"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring_revision.py",
+      "bytes": 24547,
+      "sha256": "a74e1d6b34a7c103c93bff2ad3706dc15eb8bbe5d41f1a494eef59023b98a9ca"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/authoring_round2.py",
+      "bytes": 6078,
+      "sha256": "fae4b03e81f008b7cf16a3255f1e2af5c521341b79a5c7413a42248979b083eb"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/build.py",
+      "bytes": 18292,
+      "sha256": "f304dbd1bcfb54b0b59345248f5f8b58ae75b1303a1b2841a7aeeff129a15ef1"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/materials_followup.py",
+      "bytes": 10496,
+      "sha256": "b812ac50771b45006d7a57ecf2b7c2b168f167d98408d4b441ccdaebca8782d8"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/materials_request.py",
+      "bytes": 23177,
+      "sha256": "6aa93a932725110c12ce54f956f32cf86e568744004c2c64a437f2c8520a294c"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/materials_round2.py",
+      "bytes": 9558,
+      "sha256": "d8c297d572003f435efd0b3fdcc996fff7203ea070f3151dde6864ab0d3b98d1"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/review_pending.py",
+      "bytes": 12304,
+      "sha256": "e39c072e31c1b7c03d474f641096f927ba32a56e7b3768e285539dd90bbb0504"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/rule-package.schema.json",
+      "bytes": 6076,
+      "sha256": "243552aef3e92ec8d09d4f3978b3d4292b6db2d4aae8e11101cb5eadd9d81554"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/test-cases.json",
+      "bytes": 110122,
+      "sha256": "841ac5a8e87200c335cd9ae02052e5227f91b2689ede8ad6a0108415aefe5f06"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/test_package.py",
+      "bytes": 21495,
+      "sha256": "a4082abaad3e8d736f5584e35cc9b0b0846fdff4be960e50712ca78840e48132"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/verify.py",
+      "bytes": 43060,
+      "sha256": "bf0e2644641cd2ed602556e5ecc22dd95dfc734314e00991eef6183839c50d03"
+    },
+    {
+      "path": "smart-cost-ai/tools/quota_rules/verify_round2.py",
+      "bytes": 14710,
+      "sha256": "4800776a1bdbccc1565a007e1b04c2f7738fb09931bbf089f74f5fd86960d93a"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/ai/controller/AiPythonTaskController.java",
+      "bytes": 1811,
+      "sha256": "6229b863048f61c076ab1aff0fde5e54fb7cac2966b07d416f79d4cd86e55940"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/ai/dao/AiPythonTaskDao.java",
+      "bytes": 332,
+      "sha256": "5aaa0d286d597d87a1ef39be2cd3ff4848d91af4c031310a4375d32c881514d8"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/ai/dto/AiPythonTaskView.java",
+      "bytes": 716,
+      "sha256": "58ea49c3d273c66849bf8eac61906f8e8f123891540944999d9560645f7615bf"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/ai/model/AiPythonTask.java",
+      "bytes": 1433,
+      "sha256": "641e808d1fb96dd6e6be01b11261108e6f23ff8abe4ca621eef45bcfb5915afa"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/ai/service/AiPythonTaskService.java",
+      "bytes": 11732,
+      "sha256": "7b3060a157a5e49f3a3aa91d398bc2a2c033c1f13aa9631af7af9d6596aff423"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/file/controller/FileController.java",
+      "bytes": 4526,
+      "sha256": "e4cc05245f5b86fd3af3e8479145cd5b5fad0cf4f9bb55cc125637ebf3e233ca"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/file/dao/FileInfoDao.java",
+      "bytes": 324,
+      "sha256": "60a53d536d7a6c4607b0b7a986120dbd055de9c8bcaf45bc9752fbf3d9cdf301"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/file/model/FileInfo.java",
+      "bytes": 1555,
+      "sha256": "096244660be475b1991a50a03dcc72f5125170205b74921cef94d41077931005"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/file/service/FileService.java",
+      "bytes": 7032,
+      "sha256": "0a222f09494dc64649ea73e4170f0fb26769adef4424d3f2ea4433601b0f5c6d"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/controller/QuotaMatchController.java",
+      "bytes": 2439,
+      "sha256": "bbb8107087914f5c661d1c8dcca808de057a22c00986bb6b3c7e7afe8138f0c6"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/dao/FileItemMatchConsumeDao.java",
+      "bytes": 377,
+      "sha256": "e7a58d80b0080ec834cd769824c78cb7cab20697586d04f87c113b236107c358"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/dao/FileItemMatchDao.java",
+      "bytes": 348,
+      "sha256": "6a9d26218a5e93680f96a185c29534cf1028dcd9b5a45ede127ae239b55c121d"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/dao/FileItemMatchRelationDao.java",
+      "bytes": 383,
+      "sha256": "a898ade424cc420a8a8334a1fefaadb524711390df51db937c65e7adeb5fcdb8"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/dto/QuotaCellUpdateInput.java",
+      "bytes": 607,
+      "sha256": "cf36857c7567262e91e024f5c7b8b2d42f32d85d8006ae55871e92bfef96765a"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/dto/QuotaManualMatchInput.java",
+      "bytes": 850,
+      "sha256": "ea249147ae984a4b8618663dd00f3b4b4ed35069cabefeb406f4c257f6cdd989"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/dto/QuotaMatchConsumeView.java",
+      "bytes": 953,
+      "sha256": "7f87fbc88a46890c67db8af207e7c4defcfc1ea4b4e9ee644b98bbafdc218996"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/dto/QuotaMatchView.java",
+      "bytes": 1424,
+      "sha256": "73a4d6fc4a768d42cd2bbc9fc4b6e4c9beffca726a1224860f2bb3103f2f0881"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/model/FileItemMatch.java",
+      "bytes": 2080,
+      "sha256": "92fa56a96498ba7fa507dbf8d3e8292dd1c57c815f0dce921b1f001c27a5e9f5"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/model/FileItemMatchConsume.java",
+      "bytes": 1821,
+      "sha256": "17789f46326bf986043fe60ef11cf42bbc74240ca9c813a3ba8e2e7fe919958e"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/model/FileItemMatchRelation.java",
+      "bytes": 642,
+      "sha256": "ffe63c4300012cff6a9ce09e9a2273a54e5ae65b2c6200d452b757055f22415d"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/matching/service/QuotaMatchService.java",
+      "bytes": 19250,
+      "sha256": "b9587b8b2ba4837251895dfd372752792e42b928c6b90f50d683b8666815efdc"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/controller/ProjectCbsController.java",
+      "bytes": 4496,
+      "sha256": "2babae5c49ad8aba7ae24e01a1384d1d794e6b966bdb3a6a737b742aeb134d44"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/controller/ProjectController.java",
+      "bytes": 2808,
+      "sha256": "269cb88b1a3c9fa28eb32cf44a8ebb7b6c8629a526097f14bd65f5af33c1fc96"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dao/BatchDao.java",
+      "bytes": 312,
+      "sha256": "5aa3c501445ddee39f396f46c6412b6cca7fc89c9fd5c8edf5930b57f7cb15d5"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dao/ProjectCbsDao.java",
+      "bytes": 333,
+      "sha256": "af2ec895b810701a9812f7c66ca3350ab7700e3957533f9cd7b688bf0bd0987a"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dao/ProjectCbsDeLibraryDao.java",
+      "bytes": 371,
+      "sha256": "6180b0ce9c1c02723a4094659d599b9b0d7f1d194ae3200d87b7360994f89764"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dao/ProjectDao.java",
+      "bytes": 320,
+      "sha256": "c89260c0174e8bb1b34693e3bda8e7bac630c3e57adfdc6e468de091ab240674"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dao/ProjectFileDao.java",
+      "bytes": 329,
+      "sha256": "a4023e0fcb383fb5c081fb6384f5be2b08b8d7faef866cd547e43eac30f52270"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/BatchView.java",
+      "bytes": 447,
+      "sha256": "7dca729794359f41e70d3cb0043066cd3d40f16c19e522591ee29a297c4f9961"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsDeLibraryInput.java",
+      "bytes": 642,
+      "sha256": "1d1278c26b5954fd2865212f40d724d0256ec11e2c0aebd70437b9a6bf389640"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsDeLibraryView.java",
+      "bytes": 749,
+      "sha256": "fe9f8209989a0aeccabc8e286f926f6696e09cc4e3d27c2546c51fd2cf90ab73"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsImportInput.java",
+      "bytes": 1681,
+      "sha256": "0a700ca5db05314ff683897a6e9072a83d76280d3e6cb071dc57c599c4aced86"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsImportResult.java",
+      "bytes": 523,
+      "sha256": "cc6fc5e1420017f29621d89e5d6cd1f3093cf793adbebe3e230b7e4ca9cf930a"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsMoveInput.java",
+      "bytes": 832,
+      "sha256": "3f05ce98d6da14d0e8d9131cf5d27576daacb8c62d2ad697113cefda919cef1e"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsNodeInput.java",
+      "bytes": 1036,
+      "sha256": "08b82890c90617fd99c77686ddb889fcb6a077e5d5788916a35c622e25eb0a1c"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsNodeView.java",
+      "bytes": 1031,
+      "sha256": "a9a0bfaef78930749de7320e1e1be577050e3a2f774081ce62dd2e27e9b3e406"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectCbsOperationResult.java",
+      "bytes": 458,
+      "sha256": "a1d62ef62b4fe91f7015b84b71ae561e7bcd785e61f85a76c7eb56836419f171"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectInitResult.java",
+      "bytes": 685,
+      "sha256": "8d52871f1469eda671599ec88cb9a9414dcae5d3fc8d7dc792e60fa93a375b02"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectInput.java",
+      "bytes": 1043,
+      "sha256": "623f37ce4dcaf3018a371cffde58202c54f3326fbb2e14ca0a003b84d9ca00a1"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectQueryInput.java",
+      "bytes": 399,
+      "sha256": "2bcdb088642cd8012a690150779ca5e3b5752cd24a29322b9d6ab205b0ad5e3c"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/dto/ProjectView.java",
+      "bytes": 559,
+      "sha256": "91b9278fe3eb2acfe355921791b2c8eb2fa2be0b19f16d1cb6918b1e04a397b6"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/model/Batch.java",
+      "bytes": 1060,
+      "sha256": "1ce19a68c0e5eb1c1d965736c51800267f5a4d84bbff0e4bc502d75da504e24c"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/model/Project.java",
+      "bytes": 962,
+      "sha256": "79fe732eb9409c8acc0b6c1ac6ba56c6863c990d90010d67dad658839240a1c9"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/model/ProjectCbs.java",
+      "bytes": 1519,
+      "sha256": "f7f92922236992365b4a6afd1ccbcbe7017e2a906e17c313c5403d508ca7a383"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/model/ProjectCbsDeLibrary.java",
+      "bytes": 888,
+      "sha256": "30c6790b99ad45a1f5b08e37c920031e07c03f6906a347f4c9aa4d2bd6af41f2"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/model/ProjectFile.java",
+      "bytes": 1355,
+      "sha256": "f8528c5b8dd5138a7c2bab0a6415d2760c80184ee349d1cde60cb90e260aabb2"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/service/ProjectCbsDeLibraryService.java",
+      "bytes": 7660,
+      "sha256": "eb7a39871e70f6ff5ce1861e2f236867049d567afb85c810c2f899e3a43286ed"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/service/ProjectCbsService.java",
+      "bytes": 34893,
+      "sha256": "5d613ddb32d7be854da37a8e5cf5d686d26e243741b640f1ad7388794956720a"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/project/service/ProjectService.java",
+      "bytes": 11757,
+      "sha256": "b9b8651ac66fe1cc866413a9bc1a705d9e9e9bed9ac92162f45c9ca237ea32e8"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/controller/QuantityStructureController.java",
+      "bytes": 3333,
+      "sha256": "064ae55a0c9e87370910224ab7b21bd29708c84ebc9b232e47dc748fa8bbcc3a"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/controller/RawMaterialFileController.java",
+      "bytes": 2180,
+      "sha256": "a8c209b689cc88fa636aabd577fbc9dcc765887948d637a1c0abf4be89b8a056"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/dao/FileHeaderDao.java",
+      "bytes": 325,
+      "sha256": "5b700c7c866e8267f2527ded47a8a23c6e878b2ffe4f41cb540c18bf4686f978"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/dao/FileItemDao.java",
+      "bytes": 317,
+      "sha256": "1a17349ef3e45f4df9ce471dd81ed3bc64ece93fe7057d2f58d21dc8b249e9f8"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/dao/FileRawDao.java",
+      "bytes": 313,
+      "sha256": "d321ab86b93084bcd2b24621bbf462a6b1714c6ea692615144b84be865d671b5"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/dto/FileItemNodeView.java",
+      "bytes": 1572,
+      "sha256": "0bb439d070509fa5971fa6de64fa6090a7aa763e885eceb0a6e2859025be0e81"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/dto/MaterialFileView.java",
+      "bytes": 498,
+      "sha256": "14cc4c7f58c8b3fdc9220d583abee9c35dd9889eeecbc81951a9025acc807ba4"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/dto/QuantityCbsNodeView.java",
+      "bytes": 1068,
+      "sha256": "0207ef18db898ccc9d387b1f9ee1249138a5999e70b6ea3794fe713ead59cc38"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/dto/QuantitySummary.java",
+      "bytes": 366,
+      "sha256": "a1b187d4af5ae78760e26e35b1fcab359aca7b9dd4306bcc4b14e96a1885422b"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/model/FileHeader.java",
+      "bytes": 925,
+      "sha256": "1bbee7667ae10a851b3509bdba0bb518d116f0dba196d61cea176eb7c754b286"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/model/FileItem.java",
+      "bytes": 1375,
+      "sha256": "b64fcbf932d58d947096fc9f1903edc128d6131b53e28704693dced2255550c7"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/model/FileRaw.java",
+      "bytes": 1539,
+      "sha256": "cc11ace26ca60439fea73cca59b2406c9acfff168a2bda5cfa1c6af22647c18b"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/service/MaterialTableModels.java",
+      "bytes": 3011,
+      "sha256": "a9e4bf577113d11a0ae2c2f50eee73a35ee94ba34449d09a961c080d4e53d803"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/service/MaterialTablePdfParser.java",
+      "bytes": 24425,
+      "sha256": "cec6dc78186bf83bcea804853cd713357e70493580fb07517045d623c504f753"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/service/MaterialTableWordParser.java",
+      "bytes": 14552,
+      "sha256": "de84e85594a0d17d90acb1ae459d01cf8faa4b8a2fef9987225351191ad288a9"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/service/QuantityStructureService.java",
+      "bytes": 19260,
+      "sha256": "01f3fd3b1d5f03e9c05839a6dc75d4b30ecbe77309544e41d52b58d457697122"
+    },
+    {
+      "path": "smart-cost-server/src/main/java/com/cq/design/smartcost/modules/raw/service/RawMaterialFileService.java",
+      "bytes": 12388,
+      "sha256": "25c502d4a8bcd11988cecc3d6c852d79df8e0d6b3921cb1811f6d6fe4e50d787"
+    },
+    {
+      "path": "smart-cost-server/src/main/resources/db/schema/001__init_schema.sql",
+      "bytes": 74064,
+      "sha256": "1699511100f7183420c777728516a1eac8f772d953a047dca50e71ff7417524f"
+    },
+    {
+      "path": "smart-cost-server/src/main/resources/db/schema/002__initial_data.sql",
+      "bytes": 22662,
+      "sha256": "9b2d724efcdf288143591988392fff46a6aed5ec15b6428db19671eb3d633ac0"
+    },
+    {
+      "path": "smart-cost-server/src/main/resources/db/schema/003__init_cbs_knowledge_access.sql",
+      "bytes": 3179,
+      "sha256": "6763820a38754f5fb3a89adb60afc9a53491f9b7f887f3868f40270b8a918001"
+    },
+    {
+      "path": "smart-cost-server/src/main/resources/db/schema/003__init_quota_knowledge_access.sql",
+      "bytes": 3282,
+      "sha256": "d0634f1e19932a9b05d10c39702c1915a563a415a05df43d2bde17cf566f5656"
+    },
+    {
+      "path": "smart-cost-server/src/main/resources/db/schema/004__init_cbs_data.sql",
+      "bytes": 81381,
+      "sha256": "a2a56f335f5b0d254020cbe2875f781fca16d5cce11c362dfb5e9493a687b0b9"
+    },
+    {
+      "path": "smart-cost-server/src/main/resources/db/schema/README.md",
+      "bytes": 927,
+      "sha256": "47455e6edfa54ce0ef9979283ef15a9dc8864643503c5fbd2c38073f2bf8a937"
+    },
+    {
+      "path": "smart-cost-web/src/views/smartCost/knowledge/KnowledgePage.vue",
+      "bytes": 4471,
+      "sha256": "6f57c7189151d4225a82a2a2b00c47ff7178901b1b3e2a01ea7e814d4dda1bbc"
+    },
+    {
+      "path": "smart-cost-web/src/views/smartCost/project/manage/ManagePage.vue",
+      "bytes": 22419,
+      "sha256": "a20a16a38e1c43ab845d6d24cc523abe90e58727bb2a6fc776881f599d9a48b4"
+    },
+    {
+      "path": "verification-evidence/20261103-new-and-append/report.md",
+      "bytes": 6596,
+      "sha256": "975b6965231dfdbb1941fdd107b32db7e8eda9228e14d8f0cc53e226bf7567f6"
+    },
+    {
+      "path": "verification-evidence/20261110-0902-optimization-removal/report.md",
+      "bytes": 12313,
+      "sha256": "acc7d1ba7b309acf0f49c32ce28c8db5a5ccb86375b2980695f60bc5c22270f9"
+    },
+    {
+      "path": "verification-evidence/20261110-0902-snapshot-integration/report.md",
+      "bytes": 7633,
+      "sha256": "abf61cb23e6ff47f24bc35d6edd159eafa17ff88ba0beb36ad6eb5850dfbaaf6"
+    },
+    {
+      "path": "verification-evidence/20261110-0902-snapshot-live/report.md",
+      "bytes": 6248,
+      "sha256": "e85d3c6bc0ca243f6951684288023626669c3802fc1300bb424cc3360132a7bb"
+    },
+    {
+      "path": "verification-evidence/20261111-0902-task-execution-profile/report.md",
+      "bytes": 6404,
+      "sha256": "5e1ab962190308e83b238702cd1b1cf362445a361549ef5a5e50a50e74047e2b"
+    },
+    {
+      "path": "verification-evidence/20261112-0903-second-review-integration/report.md",
+      "bytes": 7194,
+      "sha256": "335830396649442c6e3a429611e26acb6ef67167636f3d7d1c56b9da96b97b7e"
+    },
+    {
+      "path": "verification-evidence/20261112-0903-second-review-integration/v5-release-archive/original-workbooks/定额规则待专家确认问题_已回答.xlsx",
+      "bytes": 18972,
+      "sha256": "204032a9216574d6db1d7c9270031835c31329eca3da03c851e9ed4d0294075b"
+    },
+    {
+      "path": "verification-evidence/20261112-0903-second-review-integration/v5-release-archive/original-workbooks/智能组价_规则梳理总表-最新版.xlsx",
+      "bytes": 320893,
+      "sha256": "85098adb247a7b02ad5741cae0ce18e0da692a47f0d469a7c83ce0bd5fadbc12"
+    },
+    {
+      "path": "verification-evidence/20261112-0903-second-review-integration/v5-release-archive/workspace/verification-evidence/rule-normalization-plan-20261105/实施方案.md",
+      "bytes": 168623,
+      "sha256": "9e87a96e8cc30b4b7d767b785ae24cfaa0fc9377119356c83292daeb592fb4b9"
+    },
+    {
+      "path": "verification-evidence/20261112-0903-second-review-integration/v5-release-archive/workspace/verification-evidence/rule-normalization-plan-20261105/项目接入实施细则.md",
+      "bytes": 405257,
+      "sha256": "f4d31c41988a3633822d751bc40beb1bb61fd98950e742734583f159facf7716"
+    },
+    {
+      "path": "verification-evidence/20261113-0903-generic-feature-tier/checks.json",
+      "bytes": 1709,
+      "sha256": "da4f973712970852c60026df5005d5ff9ae4d91d011d652e76b392cd87d3feb3"
+    },
+    {
+      "path": "verification-evidence/20261113-0903-generic-feature-tier/report.md",
+      "bytes": 4069,
+      "sha256": "62153d3d1f241d3aabcc9f901af30aa79d5b43339a9adf6b76ea8531316cc75b"
+    },
+    {
+      "path": "verification-evidence/20261113-0903-generic-feature-tier/用户确认.md",
+      "bytes": 1150,
+      "sha256": "10fce85499684f66bab114c68906c13edce71e07fcffd3e281a4b2dae86dde01"
+    },
+    {
+      "path": "verification-evidence/20261113-project-cost-removal/checks.json",
+      "bytes": 1992,
+      "sha256": "53e344569c8a1fe29eecc23ef53dcfa6b2d97b25a99884c37a7d73b8f71e454b"
+    },
+    {
+      "path": "verification-evidence/20261113-project-cost-removal/report.md",
+      "bytes": 3427,
+      "sha256": "e1cdca8e080dde8d47549cc4d7afda336de5060ee3798589e5516f042aa0b932"
+    },
+    {
+      "path": "verification-evidence/20261113-project-cost-removal/用户确认.md",
+      "bytes": 1216,
+      "sha256": "d27691d0a86fb7bd63b994f6d88873153da1fa24eab88bcb5ca277144c4c9bd2"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/confirmed-changes.json",
+      "bytes": 71462,
+      "sha256": "4b92f1634775ccbde5fe8032ed0799e7e469230ea2f2e05e07dbe9616acde059"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/release-checks.json",
+      "bytes": 683,
+      "sha256": "b491b6c47e7124cf93b8ef4c59e905fe0da1e9e38ade2a908db40608bd5902d1"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/交接与验收.md",
+      "bytes": 9657,
+      "sha256": "449af441ca6f50cbf826de291837752e5d31d150aba2a227ca7444d63a1f54ea"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/用户定向确认.json",
+      "bytes": 497,
+      "sha256": "83588d644ca17487cbbae85178f74a0d3261597dbd8f5623debdf18fca34333c"
+    },
+    {
+      "path": "verification-evidence/materials-confirmation-20261112-v5/用户第二轮原始答复.txt",
+      "bytes": 12861,
+      "sha256": "70226c82aead8b067168633a0cf85296250ecb5896140dc44f2087cef126ced4"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/current-quota-catalog.json",
+      "bytes": 4540375,
+      "sha256": "ec03bd65d9150f51168d525513075466ea1d7b5dc36888a2f8fc5070e6e723a1"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/d06-d08-decision-20261112.md",
+      "bytes": 8813,
+      "sha256": "c910053982fa8d4d935b06b18bc899c67ab0a1f62cdd78fa236721e925109328"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/existing-evidence.json",
+      "bytes": 16911,
+      "sha256": "5338b7e9c75f20640773e348dff229c2001fc740954bff8acd2969f4e6559683"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/materials-answers-20261112-r2.md",
+      "bytes": 17852,
+      "sha256": "12bb4c19dba380cab4d3a0f59846b5e44e5cd9e3e34346d15bb172d09c702fc5"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/materials-answers-20261112.md",
+      "bytes": 22046,
+      "sha256": "7eef92e1d254df7fc57ad56d74397669d6c75ea3835df8c6966e1e4e6c59e4c1"
+    },
+    {
+      "path": "verification-evidence/pending-materials-20261112/交接与验收.md",
+      "bytes": 10206,
+      "sha256": "061f14ecb7fc94f26c05d5d7400c2eec9a136d33121ba4e66032ce2e376a34e9"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/20261110-规则更新与专家答复证据.md",
+      "bytes": 27612,
+      "sha256": "16a9471ddebf2c7902787c08bdf76e2ed3c1f57e233b092a6300646b2876c2d8"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A-07-image1.png",
+      "bytes": 146753,
+      "sha256": "e51cb8caa2946492d05f53b419849ad2539effbf24282ed37a728d94d529844c"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A-09-image2.png",
+      "bytes": 47062,
+      "sha256": "b7e617d0d4a4b1ba866a98201bdfbec21128df5f7c5fdc92741432d13b96a179"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A-09-image3.png",
+      "bytes": 78376,
+      "sha256": "d9f3c07004b3f792bf9fc2a0e8e20bad8e88b509fbb08e5e88a30ce28a8a07b0"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A05-rules.txt",
+      "bytes": 5061,
+      "sha256": "879eb19081d1a3d06590da4faaaebab0d6d08a30cc80c3e161e9409cdc82898a"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A06-rules.txt",
+      "bytes": 21380,
+      "sha256": "d60a07ea08779a9a0e72863b8becb81ef3f457ce20a144594e19e8da5f6b4182"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A07-rules.txt",
+      "bytes": 1794,
+      "sha256": "1bf16b1a5f3679f0ac917932fb4a88997bc38e665ba8db59a9f9b83577b8d356"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A09-rules.txt",
+      "bytes": 6917,
+      "sha256": "a5540aa30bc1d24238a5781e12024c90f45b0757e7dec0b78efd565b4c81801d"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/A11-rules.txt",
+      "bytes": 5413,
+      "sha256": "20d8a2eb1b2566f5ddcf6dce35d51c645f6efc61482d6036bc649f8a46c46c18"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/acceptance-cases.v1.12.json",
+      "bytes": 883852,
+      "sha256": "69fce74ef50467167df79abba9917293f377afa82a837c7bf01f94957e31b147"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/acceptance-cases.v1.15.json",
+      "bytes": 915286,
+      "sha256": "f7c2191949dd8d64847e8720d3f13c6e88a4a417abb4bd768e89848a1af14ab5"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/baseline-integration-checks-v1.12-20261112.json",
+      "bytes": 984,
+      "sha256": "59a6398f9f7b80b9e204aedb56741492bbe0a67190fc0290bf5c3295cac3118e"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/baseline-integration-checks-v1.15-20261113.json",
+      "bytes": 1992,
+      "sha256": "53e344569c8a1fe29eecc23ef53dcfa6b2d97b25a99884c37a7d73b8f71e454b"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/quota-ambiguity-review.md",
+      "bytes": 24840,
+      "sha256": "a3e388ca874e8b99eda05793ff44e01ab4c16d9a723527a9d416898d377a64eb"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/quota-source-db-20261110.json",
+      "bytes": 4666710,
+      "sha256": "44f9b505cc7903177262f4351ec3c2f953cb2b325a11426c2050bcc8c5a0f2f7"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/source-update-20261110.json",
+      "bytes": 624393,
+      "sha256": "f7aa92aba1a060cef21f00d9db90ac309454bc5364960e3b05003c7227de6fdd"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/代码文件与调用链核对-20261112.md",
+      "bytes": 32257,
+      "sha256": "094b9388dacfa045b12302b8450bd45e78f074b4d480d94b970272afff75f7bd"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/定额原文核验与未闭项-20261110.md",
+      "bytes": 7746,
+      "sha256": "1da0234d6163ca8005855867ce107e1222be48235c4d637dc4d7160b14335526"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/实施方案.md",
+      "bytes": 170766,
+      "sha256": "8bfa8b7e294f969244a6c23024048f6156c7fe95a8243091a8db7fe1a3a1c15f"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/待答复问题清单.md",
+      "bytes": 46930,
+      "sha256": "f00d25eed9aa17bdde8036ffe0ca9c61d23926848b8cbe391a46eda1b62ca26b"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/规则拆解独立校验-20261110.json",
+      "bytes": 5838,
+      "sha256": "78f8426a1700651534ed0fc688f23d52ae889139dd3f88a35bdc6081845d051f"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/规则来源处理目录.md",
+      "bytes": 17522,
+      "sha256": "085ee3460fe71aa358c212f905e40020fb60223e34616ab2cc15de525cbe2cba"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/规则逐条拆解-20261110.json",
+      "bytes": 1470415,
+      "sha256": "0829453f7a35ec52266f29105a7d27511b54e30785528cc08f758d3e71bb4e8e"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/规则逐条拆解-20261110.md",
+      "bytes": 118200,
+      "sha256": "70d6d07509dbaedd1e1c499e08b98535a0dd2f9e8d2e10cca6720ae977ae8d51"
+    },
+    {
+      "path": "verification-evidence/rule-normalization-plan-20261105/项目接入实施细则.md",
+      "bytes": 422613,
+      "sha256": "5ae73d48606cbb09eb2612f4a1e858d0d0f91fa0eb7a4a48b4f952c78ac6c41a"
+    }
+  ]
+}

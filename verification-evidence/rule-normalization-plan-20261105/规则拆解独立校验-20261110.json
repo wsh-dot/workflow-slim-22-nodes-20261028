@@ -1,0 +1,259 @@
+{
+  "source_cell_checks": [
+    {
+      "check": "source sha256: 智能组价_规则梳理总表-最新版.xlsx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "source sha256: 定额规则待专家确认问题_已回答.xlsx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "expert text, red runs and all-red flags",
+      "pass": true,
+      "detail": "33 answers, mismatches: "
+    },
+    {
+      "check": "unique row ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all rows remain inactive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "PRICE-01 remains pending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-05 nonempty cells captured exactly once",
+      "pass": true,
+      "detail": "81 source cells, 81 captured"
+    },
+    {
+      "check": "A-05 current cell text and formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-05 no hidden rows/columns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-06 nonempty cells captured exactly once",
+      "pass": true,
+      "detail": "795 source cells, 795 captured"
+    },
+    {
+      "check": "A-06 current cell text and formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-06 no hidden rows/columns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-07 nonempty cells captured exactly once",
+      "pass": true,
+      "detail": "57 source cells, 57 captured"
+    },
+    {
+      "check": "A-07 current cell text and formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-07 no hidden rows/columns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-09 nonempty cells captured exactly once",
+      "pass": true,
+      "detail": "165 source cells, 165 captured"
+    },
+    {
+      "check": "A-09 current cell text and formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-09 no hidden rows/columns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-11 nonempty cells captured exactly once",
+      "pass": true,
+      "detail": "209 source cells, 209 captured"
+    },
+    {
+      "check": "A-11 current cell text and formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A-11 no hidden rows/columns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "ten source formulas preserved",
+      "pass": true,
+      "detail": "10"
+    },
+    {
+      "check": "embedded image bytes retained in manifest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "embedded image positions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A06 group main anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A09 subject only from explicit merge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "deleted associations excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A07 examples excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A05 wrong target not silently mapped",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A06 motor boundary and correction preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "5-4019 database wording",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "motor source endpoints",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "3kW user-selected motor record",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "film size is not uniquely determined by 8mm threshold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example cable 300m",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example duplicate earthwork deduction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example shrink sleeve",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example lugs and 10-point unit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example non-explosion pump motor power boundary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example 9 MWp split",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example outer screen area",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "example price half-up then multiply",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "images": [
+    {
+      "sheet": "A-07",
+      "sha256": "e51cb8caa2946492d05f53b419849ad2539effbf24282ed37a728d94d529844c",
+      "from": [
+        9,
+        2
+      ],
+      "to": [
+        20,
+        126
+      ]
+    },
+    {
+      "sheet": "A-09",
+      "sha256": "b7e617d0d4a4b1ba866a98201bdfbec21128df5f7c5fdc92741432d13b96a179",
+      "from": [
+        5,
+        32
+      ],
+      "to": [
+        8,
+        35
+      ]
+    },
+    {
+      "sheet": "A-09",
+      "sha256": "d9f3c07004b3f792bf9fc2a0e8e20bad8e88b509fbb08e5e88a30ce28a8a07b0",
+      "from": [
+        5,
+        13
+      ],
+      "to": [
+        9,
+        18
+      ]
+    }
+  ],
+  "quota_snapshot_sha256": "44f9b505cc7903177262f4351ec3c2f953cb2b325a11426c2050bcc8c5a0f2f7",
+  "limitations": [
+    "Arithmetic checks validate hand-worked examples, not production execution.",
+    "Endpoint checks do not verify intermediate codes or official publication provenance.",
+    "PRICE-01 and expert source documents remain pending."
+  ],
+  "failed": 0
+}
